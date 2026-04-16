@@ -1,0 +1,10 @@
+# Render Blueprint — statische Dogmatiek-webapp voor klasgenoten.
+# Zie Webapp/README.txt voor stappen in het Render-dashboard.
+# Docs: https://render.com/docs/static-sites
+
+services:
+  - type: web
+    name: dogmatiek-oefenen
+    runtime: static
+    buildCommand: 'echo "Geen build; bestanden staan al in Webapp/"'
+    staticPublishPath: ./Webapp

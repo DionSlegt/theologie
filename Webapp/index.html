@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dogmatiek — oefenen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <button type="button" id="btn-back" class="btn-back hidden" aria-label="Terug">← Terug</button>
+      <h1 id="title">Dogmatiek oefenen</h1>
+    </header>
+
+    <main id="main">
+      <!-- Setup -->
+      <section id="view-setup" class="view">
+        <div class="panel">
+          <h2>Oefenmodus</h2>
+          <div class="segmented" role="group" aria-label="Soort oefening">
+            <button type="button" class="seg active" data-mix="typing">Typen</button>
+            <button type="button" class="seg" data-mix="mcq">Meerkeuze</button>
+            <button type="button" class="seg" data-mix="both">Typen + meerkeuze</button>
+            <button type="button" class="seg" data-mix="blank">Leeg vlak</button>
+          </div>
+          <p class="small muted" id="mix-hint">Alleen typen: typ je antwoord, tik op Antwoord tonen en geef zelf Goed of Fout. Na de ronde zie je fouten hieronder op het overzicht en kun je ze apart nog een keer doen.</p>
+        </div>
+
+        <div class="panel">
+          <h2>Richting</h2>
+          <div class="segmented" role="group" aria-label="Richting">
+            <button type="button" class="seg-dir active" data-dir="termDef">Term → definitie</button>
+            <button type="button" class="seg-dir" data-dir="defTerm">Definitie → term</button>
+            <button type="button" class="seg-dir" data-dir="mixed">Gemengd</button>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Hoofdstukken</h2>
+          <label class="check-all"><input type="checkbox" id="chk-all" /> <strong>Alle hoofdstukken</strong> <span id="total-terms" class="muted"></span></label>
+          <div id="chapter-list" class="chapter-list"></div>
+        </div>
+
+        <button type="button" id="btn-start" class="btn primary" disabled>Start oefening</button>
+        <button type="button" id="btn-open-manage" class="btn secondary">Termen beheren…</button>
+      </section>
+
+      <section id="view-manage" class="view hidden" aria-label="Termen beheren">
+        <p class="small muted" id="manage-storage-hint"></p>
+        <div class="manage-toolbar">
+          <button type="button" id="btn-new-card" class="btn secondary">Nieuwe term</button>
+          <button type="button" id="btn-export-json" class="btn secondary">Exporteren (JSON)</button>
+          <label class="btn secondary import-label">
+            Importeren
+            <input type="file" id="import-json-file" accept="application/json,.json" class="hidden-input" />
+          </label>
+          <button type="button" id="btn-reset-default" class="btn secondary danger-outline">reset</button>
+        </div>
+        <div id="manage-list" class="manage-list"></div>
+      </section>
+
+      <!-- Session -->
+      <section id="view-session" class="view hidden">
+        <p class="progress" id="progress"></p>
+        <div id="context-note" class="context-note hidden"></div>
+        <div class="card prompt-card">
+          <p class="label" id="prompt-label"></p>
+          <div class="prompt-row">
+            <p id="prompt-text" class="prompt"></p>
+            <span id="prompt-page" class="prompt-page hidden" aria-hidden="true"></span>
+          </div>
+        </div>
+        <div id="typing-area" class="typing-area">
+          <textarea id="answer-input" rows="4" placeholder="Typ je antwoord…"></textarea>
+        </div>
+        <div id="typing-review" class="typing-review hidden" aria-live="polite">
+          <div class="typing-review-block">
+            <p class="label">Jouw antwoord</p>
+            <p id="typing-review-user" class="review-text"></p>
+          </div>
+          <div class="typing-review-block">
+            <p class="label">Juiste antwoord</p>
+            <p id="typing-review-expected" class="review-text"></p>
+          </div>
+          <p class="small muted typing-self-q">Hoe oordeel je zelf?</p>
+          <div class="self-judge-row">
+            <button type="button" id="btn-typing-wrong" class="btn judge-wrong">Fout</button>
+            <button type="button" id="btn-typing-good" class="btn judge-good">Goed</button>
+          </div>
+        </div>
+        <div id="blank-area" class="blank-area hidden" aria-live="polite">
+          <div id="blank-placeholder" class="blank-placeholder">
+            <span class="sr-only">Ruimte om zelf aan het antwoord te denken</span>
+          </div>
+          <div id="blank-revealed" class="blank-revealed hidden">
+            <p class="label">Antwoord</p>
+            <p id="blank-answer-text" class="prompt blank-answer"></p>
+            <p class="small muted blank-self-q">Wist je dit (al) zelf?</p>
+            <div class="self-judge-row">
+              <button type="button" id="btn-blank-wrong" class="btn judge-wrong">Fout</button>
+              <button type="button" id="btn-blank-good" class="btn judge-good">Goed</button>
+            </div>
+          </div>
+        </div>
+        <div id="mcq-area" class="mcq-area hidden"></div>
+        <div class="actions-row" id="actions-main">
+          <button type="button" id="btn-prev" class="btn secondary" disabled>Vorige</button>
+          <button type="button" id="btn-submit" class="btn primary">Volgende</button>
+        </div>
+        <div class="actions-row hidden" id="actions-judge-prev-only">
+          <button type="button" id="btn-judge-prev" class="btn secondary">Vorige</button>
+        </div>
+      </section>
+
+      <!-- Summary -->
+      <section id="view-summary" class="view hidden">
+        <h2>Ronde afgerond</h2>
+        <div class="stats">
+          <p><span class="ok" id="sum-good">0</span> goed</p>
+          <p><span class="bad" id="sum-bad">0</span> fout</p>
+        </div>
+        <div id="wrong-review-wrap" class="panel wrong-review-wrap hidden">
+          <h3 class="wrong-review-heading">Fouten uit deze ronde</h3>
+          <p class="small muted wrong-review-intro">Ook bij typen: hier zie je wat fout ging; daarna dezelfde modus opnieuw voor alleen deze kaarten.</p>
+          <ul id="wrong-review-list" class="wrong-review-list"></ul>
+        </div>
+        <div class="summary-actions">
+          <button type="button" id="btn-practice-wrong" class="btn primary hidden">Fouten opnieuw oefenen</button>
+          <button type="button" id="btn-again" class="btn secondary">Opnieuw (zelfde instellingen)</button>
+          <button type="button" id="btn-home" class="btn primary">Instellingen</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="dlg-card" class="modal form-modal">
+    <h3 id="dlg-card-title">Term bewerken</h3>
+    <form id="form-card" class="card-form">
+      <input type="hidden" id="ed-id" value="" />
+      <label class="field">
+        <span class="field-label">Term</span>
+        <input type="text" id="ed-term" required autocomplete="off" />
+      </label>
+      <label class="field">
+        <span class="field-label">Definitie</span>
+        <textarea id="ed-definition" rows="4" required></textarea>
+      </label>
+      <label class="field">
+        <span class="field-label">Hoofdstuk</span>
+        <input type="text" id="ed-chapter" required placeholder="bijv. Hoofdstuk 1" list="chapter-suggestions" />
+      </label>
+      <datalist id="chapter-suggestions"></datalist>
+      <label class="field">
+        <span class="field-label">Bladzijde (optioneel)</span>
+        <input type="number" id="ed-sourcepage" min="1" step="1" placeholder="—" />
+      </label>
+      <label class="field">
+        <span class="field-label">Context / ter info (optioneel)</span>
+        <textarea id="ed-context" rows="2"></textarea>
+      </label>
+      <div class="modal-actions">
+        <button type="button" id="dlg-card-cancel" class="btn secondary">Annuleren</button>
+        <button type="submit" class="btn primary">Opslaan</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="dlg-reset" class="modal">
+    <h3>Standaardset herstellen?</h3>
+    <p class="muted">Alle eigen termen in deze browser worden vervangen door de set uit <code>data/terms.json</code>.</p>
+    <div class="modal-actions">
+      <button type="button" id="dlg-reset-cancel" class="btn secondary">Annuleren</button>
+      <button type="button" id="dlg-reset-confirm" class="btn danger">Herstellen</button>
+    </div>
+  </dialog>
+
+  <dialog id="dlg-exit" class="modal">
+    <h3>Oefening afsluiten?</h3>
+    <p>Weet je het zeker? Als je nu teruggaat, wordt deze oefening afgesloten en gaat je voortgang in deze ronde verloren.</p>
+    <div class="modal-actions">
+      <button type="button" id="dlg-exit-cancel" class="btn secondary">Annuleren</button>
+      <button type="button" id="dlg-exit-confirm" class="btn danger">Afsluiten</button>
+    </div>
+  </dialog>
+
+  <script src="js/app.js?v=202604097"></script>
+</body>
+</html>
