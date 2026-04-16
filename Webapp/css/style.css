@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -39,7 +43,8 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 12px 16px;
+  padding: 12px max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left));
+  padding-top: max(12px, env(safe-area-inset-top));
   background: rgba(245, 245, 247, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -55,10 +60,15 @@ body {
   border: none;
   background: transparent;
   color: var(--accent);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  padding: 6px 8px;
-  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  touch-action: manipulation;
+  font-family: inherit;
 }
 
 .btn-back:hover {
@@ -72,7 +82,9 @@ body {
 #main {
   flex: 1;
   padding: 16px;
-  padding-bottom: 32px;
+  padding-bottom: max(32px, env(safe-area-inset-bottom));
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
 }
 
 .view.hidden {
@@ -107,8 +119,11 @@ body {
   border-radius: 10px;
   background: var(--bg);
   font-size: 0.85rem;
+  font-family: inherit;
   cursor: pointer;
   color: var(--text);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .segmented .seg.active,
@@ -131,21 +146,33 @@ body {
 .chapter-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   margin-top: 12px;
-  max-height: 42vh;
+  max-height: min(50vh, 420px);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .chapter-list label {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 10px;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 14px;
+  min-height: 52px;
+  border-radius: 12px;
   border: 1px solid var(--border);
   cursor: pointer;
   background: var(--bg);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.chapter-list input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
 }
 
 .chapter-list label:hover {
@@ -155,9 +182,18 @@ body {
 .check-all {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   font-size: 0.95rem;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  padding: 12px 0;
+  min-height: 48px;
+}
+
+.check-all input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  accent-color: var(--accent);
 }
 
 .btn {
@@ -173,6 +209,8 @@ body {
   cursor: pointer;
   width: 100%;
   margin-top: 8px;
+  touch-action: manipulation;
+  font-family: inherit;
 }
 
 .btn.primary {
@@ -185,7 +223,9 @@ body {
 }
 
 .btn.primary:disabled {
-  opacity: 0.45;
+  opacity: 1;
+  background: #aeaeb2;
+  color: #3a3a3c;
   cursor: not-allowed;
 }
 
@@ -680,4 +720,65 @@ body {
 
 .manage-card-actions .btn-del:hover {
   background: rgba(194, 65, 12, 0.1);
+}
+
+/* ——— Mobiel / smalle schermen ——— */
+@media (max-width: 540px) {
+  #app {
+    max-width: 100%;
+  }
+
+  #main {
+    padding-top: 12px;
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .panel {
+    padding: 14px 14px;
+    margin: 12px 0;
+  }
+
+  .panel h2 {
+    font-size: 0.95rem;
+  }
+
+  .topbar h1 {
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  .segmented {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .segmented .seg,
+  .segmented .seg-dir {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 12px 14px;
+    font-size: 0.92rem;
+  }
+
+  .chapter-list {
+    max-height: min(48vh, 380px);
+  }
+
+  .manage-card-row {
+    flex-direction: column;
+  }
+
+  .manage-card-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .manage-card-actions button {
+    width: 100%;
+    min-height: 44px;
+  }
 }
