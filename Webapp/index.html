@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Studie</title>
-  <link rel="stylesheet" href="css/style.css?v=202604100" />
+  <link rel="stylesheet" href="css/style.css?v=202605200" />
 </head>
 <body>
   <div id="app">
@@ -23,19 +23,65 @@
           </button>
           <button type="button" class="launcher-card" id="launch-ot">
             <span class="launcher-card-title">Oude Testament</span>
-            <span class="launcher-card-desc">Komt later beschikbaar.</span>
+            <span class="launcher-card-desc">Kaders, begrippen, personen en Hs 2.</span>
           </button>
           <button type="button" class="launcher-card" id="launch-nt">
             <span class="launcher-card-title">Nieuwe Testament</span>
-            <span class="launcher-card-desc">Komt later beschikbaar.</span>
+            <span class="launcher-card-desc">Powell, Achtenmeier en gecombineerd oefenen.</span>
           </button>
         </div>
       </section>
 
-      <section id="view-coming" class="view hidden" aria-label="Binnenkort">
+      <section id="view-ot-menu" class="view hidden" aria-label="Oude Testament"></section>
+      <section id="view-nt-menu" class="view hidden" aria-label="Nieuwe Testament"></section>
+
+      <section id="view-nt-combined" class="view hidden" aria-label="NT gecombineerd">
         <div class="panel">
-          <h2 id="coming-title">—</h2>
-          <p id="coming-body" class="muted coming-body"></p>
+          <h2>Onderdelen</h2>
+          <p class="small muted">Zelfde volgorde als in de app: Hs 1–2 Powell → Hs 3 Powell → Achtenmeier.</p>
+          <label class="check-all"><input type="checkbox" id="nt-chk-all" checked /> <strong>Alle onderdelen</strong></label>
+          <div id="nt-combined-list" class="chapter-list"></div>
+        </div>
+        <button type="button" id="nt-btn-start-combined" class="btn primary">Start oefening</button>
+      </section>
+
+      <section id="view-reveal" class="view hidden" aria-label="Oefenen">
+        <p class="progress" id="reveal-progress"></p>
+        <div class="card prompt-card">
+          <p class="label" id="reveal-prompt-label">Vraag</p>
+          <div id="reveal-prompt" class="md-content prompt"></div>
+        </div>
+        <div id="reveal-answer-wrap" class="hidden">
+          <div class="card prompt-card">
+            <p class="label">Antwoord</p>
+            <div id="reveal-answer" class="md-content prompt"></div>
+          </div>
+          <p class="small muted blank-self-q">Wist je dit (al) zelf?</p>
+          <div class="self-judge-row">
+            <button type="button" id="reveal-btn-wrong" class="btn judge-wrong">Fout</button>
+            <button type="button" id="reveal-btn-good" class="btn judge-good">Goed</button>
+          </div>
+        </div>
+        <div class="actions-row" id="reveal-actions">
+          <button type="button" id="reveal-btn-prev" class="btn secondary" disabled>Vorige</button>
+          <button type="button" id="reveal-btn-next" class="btn primary">Laat antwoord zien</button>
+        </div>
+      </section>
+
+      <section id="view-reveal-summary" class="view hidden" aria-label="Ronde afgerond">
+        <h2>Ronde afgerond</h2>
+        <div class="stats">
+          <p><span class="ok" id="reveal-sum-good">0</span> goed</p>
+          <p><span class="bad" id="reveal-sum-bad">0</span> fout</p>
+        </div>
+        <div id="reveal-wrong-wrap" class="panel wrong-review-wrap hidden">
+          <h3 class="wrong-review-heading">Fouten uit deze ronde</h3>
+          <ul id="reveal-wrong-list" class="wrong-review-list"></ul>
+        </div>
+        <div class="summary-actions">
+          <button type="button" id="reveal-btn-practice-wrong" class="btn primary hidden">Fouten opnieuw oefenen</button>
+          <button type="button" id="reveal-btn-again" class="btn secondary">Opnieuw</button>
+          <button type="button" id="reveal-btn-done" class="btn primary">Klaar</button>
         </div>
       </section>
 
@@ -207,6 +253,7 @@
     </div>
   </dialog>
 
-  <script src="js/app.js?v=202604100"></script>
+  <script src="js/ot-nt.js?v=202605200"></script>
+  <script src="js/app.js?v=202605200"></script>
 </body>
 </html>

@@ -1,0 +1,1283 @@
+{
+  "version": 1,
+  "ot": {
+    "title": "Oude Testament",
+    "sections": [
+      {
+        "header": "Hs 1 Jacobson & Chan",
+        "links": [
+          {
+            "label": "I. Historische en Geografische Kaders",
+            "pack": "ot-kaders"
+          },
+          {
+            "label": "II. Begrippen",
+            "pack": "ot-begrippen"
+          },
+          {
+            "label": "III. Personen uit het Oude Testament",
+            "pack": "ot-personen"
+          }
+        ]
+      },
+      {
+        "header": "Hs 2 Jacobson & Chan",
+        "links": [
+          {
+            "label": "Opbouw OT",
+            "pack": "ot-hs2-opbouw"
+          },
+          {
+            "label": "Canon OT",
+            "pack": "ot-hs2-canon"
+          },
+          {
+            "label": "Ontwikkeling OT",
+            "pack": "ot-hs2-ontwikkeling"
+          },
+          {
+            "label": "Verschil ‘achter’ en ‘in’ de tekst",
+            "pack": "ot-hs2-verschil"
+          },
+          {
+            "label": "Begrippen",
+            "pack": "ot-hs2-begrippen"
+          }
+        ]
+      }
+    ]
+  },
+  "nt": {
+    "title": "Nieuwe Testament",
+    "combinedOrder": [
+      "nt-tijdsperiode",
+      "nt-begrippen-hs12",
+      "nt-personen",
+      "nt-stromingen",
+      "nt-opbouw",
+      "nt-begrippen-hs3",
+      "nt-achtenmeier"
+    ],
+    "sections": [
+      {
+        "header": "Oefenen",
+        "links": [
+          {
+            "label": "Gecombineerd oefenen",
+            "combined": true
+          }
+        ]
+      },
+      {
+        "header": "Hs 1–2 Powell",
+        "links": [
+          {
+            "label": "Tijdsperiode",
+            "pack": "nt-tijdsperiode"
+          },
+          {
+            "label": "Begrippen",
+            "pack": "nt-begrippen-hs12"
+          },
+          {
+            "label": "Belangrijke personen",
+            "pack": "nt-personen"
+          },
+          {
+            "label": "Stromingen",
+            "pack": "nt-stromingen"
+          }
+        ]
+      },
+      {
+        "header": "Hs 3 Powell",
+        "links": [
+          {
+            "label": "Opbouw/type boeken NT",
+            "pack": "nt-opbouw"
+          },
+          {
+            "label": "Begrippen",
+            "pack": "nt-begrippen-hs3"
+          }
+        ]
+      },
+      {
+        "header": "Achtenmeier",
+        "links": [
+          {
+            "label": "Canonvorming NT",
+            "pack": "nt-achtenmeier"
+          }
+        ]
+      }
+    ]
+  },
+  "packs": {
+    "ot-begrippen": {
+      "title": "II. Begrippen",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "testament",
+          "prompt": "**Testament**",
+          "answer": "Een schriftelijk verslag van een verbond."
+        },
+        {
+          "id": "aartsvaders",
+          "prompt": "**Aartsvaders**",
+          "answer": "De stamvaders en stammoeders van Israël, doorgaans Abraham en Sara, Isaak en Rebekka, en Jakob met Rachel en Lea."
+        },
+        {
+          "id": "voor-gtr",
+          "prompt": "**Voor de gewone tijdrekening**",
+          "answer": "De academische aanduiding voor jaartallen vóór de geboorte van Christus."
+        },
+        {
+          "id": "israel",
+          "prompt": "**Israël**",
+          "answer": "Dit verwijst naar het nageslacht van Abraham en Sara, het Noordrijk of de naam die aan de patriarch Jakob werd gegeven."
+        },
+        {
+          "id": "egypte",
+          "prompt": "**Egypte**",
+          "answer": "Een oud wereldrijk in het noordoosten van Afrika, gesitueerd rond de rivier de Nijl."
+        },
+        {
+          "id": "exodus",
+          "prompt": "**Exodus**",
+          "answer": "Het tweede boek van de Pentateuch waarin de bevrijding van de Israëlieten uit de Egyptische slavernij wordt beschreven."
+        },
+        {
+          "id": "de-wet",
+          "prompt": "**De wet**",
+          "answer": "De wetten van Mozes of de voorschriften in de Pentateuch, vaak gebruikt als synoniem voor de Thora."
+        },
+        {
+          "id": "richters",
+          "prompt": "**Richters**",
+          "answer": "Leiders die worden aangeduid als verlossers of redders en die Israël leidden vóór de tijd van de koningen."
+        },
+        {
+          "id": "kanaaniet",
+          "prompt": "**Kanaäniet**",
+          "answer": "Een term voor de bewoners van het Heilige Land voordat de Israëlieten daar hun intrek namen."
+        },
+        {
+          "id": "juda",
+          "prompt": "**Juda**",
+          "answer": "Het Zuidrijk dat Jeruzalem als politiek en religieus centrum had."
+        },
+        {
+          "id": "noordrijk",
+          "prompt": "**Noordrijk**",
+          "answer": "De tien stammen die zich na de regering van Salomo afscheidden van de dynastie van David."
+        },
+        {
+          "id": "offer",
+          "prompt": "**Offer**",
+          "answer": "Het aanbieden van iets waardevols, zoals vee of gewassen, als een uiting van religieuze aanbidding."
+        },
+        {
+          "id": "assyrie",
+          "prompt": "**Assyrië**",
+          "answer": "Een rijk in Noord-Mesopotamië dat in de achtste en zevende eeuw voor de gewone tijdrekening een enorme impact had op Israël en Juda."
+        },
+        {
+          "id": "samaritanen",
+          "prompt": "**Samaritanen**",
+          "answer": "Een volksgroep die in Samaria woonde en beweerde het ware Israël te zijn; zij stamden af van de achtergebleven bevolking na de Assyrische verovering."
+        },
+        {
+          "id": "ballingschap",
+          "prompt": "**Ballingschap**",
+          "answer": "De periode in de zesde eeuw voor de gewone tijdrekening waarin de elite van Juda gedwongen werd weggevoerd naar Mesopotamië."
+        },
+        {
+          "id": "babylon",
+          "prompt": "**Babylon**",
+          "answer": "Een macht in Zuid-Mesopotamië die verantwoordelijk was voor de verwoesting van Jeruzalem en de deportatie van het volk."
+        },
+        {
+          "id": "ballingen",
+          "prompt": "**Ballingen**",
+          "answer": "De inwoners van Juda die na de verovering van hun land werden weggevoerd naar Mesopotamië."
+        },
+        {
+          "id": "cyrus",
+          "prompt": "**Cyrus de Grote**",
+          "answer": "De Perzische keizer die het Nabije Oosten veroverde en de ballingen toestemming gaf om terug te keren naar hun land."
+        },
+        {
+          "id": "perzie",
+          "prompt": "**Perzië**",
+          "answer": "Een uitgestrekt gebied ten oosten van Mesopotamië dat het centrum vormde van het Perzische Rijk."
+        },
+        {
+          "id": "gtr",
+          "prompt": "**Gewone tijdrekening**",
+          "answer": "De academische aanduiding voor de jaartelling na de geboorte van Christus."
+        },
+        {
+          "id": "tweede-tempelperiode",
+          "prompt": "**Tweede Tempelperiode**",
+          "answer": "De periode in de Joodse geschiedenis tussen de inwijding van de tweede tempel in 515 voor de gewone tijdrekening en de verwoesting ervan door de Romeinen in 70 na de gewone tijdrekening."
+        },
+        {
+          "id": "synagoge",
+          "prompt": "**Synagoge**",
+          "answer": "Een bijeenkomst van Joden voor aanbidding, gebed en de studie van de Bijbel."
+        },
+        {
+          "id": "diaspora",
+          "prompt": "**Diaspora**",
+          "answer": "Joden die buiten het Heilige Land wonen, ook wel de verstrooiing genoemd."
+        },
+        {
+          "id": "thora",
+          "prompt": "**Thora**",
+          "answer": "De wet van Mozes zoals vastgelegd in de Pentateuch; vaak gebruikt voor de eerste vijf Bijbelboeken."
+        },
+        {
+          "id": "oude-nabije-oosten",
+          "prompt": "**Oude Nabije Oosten**",
+          "answer": "Het geografische gebied dat zich uitstrekt van Egypte via de Levant naar Mesopotamië en Perzië."
+        },
+        {
+          "id": "hellenistisch",
+          "prompt": "**Hellenistisch**",
+          "answer": "Beïnvloed door de Griekse en Romeinse cultuur, taal en denkwijze."
+        },
+        {
+          "id": "seleuciden",
+          "prompt": "**Seleuciden**",
+          "answer": "De Syrische dynastie die over Palestina heerste tussen 198 en 167 voor de gewone tijdrekening."
+        },
+        {
+          "id": "antiochus",
+          "prompt": "**Antiochus IV Epiphanes**",
+          "answer": "Een Syrische koning uit de Seleucidische dynastie die de Joodse godsdienst vervolgde."
+        },
+        {
+          "id": "hasmoneeen",
+          "prompt": "**Hasmoneeën**",
+          "answer": "De familie van Joodse rebellen die een succesvolle opstand leidde tegen de Syrische overheersing."
+        },
+        {
+          "id": "vorstendommen",
+          "prompt": "**Vorstendommen**",
+          "answer": "Geestelijke machten die hun invloed uitoefenen in een onzichtbare dimensie."
+        },
+        {
+          "id": "ptolemeeen",
+          "prompt": "**Ptolemeeën**",
+          "answer": "De Egyptische dynastie die over Palestina heerste in de periode tussen 320 en 198 voor de gewone tijdrekening."
+        },
+        {
+          "id": "pentateuch",
+          "prompt": "**Pentateuch**",
+          "answer": "De verzamelnaam voor de eerste vijf boeken van de Bijbel."
+        },
+        {
+          "id": "heilige-land",
+          "prompt": "**Heilige Land**",
+          "answer": "Het land dat door God aan Abraham, Sara en hun nageslacht was beloofd."
+        },
+        {
+          "id": "aram",
+          "prompt": "**Aram**",
+          "answer": "Een term voor de regio rond Damascus en de Arameeërs."
+        },
+        {
+          "id": "nieuw-assyrisch",
+          "prompt": "**Nieuw-Assyrische Rijk**",
+          "answer": "Het rijk vanuit Noord-Mesopotamië dat het Nabije Oosten domineerde van de achtste eeuw tot circa 609 voor de gewone tijdrekening."
+        },
+        {
+          "id": "nieuw-babylonisch",
+          "prompt": "**Nieuw-Babylonische Rijk**",
+          "answer": "Het rijk vanuit Zuid-Mesopotamië dat heerste van circa 612 tot 539 voor de gewone tijdrekening."
+        },
+        {
+          "id": "jehoed",
+          "prompt": "**Jehoed**",
+          "answer": "De aanduiding voor de provincie Juda tijdens de periode van de Perzische overheersing."
+        },
+        {
+          "id": "priesters",
+          "prompt": "**Priesters**",
+          "answer": "Functionarissen in de tijd van de tweede tempel die verantwoordelijk waren voor het offerstelsel en nauw verbonden waren met de Sadduceeën."
+        },
+        {
+          "id": "profeet",
+          "prompt": "**Profeet**",
+          "answer": "Iemand die namens een goddelijke bron een boodschap overbrengt."
+        },
+        {
+          "id": "polytheisme",
+          "prompt": "**Polytheïsme**",
+          "answer": "Het geloof in het bestaan van meerdere goden."
+        },
+        {
+          "id": "henotheisme",
+          "prompt": "**Henotheïsme**",
+          "answer": "Het geloof in meerdere goden, waarbij één specifieke god de andere goden overheerst."
+        },
+        {
+          "id": "monolatrie",
+          "prompt": "**Monolatrie**",
+          "answer": "De aanbidding van één enkele god zonder daarbij het bestaan van andere goden te ontkennen."
+        },
+        {
+          "id": "monotheisme",
+          "prompt": "**Monotheïsme**",
+          "answer": "Het geloof dat er slechts één God bestaat."
+        },
+        {
+          "id": "jodendom",
+          "prompt": "**Jodendom**",
+          "answer": "Een verzamelnaam voor de religieuze systemen en geloofsovertuigingen van het Joodse volk."
+        },
+        {
+          "id": "demon",
+          "prompt": "**Demon**",
+          "answer": "Een boze of onreine geest die mensen kan kwellen of beperken."
+        },
+        {
+          "id": "zalven",
+          "prompt": "**Zalven**",
+          "answer": "Het gebruik van olie om aan te geven dat iemand door God is gekozen voor een koninklijke functie."
+        },
+        {
+          "id": "ijzertijd",
+          "prompt": "**IJzertijd**",
+          "answer": "De archeologische periode vanaf circa 1200 voor de gewone tijdrekening waarin Israël zich ontwikkelde van een stammenbond naar een koninkrijk."
+        },
+        {
+          "id": "schrijvers",
+          "prompt": "**Schrijvers**",
+          "answer": "Professionals die getraind waren in het onderwijzen, kopiëren en interpreteren van teksten."
+        },
+        {
+          "id": "genre",
+          "prompt": "**Genre**",
+          "answer": "Een specifiek type of een literaire vorm van een tekst, zoals poëzie of geschiedschrijving."
+        }
+      ]
+    },
+    "ot-hs2-begrippen": {
+      "title": "Begrippen (Hs 2)",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "schrift-heilige-schrift",
+          "prompt": "**Schrift / Heilige Schrift**",
+          "answer": "Geschriften die als door God geïnspireerd en gezaghebbend worden gezien."
+        },
+        {
+          "id": "hebreeuwse-bijbel-tanakh",
+          "prompt": "**Hebreeuwse Bijbel (Tanakh)**",
+          "answer": "De Joodse Bijbel: Wet, Profeten en Geschriften."
+        },
+        {
+          "id": "aramees",
+          "prompt": "**Aramees**",
+          "answer": "Oude taal waarin delen van het Oude Testament zijn geschreven."
+        },
+        {
+          "id": "canon",
+          "prompt": "**Canon**",
+          "answer": "Officiële lijst van erkende Bijbelboeken."
+        },
+        {
+          "id": "septuaginta",
+          "prompt": "**Griekse vertaling (Septuagint)**",
+          "answer": "Vroege Griekse vertaling van het Oude Testament."
+        },
+        {
+          "id": "vulgata",
+          "prompt": "**Latijnse vertaling (Vulgata)**",
+          "answer": "Latijnse Bijbelvertaling die lang standaard was in de kerk."
+        },
+        {
+          "id": "apocrief",
+          "prompt": "**Apocriefe boeken**",
+          "answer": "Boeken die niet door iedereen als gezaghebbend worden gezien."
+        },
+        {
+          "id": "deuterocanoniek",
+          "prompt": "**Deuterocanonieke boeken**",
+          "answer": "Boeken die wel in de katholieke Bijbel staan, maar niet in de protestantse."
+        },
+        {
+          "id": "vijf-boeken-mozes",
+          "prompt": "**De vijf boeken van Mozes / Wet**",
+          "answer": "Eerste vijf Bijbelboeken met wetten en oorsprongsverhalen."
+        },
+        {
+          "id": "historische-boeken",
+          "prompt": "**Historische boeken**",
+          "answer": "Boeken die de geschiedenis van Israël beschrijven."
+        },
+        {
+          "id": "poezie-wijsheid",
+          "prompt": "**Poëzie en wijsheidsliteratuur**",
+          "answer": "Boeken met liederen, spreuken en levenswijsheid."
+        },
+        {
+          "id": "grote-profeten",
+          "prompt": "**Grote profeten**",
+          "answer": "Langere profetische boeken met uitgebreide boodschappen."
+        },
+        {
+          "id": "kleine-profeten",
+          "prompt": "**Kleine profeten**",
+          "answer": "Kortere profetische boeken."
+        },
+        {
+          "id": "schriftgeleerden",
+          "prompt": "**Schriftgeleerden**",
+          "answer": "Mensen die teksten kopieerden en bewaarden."
+        },
+        {
+          "id": "dode-zee-rollen",
+          "prompt": "**Dode Zee-rollen**",
+          "answer": "Oude manuscripten van Bijbelteksten en andere Joodse geschriften."
+        },
+        {
+          "id": "masoreten",
+          "prompt": "**Masoreten**",
+          "answer": "Geleerden die de Bijbeltekst nauwkeurig bewaarden en aanvulden."
+        },
+        {
+          "id": "masoretische-tekst",
+          "prompt": "**Masoretische tekst**",
+          "answer": "De standaard Hebreeuwse tekst van het Oude Testament."
+        },
+        {
+          "id": "mondelinge-overlevering",
+          "prompt": "**Mondelinge overlevering**",
+          "answer": "Tradities die eerst mondeling werden doorgegeven."
+        },
+        {
+          "id": "samenstelling",
+          "prompt": "**Samenstelling**",
+          "answer": "Het proces van het schrijven van een tekst."
+        },
+        {
+          "id": "redactie",
+          "prompt": "**Redactie**",
+          "answer": "Het bewerken en samenvoegen van teksten."
+        },
+        {
+          "id": "verzameling",
+          "prompt": "**Verzameling**",
+          "answer": "Het bijeenbrengen van meerdere teksten."
+        },
+        {
+          "id": "overlevering",
+          "prompt": "**Overlevering**",
+          "answer": "Het doorgeven van teksten door de tijd."
+        },
+        {
+          "id": "handschrift",
+          "prompt": "**Handschrift**",
+          "answer": "Handgeschreven kopie van een tekst."
+        },
+        {
+          "id": "interpretatie",
+          "prompt": "**Interpretatie / uitleg**",
+          "answer": "Het begrijpen van de betekenis van een tekst."
+        },
+        {
+          "id": "wereld-achter-tekst",
+          "prompt": "**Wereld achter de tekst**",
+          "answer": "De historische context waarin de tekst is ontstaan."
+        },
+        {
+          "id": "wereld-in-tekst",
+          "prompt": "**Wereld in de tekst**",
+          "answer": "De wereld zoals die in het verhaal wordt beschreven."
+        },
+        {
+          "id": "samaritanen-hs2",
+          "prompt": "**Samaritanen**",
+          "answer": "Religieuze groep verwant aan het jodendom met eigen tradities."
+        },
+        {
+          "id": "hellenistische-periode",
+          "prompt": "**Hellenistische periode**",
+          "answer": "Tijd waarin de Griekse cultuur veel invloed had."
+        }
+      ]
+    },
+    "ot-kaders": {
+      "title": "I. Historische en Geografische Kaders",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "ot-kaders-q1-namen",
+          "prompt": "**Vraag 1**\n\nUit welke 7 periodes kunnen we het Oude Testament in verdelen?",
+          "answer": "1. De periode van de Aartsvaders\n\n2. Slavernij in Egypte en de Exodus\n\n3. Vestiging in het land en de Rechters\n\n4. De Verenigde Monarchie\n\n5. De Verdeelde Monarchie\n\n6. De Ballingschap en de Perzische Periode\n\n7. De Hellenistische Periode"
+        },
+        {
+          "id": "ot-kaders-q2-tijd-1",
+          "prompt": "**Vraag 2**\n\nWanneer speelde deze periode zich af?\n\n**1. De periode van de Aartsvaders**",
+          "answer": "Vóór 1500 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-2",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**2. Slavernij in Egypte en de Exodus**",
+          "answer": "Ca. 1500–1240 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-3",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**3. Vestiging in het land en de Rechters**",
+          "answer": "Ca. 1200–1000 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-4",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**4. De Verenigde Monarchie**",
+          "answer": "Ca. 1025–922 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-5",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**5. De Verdeelde Monarchie**",
+          "answer": "Ca. 922–586 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-6",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**6. De Ballingschap en de Perzische Periode**",
+          "answer": "Ca. 539–333 v.Chr."
+        },
+        {
+          "id": "ot-kaders-q2-tijd-7",
+          "prompt": "Wanneer speelde deze periode zich af?\n\n**7. De Hellenistische Periode**",
+          "answer": "332–63 v.Chr."
+        },
+        {
+          "id": "ot-kaders-p1-aartsvaders",
+          "prompt": "**1. De periode van de Aartsvaders (vóór 1500 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**\n\n**Wereldrijken:**",
+          "answer": "**Bijbelse context:**\n\nHet verhaal van Israël begint met Abraham en Sara, Isaak en Rebekka, Jakob, Rachel en Lea, en Jozef. Deze periode wordt ook wel de tijd van de voorouders genoemd. Migratie van de aartsvaders door de Vruchtbare Halve Maan.\n\n**Archeologische periode:**\n\nDeze verhalen worden doorgaans geplaatst in de **Midden-Bronstijd** (ca. 2000–1550 v.Chr.).\n\n**Historische context:**\n\nDit was een tijd van grote migraties. Half-nomadische groepen zoals de Amorieten namen de macht over in Mesopotamië (het Oud-Babylonische Rijk van Hammurabi).\n\n**Wereldrijken:**\n\nHet Egyptische Middenrijk was een dominante macht, en in Mesopotamië bloeiden de eerste grote steden en schrijfsystemen (spijkerschrift) op."
+        },
+        {
+          "id": "ot-kaders-p2-exodus",
+          "prompt": "**2. Slavernij in Egypte en de Exodus (ca. 1500–1240 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**\n\n**Wereldrijken:**",
+          "answer": "**Bijbelse context:**\n\nDe nakomelingen van Jakob groeien uit tot een volk in Egypte, worden tot slaaf gemaakt en uiteindelijk door God bevrijd onder leiding van Mozes.\n\n**Archeologische periode:**\n\nDe **Late Bronstijd** (ca. 1550–1200 v.Chr.).\n\n**Historische context:**\n\nEen periode van internationale contacten en een machtsevenwicht tussen grote rijken.\n\n**Wereldrijken:**\n\nHet **Nieuwe Rijk van Egypte** was op het hoogtepunt van zijn macht en oefende grote invloed uit over Kanaän. De Amarnabrieven uit deze tijd bieden een unieke blik op de diplomatieke relaties tussen Egypte en vazalkoningen in de regio."
+        },
+        {
+          "id": "ot-kaders-p3-rechters",
+          "prompt": "**3. Vestiging in het land en de Rechters (ca. 1200–1000 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**\n\n**Wereldrijken:**",
+          "answer": "**Bijbelse context:**\n\nNa de woestijnreis trekt Israël onder Jozua het beloofde land Kanaän binnen. Er volgt een periode van een losse stammenbond onder leiding van «rechters» (charismatische leiders).\n\n**Archeologische periode:**\n\n**IJzertijd I** (ca. 1200–930 v.Chr.).\n\n**Historische context:**\n\nDe overgang van Brons naar IJzer ging gepaard met grote chaos. De zogenaamde «Zeevolken» (waaronder de Filistijnen) vielen de kustgebieden aan en zorgden voor een nieuwe sociale orde.\n\n**Wereldrijken:**\n\nEr was een machtsvacuüm; de grote rijken (Egypte, Hettieten) verloren hun grip op de regio, waardoor kleinere groepen zoals de Israëlieten en Arameeërs de ruimte kregen om zich te ontwikkelen."
+        },
+        {
+          "id": "ot-kaders-p4-verenigd",
+          "prompt": "**4. De Verenigde Monarchie (ca. 1025–922 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**",
+          "answer": "**Bijbelse context:**\n\nVanwege de dreiging van omringende volken (vooral de Filistijnen) vraagt Israël om een koning. Saul, David en Salomo regeren achtereenvolgens over de twaalf verenigde stammen.\n\n**Archeologische periode:**\n\nLate **IJzertijd I**.\n\n**Historische context:**\n\nOnder David bereikte Israël voor korte tijd de status van een regionaal rijk. Jeruzalem werd de hoofdstad en Salomo bouwde de eerste tempel."
+        },
+        {
+          "id": "ot-kaders-p5-verdeeld",
+          "prompt": "**5. De Verdeelde Monarchie (ca. 922–586 v.Chr.)**\n\n**Bijbelse context:**\n\n**Overige belangrijke personen:**\n\n**Archeologische periode:**\n\n**Wereldrijken en ondergang:**",
+          "answer": "**Bijbelse context:**\n\nNa de dood van Salomo scheurt het rijk in tweeën: het Noordrijk (Israël) en het Zuidrijk (Juda).\n\n**Overige belangrijke personen:**\n\nJerobeam I & II (Noordrijk), Hizkia, Josia, Jesaja\n\n**Archeologische periode:**\n\nIJzertijd II (ca. 930–539 v.Chr.).\n\n**Wereldrijken en ondergang:**\n\n- **Het Nieuw-Assyrische Rijk:** Vanaf de 9e eeuw v.Chr. breidt Assyrië zijn macht uit. In **722 v.Chr.** veroveren de Assyriërs Samaria, waarmee een einde komt aan het Noordrijk.\n- **Het Nieuw-Babylonische Rijk:** Babylonië neemt de macht over van de Assyriërs. Koning Nebukadnezar verovert Jeruzalem en verwoest de tempel in **587/586 v.Chr.**, wat het begin van de ballingschap markeert."
+        },
+        {
+          "id": "ot-kaders-p6-ballingschap",
+          "prompt": "**6. De Ballingschap en de Perzische Periode (ca. 539–333 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Wereldrijken:**",
+          "answer": "**Bijbelse context:**\n\nEen periode waarin veel Judeeërs in Babylonië woonden. Na de verovering van Babylon door de Perzen mogen zij terugkeren om Jeruzalem en de tempel te herbouwen (onder leiding van figuren als Ezra en Nehemia).\n\n**Archeologische periode:**\n\nIJzertijd III (ca. 539–332 v.Chr.).\n\n**Wereldrijken:**\n\nHet **Perzische Rijk** (onder Cyrus de Grote) was het grootste rijk dat de wereld tot dan toe had gezien. Juda was geen onafhankelijk koninkrijk meer, maar een provincie genaamd «Jehoed»."
+        },
+        {
+          "id": "ot-kaders-p7-hellenistisch",
+          "prompt": "**7. De Hellenistische Periode (332–63 v.Chr.)**\n\n**Bijbelse context:**\n\n**Wereldrijken:**\n\n**Cultuur:**",
+          "answer": "**Bijbelse context:**\n\nDe laatste boeken van het Oude Testament (zoals Daniël) weerspiegelen de spanningen van deze tijd.\n\n**Wereldrijken:**\n\n**Alexander de Grote** verovert het Nabije Oosten in 332 v.Chr. Na zijn dood strijden zijn generaals (de Ptolemeeën in Egypte en de Seleuciden in Syrië) om de macht over Judea. Antiochus IV Epiphanes was een Seleucidische koning die de Joden probeerde te helleniseren en de tempel ontwijdde, wat leidde tot de Makkabese opstand.\n\n**Cultuur:**\n\nDe opkomst van het Hellenisme (Griekse cultuur en taal) heeft een enorme impact op de Joodse identiteit en leidt uiteindelijk tot de Griekse vertaling van de Bijbel, de **Septuaginta**."
+        }
+      ]
+    },
+    "ot-personen": {
+      "title": "III. Personen uit het Oude Testament",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "ot-persoon-abraham",
+          "prompt": "**1. Abraham**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde in de **Midden-Bronstijd** (ongeveer 2000–1550 v.Chr.).\n- Zijn geografische route liep door de **Vruchtbare Halve Maan**: van Ur (Mesopotamië) naar Haran en uiteindelijk naar Sichem in Kanaän.\n\n**Typering van de periode:**\n\n- Wordt beschouwd als de tijd van de **aartsvaders** (stamvaders en stammoeders) van Israël.\n- Een tijd van grote sociale mobiliteit en migratie van half-nomadische groepen.\n- Technologische ontwikkelingen zoals de opkomst van steden en de verspreiding van schriftselsels (spijkerschrift en hiërogliefen).\n\n**Politieke situatie in het ONO:**\n\n- In Mesopotamië namen de **Amorieten** de macht over van de eerdere Ur-dynastieën.\n- Bloei van het **Oud-Babylonische Rijk**, met name onder koning **Hammurabi** (bekend van zijn wetscodex).\n- Egypte werd gedomineerd door het **Middenrijk**."
+        },
+        {
+          "id": "ot-persoon-mozes",
+          "prompt": "**2. Mozes**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde in de **Late Bronstijd** (ongeveer 1550–1240 v.Chr.).\n- Geografisch verbonden met Egypte (Nijldelta), de Sinaï-woestijn en de grenzen van het land Kanaän.\n\n**Typering van de periode:**\n\n- Gekenmerkt door de **slavernij** van de Israëlieten in Egypte en de daaropvolgende **Exodus** (uittocht).\n- Ontvangst van de **Wet** (Thora) bij de berg Sinaï en de veertigjarige woestijnreis.\n\n**Politieke situatie in het ONO:**\n\n- Het **Nieuwe Rijk van Egypte** was op het hoogtepunt van zijn macht en domineerde de regio Kanaän/Syrië en de belangrijke handelsroutes.\n- Er heerste een internationaal **machtsevenwicht** tussen grootmachten zoals Egypte, de Hettieten en de Kassieten (die Mesopotamië controleerden).\n- De **Amarnabrieven** uit deze tijd tonen de diplomatieke relaties tussen de farao en vazalkoningen in Kanaän."
+        },
+        {
+          "id": "ot-persoon-jozua",
+          "prompt": "**3. Jozua**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde tijdens de overgang van de Late Bronstijd naar de **IJzertijd I** (rond 1200 v.Chr.).\n- Geconcentreerd op het land Kanaän (het beloofde land).\n\n**Typering van de periode:**\n\n- De periode van de **intocht**, verovering en vestiging van de Israëlitische stammen in Kanaän.\n- Ontstaan van de **stammenbond**, een losse federatie van twaalf stammen zonder centrale menselijke koning.\n\n**Politieke situatie in het ONO:**\n\n- Een tijd van grote chaos door de inval van de **Zeevolken** (waaronder de Filistijnen), die de oude machtsstructuren ontregelden.\n- Er ontstond een **machtsvacuüm** doordat de grote rijken (Egypte en de Hettieten) hun grip op de regio verloren.\n- Opkomst van nieuwe etnische groepen in de regio, zoals de Arameeërs en de Israëlieten."
+        },
+        {
+          "id": "ot-persoon-david-salomo",
+          "prompt": "**4. David & Salomo**\n\n- In welk gebied en in welke (archeologische) periode leefden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de **IJzertijd I** (ca. 1025–922 v.Chr.).\n- Regeerden over het verenigde koninkrijk Israël vanuit de nieuwe hoofdstad **Jeruzalem**.\n\n**Typering van de periode:**\n\n- De periode van de **Verenigde Monarchie**: de twaalf stammen werden voor het eerst onder één koning verenigd.\n- Onder David bereikte de natie kortstondig de status van een regionaal rijk.\n- Salomo bouwde de **Eerste Tempel** in Jeruzalem om de religieuze cultus te centraliseren.\n\n**Politieke situatie in het ONO:**\n\n- Zowel Egypte als de rijken in Mesopotamië waren in deze periode relatief zwak en verdeeld door interne problemen.\n- Deze afwezigheid van een dominante wereldmacht gaf Israël de ruimte om uit te groeien tot een aanzienlijke regionale macht.\n- Voortdurende rivaliteit met naburige volken zoals de **Filistijnen**."
+        },
+        {
+          "id": "ot-persoon-jerobeam-1",
+          "prompt": "**5. Jerobeam I**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde aan het begin van de **IJzertijd II** (rond 922 v.Chr.).\n- Regeerde over het **Noordrijk** (Israël).\n\n**Typering van de periode:**\n\n- De **scheuring van het rijk**: na de dood van Salomo splitste de natie zich in Israël (Noordrijk) en Juda (Zuidrijk).\n- Instelling van alternatieve religieuze centra in **Dan en Bethel** (de gouden kalveren) om de politieke breuk met Jeruzalem te bekrachtigen.\n\n**Politieke situatie in het ONO:**\n\n- Egypte was geen belangrijke militaire speler meer in de regio.\n- Begin van de heropleving van machten in Mesopotamië, wat later zou leiden tot de expansie van het **Nieuw-Assyrische Rijk**."
+        },
+        {
+          "id": "ot-persoon-jerobeam-2",
+          "prompt": "**6. Jerobeam II**\n\n- In welk gebied en in welke (archeologische) periode regeerde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Regeerde in de **IJzertijd II** (8e eeuw v.Chr.).\n- Machtscentrum in het Noordrijk (Israël), met Samaria als hoofdstad.\n\n**Typering van de periode:**\n\n- Een tijd van grote **territoriale expansie** en economische voorspoed voor het Noordrijk.\n- Echter ook een tijd van diepe religieuze ontrouw en sociale ongelijkheid (waartegen profeten als Amos ageerden).\n\n**Politieke situatie in het ONO:**\n\n- Het **Nieuw-Assyrische Rijk** werd onder koningen als Tiglath-pileser III een agressieve expansiemacht die de regio begon te domineren.\n- Andere regionale machten zoals **Aram** (Syrië) zorgden voor constante geopolitieke spanningen (zoals de Syro-Efraïmitische oorlog)."
+        },
+        {
+          "id": "ot-persoon-hizkia-josia",
+          "prompt": "**7. Hizkia & Josia**\n\n- In welk gebied en in welke (archeologische) periode leefden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de late **IJzertijd II** (Hizkia ca. 715–687 v.Chr.; Josia ca. 640–609 v.Chr.).\n- Regeerden over het Zuidrijk (Juda) vanuit Jeruzalem.\n\n**Typering van de periode:**\n\n- **Hizkia:** Religieuze hervorming en de overleving van Jeruzalem tijdens het Assyrische beleg.\n- **Josia:** Radicalere centralisatie van de cultus na de ontdekking van het «boek van de wet» (Deuteronomium) in de tempel.\n\n**Politieke situatie in het ONO:**\n\n- **Hizkia:** Het Nieuw-Assyrische Rijk was op zijn absolute hoogtepunt; het Noordrijk was al verwoest in **722 v.Chr.**\n- **Josia:** De macht van Assyrië brokkelde snel af, terwijl het **Nieuw-Babylonische Rijk** in opkomst was."
+        },
+        {
+          "id": "ot-persoon-jeremia",
+          "prompt": "**8. Jeremia**\n\n- In welk gebied en in welke (archeologische) periode was hij actief?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Actief aan het einde van de **IJzertijd II** (rond 586 v.Chr.) en het begin van de **Ballingschap**.\n- Werkzaam in Jeruzalem tijdens de belegeringen en later weggevoerd.\n\n**Typering van de periode:**\n\n- De totale catastrofe: de **verwoesting van Jeruzalem** en de tempel in 586 v.Chr.\n- De gedwongen wegvoering van de Judese bevolking naar Mesopotamië (**Ballingschap**).\n\n**Politieke situatie in het ONO:**\n\n- Absolute dominantie van het **Nieuw-Babylonische Rijk** onder koning **Nebukadnezar**.\n- Juda was een opstandige vazalstaat die uiteindelijk door de Babylonische overmacht werd vernietigd."
+        },
+        {
+          "id": "ot-persoon-zerubbabel-ezra-nehemia",
+          "prompt": "**9. Zerubbabel, Ezra & Nehemia**\n\n- In welk gebied en in welke (archeologische) periode speelden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
+          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de **IJzertijd III** (de Perzische periode, ca. 539–332 v.Chr.).\n- Werkzaam in de provincie **Jehoed** (Juda) en Jeruzalem.\n\n**Typering van de periode:**\n\n- De **terugkeer uit de ballingschap** na het decreet van Cyrus in 539 v.Chr.\n- Herstel van de gemeenschap: herbouw van de **Tweede Tempel** (Zerubbabel), de muren van de stad (Nehemia) en de herintroductie van de Thora (Ezra).\n\n**Politieke situatie in het ONO:**\n\n- Heerschappij van het **Perzische Rijk** onder **Cyrus de Grote** en zijn opvolgers.\n- De Perzen voerden een beleid van religieuze tolerantie en lieten volkeren hun eigen cultuur en tempels herstellen.\n- Juda was geen onafhankelijk koninkrijk meer, maar een semi-autonome provincie (**Jehoed**) met door de Perzen aangestelde gouverneurs."
+        }
+      ]
+    },
+    "ot-hs2-opbouw": {
+      "title": "Opbouw OT",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "opbouw-overzicht",
+          "prompt": "**Wat is de opbouw van het oude testament?**",
+          "answer": "**Pentateuch (Wet)**\n\nHistorische boeken\n\nPoëzie en wijsheid\n\nGrote Profeten\n\nKleine profeten"
+        },
+        {
+          "id": "opbouw-pentateuch",
+          "prompt": "**Pentateuch (Wet)**",
+          "answer": "Genesis\n\nExodus\n\nLeviticus\n\nNumeri\n\nDeuteronomium"
+        },
+        {
+          "id": "opbouw-historisch",
+          "prompt": "**Historische boeken**",
+          "answer": "Jozua\n\nRechters\n\nRuth\n\n1 Samuel\n\n2 Samuel\n\n1 Koningen\n\n2 Koningen\n\n1 Kronieken\n\n2 Kronieken\n\nEzra\n\nNehemia\n\nEster"
+        },
+        {
+          "id": "opbouw-poezie",
+          "prompt": "**Poëzie en wijsheid**",
+          "answer": "Job\n\nPsalmen\n\nSpreuken\n\nPrediker\n\nHooglied"
+        },
+        {
+          "id": "opbouw-grote-profeten",
+          "prompt": "**Grote profeten**",
+          "answer": "Jesaja\n\nJeremia\n\nKlaagliederen\n\nEzechiël\n\nDaniël"
+        },
+        {
+          "id": "opbouw-kleine-profeten",
+          "prompt": "**Kleine profeten**",
+          "answer": "Hosea\n\nJoël\n\nAmos\n\nObadja\n\nJona\n\nMicha\n\nNahum\n\nHabakuk\n\nSefanja\n\nHaggai\n\nZacharia\n\nMaleachi"
+        }
+      ]
+    },
+    "ot-hs2-ontwikkeling": {
+      "title": "Ontwikkeling OT",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "ontwikkeling-ot-zes-stappen",
+          "prompt": "**Geef de 6 stappen waarin de ontwikkeling van het OT kan worden omschreven.**",
+          "answer": "1. De pre-canonieke fase\n\n2. De eerste schriftelijke vastlegging\n\n3. De vorming van de drie delen (TaNaK)\n\n4. De invloed van de Septuaginta (LXX)\n\n5. De definitieve vaststelling en stabilisatie\n\n6. Ontwikkelingen tijdens de Reformatie"
+        },
+        {
+          "id": "ontwikkeling-ot-stap-1-pre-canoniek",
+          "prompt": "**1. De pre-canonieke fase:**",
+          "answer": "**Mondelinge overdracht:** In de vroege geschiedenis van Israël werden tradities, wetten en verhalen mondeling van generatie op generatie doorgegeven.\n\n**Beperkte geletterdheid:** Omdat slechts een klein percentage van de bevolking kon lezen en schrijven, bleven belangrijke tradities in eerste instantie uitsluitend mondeling bestaan."
+        },
+        {
+          "id": "ontwikkeling-ot-stap-2-schriftelijk",
+          "prompt": "**2. De eerste schriftelijke vastlegging**",
+          "answer": "**Vroege documenten:** Gaandeweg ontstonden er zeer vroege schriftelijke documenten, zoals het lied van Mozes en Mirjam (Exodus 15) of het lied van Debora (Rechters 5), die later in grotere verhalen werden opgenomen.\n\n**Individuele boeken:** Boeken als Genesis of Deuteronomium ontwikkelden zich waarschijnlijk eerst als zelfstandige eenheden voordat ze onderdeel werden van een grotere verzameling."
+        },
+        {
+          "id": "ontwikkeling-ot-stap-3-tanak",
+          "prompt": "**3. De vorming van de drie delen (TaNaK)**",
+          "answer": "De canon ontwikkelde zich in drie opeenvolgende stadia, wat nog steeds zichtbaar is in de Joodse indeling:\n\n**De Thora** (Wet)\n\n**De Nevi’im** (Profeten)\n\n**De Ketuvim** (Geschriften)"
+        },
+        {
+          "id": "ontwikkeling-ot-stap-4-lxx",
+          "prompt": "**4. De invloed van de Septuaginta (LXX)**",
+          "answer": "**Vertaling naar het Grieks:** Tussen 300 en 200 v.Chr. werden de Joodse geschriften in Alexandrië vertaald naar het Grieks voor de Joden in de diaspora.\n\n**Langere canon:** De Septuaginta bevatte vijftien extra boeken (de apocriefen of deuterocanonieke boeken) die niet in de Hebreeuwse canon voorkwamen.\n\n**Christelijke adoptie:** De vroege christelijke kerk nam deze Griekse versie over als hun Schrift, wat de basis vormde voor de uitgebreidere rooms-katholieke en orthodoxe canons."
+        },
+        {
+          "id": "ontwikkeling-ot-stap-5-vaststelling",
+          "prompt": "**5. De definitieve vaststelling en stabilisatie**",
+          "answer": "**Concilie van Jamnia** (ca. 90 n.Chr.): Na de verwoesting van de tweede tempel in 70 n.Chr. was er behoefte aan een officiële lijst. Tijdens een bijeenkomst van rabbijnen in Jamnia (Yabneh) werd de Hebreeuwse canon definitief bevestigd.\n\n**Masoretische Tekst:** Tussen 600 en 1000 n.Chr. stabiliseerden Joodse geleerden (de Masoreten) de tekst door klinkertekens en voordrachtstekens toe te voegen, wat resulteerde in de Masoretische Tekst die we vandaag nog gebruiken.\n\n**De rol van Qumran:** De vondst van de Dode Zeerollen toonde aan dat de teksten rond het begin van de jaartelling al zeer stabiel waren, maar dat er ook nog tekstuele variaties bestonden."
+        },
+        {
+          "id": "ontwikkeling-ot-stap-6-reformatie",
+          "prompt": "**6. Ontwikkelingen tijdens de Reformatie**",
+          "answer": "**Terug naar de bron:** In de zestiende eeuw besloot Maarten Luther terug te keren naar de Hebreeuwse canonlijst (zonder de extra boeken uit de Septuaginta).\n\n**Griekse volgorde:** Hoewel de protestanten de kortere Joodse lijst aanhielden, behielden ze de indeling en volgorde van de boeken uit de Griekse traditie.\n\n**Verschillen blijven bestaan:** Hierdoor hebben protestanten en rooms-katholieken vandaag de dag een verschillende canon: de protestanten volgen de Hebreeuwse lijst, terwijl katholieken de uitgebreidere lijst inclusief de deuterocanonieke boeken handhaven."
+        }
+      ]
+    },
+    "ot-hs2-canon": {
+      "title": "Canon OT",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "canon-protestants",
+          "prompt": "**De Christelijke (Protestantse) canon**",
+          "answer": "Pentateuch (Wet)\n\nHistorische boeken\n\nPoëzie en Wijsheid\n\nGrote profeten\n\nKleine profeten"
+        },
+        {
+          "id": "canon-joods",
+          "prompt": "**De Joodse canon**",
+          "answer": "De **TaNaK**\n\n**Thora** (Wet / onderwijzing)\n\n**Nevi’im** (Profeten)\n\nvroege profeten\n\nlate profeten\n\n**Ketuvim** (Geschriften)"
+        },
+        {
+          "id": "canon-rooms-katholiek",
+          "prompt": "**De Rooms-katholieke canon**",
+          "answer": "**Pentateuch (Wet)**\n\n**Historische boeken**\n\ndeuterocanonieke toevoegingen:\n\nTobit\n\nJudit\n\nEster (met deuterocanonieke toevoegingen)\n\n1 Makkabeeën\n\n2 Makkabeeën\n\n**Poëzie & Wijsheid**\n\ndeuterocanonieke toevoegingen:\n\nWijsheid (van Salomo)\n\nWijsheid van Jezus Sirach (Ecclesiasticus)\n\n**Grote profeten**\n\ndeuterocanonieke toevoegingen:\n\nBaruch\n\nDaniël (met deuterocanonieke toevoegingen)\n\n**Kleine profeten — Twaalfprofetenboek**"
+        },
+        {
+          "id": "canon-oosters-orthodox",
+          "prompt": "**Oosters-orthodoxe canon**",
+          "answer": "De oosters-orthodoxe kerken baseren zich primair op de **Septuaginta (LXX)**.\n\n**Pentateuch**\n\n**Historische boeken**\n\n1 Esdras (3 Ezra) — extra (alleen orthodox)\n\nTobit — deuterocanoniek\n\nJudit — deuterocanoniek\n\nEster (met toevoegingen) — deuterocanoniek\n\n1 Makkabeeën — deuterocanoniek\n\n2 Makkabeeën — deuterocanoniek\n\n3 Makkabeeën — extra (orthodox)\n\n4 Makkabeeën — soms als appendix\n\n**Poëzie & Wijsheid**\n\nWijsheid van Salomo\n\nWijsheid van Jezus Sirach\n\nPsalm 151 — extra (orthodox)\n\nOden (incl. Gebed van Manasse) — extra (orthodox)\n\n**Grote profeten**\n\nBaruch — deuterocanoniek\n\nBrief van Jeremia — deuterocanoniek\n\nDaniël (met toevoegingen) — deuterocanoniek\n\n**Kleine profeten**"
+        }
+      ]
+    },
+    "ot-hs2-verschil": {
+      "title": "Verschil ‘achter’ en ‘in’ de tekst",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "verschil-in-tekst",
+          "prompt": "**Hoe verklaar je de wereld ‘in’ de tekst?**",
+          "answer": "**Kern:** De wereld *in* de tekst is de wereld die de woorden zelf oproepen: de verhalen en historische claims die de bijbel maakt.\n\n**Aanpak:** Je beoordeelt hoe de tekst het verleden *portretteert*, los van de vraag of dat exact overeenkomt met wetenschappelijke of historische reconstructies.\n\n**Waarom het onderscheid telt:** Waar je meent dat een tekst vandaan komt (**achter**), beïnvloedt vaak hoe je de inhoud (**in**) uitlegt."
+        },
+        {
+          "id": "verschil-achter-tekst",
+          "prompt": "**Hoe verklaar je de wereld ‘achter’ de tekst?**",
+          "answer": "**Kern:** De wereld *achter* de tekst verwijst naar de feitelijke geschiedenis rond de auteur: sociale omstandigheden, politiek, economie en religieuze praktijken op het moment dat de tekst werd geschreven.\n\n**Reconstructie:** Omdat auteurs hun eigen wereld als vanzelfsprekend achtten, moet de moderne lezer die wereld reconstrueren met deductie en soms met “geraden.”\n\n**Betekenis:** De achtergrond van de auteur (zoals sociale positie of herkomst) beïnvloedt hoe een tekst oorspronkelijk bedoeld was.\n\n**Waarom het onderscheid telt:** Waar een lezer denkt dat een tekst vandaan komt (**achter**), bepaalt vaak hoe de inhoud (**in**) wordt geïnterpreteerd."
+        },
+        {
+          "id": "verschil-voorbeelden-bijlage",
+          "prompt": "**Welke voorbeelden uit de bijlage horen bij de wereld in en achter de tekst?**",
+          "answer": "**Wereld *in* de tekst**\n\n**2 Koningen:** De manier waarop 2 Koningen de inname van Jeruzalem in **586 v.Chr.** beschrijft, illustreert de wereld *in* de tekst.\n\n**Het verhaal van Abraham (*in* de tekst):**\n\n**De grote reis:** Abraham krijgt een persoonlijke roeping van God om zijn land te verlaten en reist van Ur via Haran naar Sichem in Kanaän.\n\n**De familie als fundament:** Hij wordt gepresenteerd als een machtige aartsvader die met zijn vrouw Sara, zijn neef Lot en al hun bezittingen reist.\n\n**De God van de vader:** Abraham sluit een persoonlijk verbond met God, die hem nageslacht en land belooft.\n\n**De politieke context:** Hij ontmoet lokale koningen en sluit bondgenootschappen, zoals met de Amoriet Mamre.\n\n**Wereld *achter* de tekst — Abraham (Midden-Bronstijd, ca. 2000–1550 v.Chr.)**\n\n**De grote reis:** De route volgt de **Vruchtbare Halve Maan**, de enige bewoonbare strook tussen de grote rijken Mesopotamië en Egypte in die periode.\n\n**De familie als fundament:** Abraham is het schoolvoorbeeld van het hoofd van een **huishouden** (*bet av*): de kleinste eenheid in een **verwantschapssamenleving**, waarin drie generaties samenleefden voor economische en sociale zekerheid.\n\n**De God van de vader:** De wereld was “betoverd” en vol goden; Abrahams religie wordt gekarakteriseerd als **henotheïsme**: één God als de hoogste vereren, zonder het bestaan van andere goden in de omgeving (zoals die van de Kanaänieten) te ontkennen.\n\n**De politieke context:** Dit past bij de realiteit waarin **Amorieten** de macht in Mesopotamië hadden en Kanaän een mozaïek van kleine stadstaten was."
+        }
+      ]
+    },
+    "nt-tijdsperiode": {
+      "title": "Tijdsperiode",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "vier-perioden",
+          "prompt": "Welke 4 tijdsperioden onderscheiden we in de geschiedenis van Judea rond het Nieuwe Testament?",
+          "answer": "1. De Perzische periode\n2. De hellenistische periode\n3. De Hasmonese periode\n4. De Romeinse periode."
+        },
+        {
+          "id": "wanneer-perzisch",
+          "prompt": "Wanneer speelde de Perzische periode ongeveer af?",
+          "answer": "ca. 537–332 v.Chr."
+        },
+        {
+          "id": "wanneer-hellenistisch",
+          "prompt": "Wanneer speelde de hellenistische periode ongeveer af?",
+          "answer": "ca. 332–167 v.Chr."
+        },
+        {
+          "id": "wanneer-hasmonesisch",
+          "prompt": "Wanneer speelde de Hasmonese periode ongeveer af?",
+          "answer": "ca. 167–63 v.Chr."
+        },
+        {
+          "id": "wanneer-romeins",
+          "prompt": "Wanneer speelde de Romeinse periode ongeveer af?",
+          "answer": "63 v.Chr.–70 n.Chr."
+        },
+        {
+          "id": "gebeurtenissen-perzisch",
+          "prompt": "Welke 3 grote gebeurtenissen vonden plaats in de Perzische periode?",
+          "answer": "• Herbouw van de tempel: na de Babylonische ballingschap mochten de Joden terugkeren naar Judea (Jehoed) om de tempel in Jeruzalem te herbouwen.\n\n• Ontstaan van synagogen: in deze tijd ontstonden synagogen als belangrijke plaatsen voor onderwijs en aanbidding.\n\n• Focus op de Thora: de Joden richtten zich steeds meer op trouw aan de Thora als het kenmerk van hun religie."
+        },
+        {
+          "id": "gebeurtenissen-hellenistisch",
+          "prompt": "Welke 3 grote gebeurtenissen vonden plaats in de hellenistische periode?",
+          "answer": "• Hellenisering: de Griekse taal, cultuur en bestuursvormen verspreidden zich over het hele gebied.\n\n• Ptolemeeën en Seleuciden: na de dood van Alexander viel zijn rijk uiteen. Palestina viel eerst onder de Ptolemeeën (gecentreerd in Egypte) en later onder de Seleuciden (gecentreerd in Syrië).\n\n• Antiochus IV Epiphanes: deze Seleucidische heerser probeerde de Joodse religie uit te roeien door gruweldaden en het dwingend opleggen van de Griekse cultuur, wat leidde tot een grote crisis."
+        },
+        {
+          "id": "gebeurtenissen-hasmonesisch",
+          "prompt": "Welke 3 grote gebeurtenissen vonden plaats in de Hasmonese periode?",
+          "answer": "• Judas de Makkabeër: onder zijn leiding werd de tempel heroverd en opnieuw ingewijd, een gebeurtenis die wordt herdacht met het Chanoeka-feest.\n\n• Hasmonese dynastie: de Makkabeeën vestigden een onafhankelijke Joodse staat.\n\n• Ontstaan van groeperingen: in deze tijd ontstonden de Joodse sekten die we in het Nieuwe Testament tegenkomen, zoals de farizeeën, sadduceën en essenen."
+        },
+        {
+          "id": "gebeurtenissen-romeins",
+          "prompt": "Welke 4 grote gebeurtenissen vonden plaats in de Romeinse periode?",
+          "answer": "• Herodes de Grote: hij regeerde van 37 tot 4 v.Chr. als vazalkoning over heel Palestina en stond bekend als een meesterbouwer (waaronder de uitbreiding van de tempel), maar ook om zijn wreedheid en paranoia.\n\n• Zonen van Herodes: na zijn dood werd zijn rijk verdeeld onder zijn zonen, zoals Herodes Antipas (Galilea) en Archelaus (Judea), die later werd vervangen door Romeinse prefecten zoals Pontius Pilatus.\n\n• De Joodse oorlog (66–73 n.Chr.): toenemende spanningen tussen de Joden en Romeinse machthebbers leidden tot een grote opstand.\n\n• Verwoesting van de tempel (70 n.Chr.): de Romeinen namen Jeruzalem in en verwoestten de tempel volledig, wat een definitief einde maakte aan het Tweede tempel-jodendom."
+        }
+      ]
+    },
+    "nt-begrippen-hs12": {
+      "title": "Begrippen (hs 1–2)",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "ptolemeeen",
+          "prompt": "**Ptolemeeën**",
+          "answer": "Deze Griekse dynastie heerste vanuit Egypte over Palestina (320–198 v.Chr.) na de dood van Alexander de Grote. Onder hun bewind hadden de Joodse hogepriesters relatief veel vrijheid, zolang de belastingen werden betaald."
+        },
+        {
+          "id": "seleuciden",
+          "prompt": "**Seleuciden**",
+          "answer": "Zij namen rond 198 v.Chr. de macht over van de Ptolemeeën en heersten vanuit Syrië. De Seleucidische koning Antiochus IV Epiphanes werd berucht omdat hij probeerde de Joodse religie uit te roeien."
+        },
+        {
+          "id": "makkabeeen",
+          "prompt": "**Makkabeeën**",
+          "answer": "Dit is de bijnaam (betekenis: ‘hamers’) voor de Joodse rebellen die onder leiding van Judas de Makkabeër in 167 v.Chr. in opstand kwamen tegen de Seleuciden. Zij heroverden de tempel, wat de oorsprong is van het Chanoeka-feest."
+        },
+        {
+          "id": "hasmoneeen",
+          "prompt": "**Hasmoneeën**",
+          "answer": "Dit was de officiële familienaam van de Makkabeeën. De Hasmonese dynastie heerste over een onafhankelijke Joodse staat van 167 tot 63 v.Chr. Hun gewoonte om de rollen van koning en hogepriester in één persoon te verenigen, leidde tot veel religieuze spanningen en het ontstaan van groepen als de farizeeën."
+        },
+        {
+          "id": "joodse-oorlog",
+          "prompt": "**De Joodse oorlog (66–73 n.Chr.)**",
+          "answer": "Een grootschalige opstand van de Joden tegen de Romeinse overheersing. Dit leidde in 70 n.Chr. tot de totale verwoesting van de tempel in Jeruzalem door de Romeinen."
+        },
+        {
+          "id": "lex-0",
+          "prompt": "**phylactery (tefillin)**",
+          "answer": "Een klein doosje met bijbelteksten dat door vrome Joden op het voorhoofd of de linkerarm wordt gedragen, als gehoorzaamheid aan o.a. Exodus 13 en Deuteronomium 6."
+        },
+        {
+          "id": "lex-1",
+          "prompt": "**casting lots (loten werpen)**",
+          "answer": "Een manier om een keuze te maken (zoals loten trekken), waarbij stenen of voorwerpen werden gebruikt om iemand te selecteren voor een taak."
+        },
+        {
+          "id": "lex-2",
+          "prompt": "**BCE (Before Common Era)**",
+          "answer": "Afkorting voor ‘voor de gewone jaartelling’; wordt in de wetenschap gebruikt in plaats van ‘v.Chr.’"
+        },
+        {
+          "id": "lex-3",
+          "prompt": "**CE (Common Era)**",
+          "answer": "Afkorting voor ‘gewone jaartelling’; wordt in de wetenschap gebruikt in plaats van ‘n.Chr.’"
+        },
+        {
+          "id": "lex-4",
+          "prompt": "**magi (magiërs / wijzen)**",
+          "answer": "Astrologen of magiërs die verbonden waren met de Perzische religie."
+        },
+        {
+          "id": "lex-5",
+          "prompt": "**tetrarch (tetrarch)**",
+          "answer": "Heerser over een kwart van een gebied of provincie."
+        },
+        {
+          "id": "lex-6",
+          "prompt": "**prefect (prefect)**",
+          "answer": "Hoge Romeinse bestuurder of ambtenaar met verschillende taken en bevoegdheden."
+        },
+        {
+          "id": "lex-7",
+          "prompt": "**procurator (procurator)**",
+          "answer": "Door de Romeinse keizer aangestelde gouverneur die een provincie bestuurde."
+        },
+        {
+          "id": "lex-8",
+          "prompt": "**Essenes (Essenen)**",
+          "answer": "Streng levende, afgescheiden Joden die in gesloten gemeenschappen leefden."
+        },
+        {
+          "id": "lex-9",
+          "prompt": "**Dead Sea Scrolls (Dode Zeerollen)**",
+          "answer": "Verzameling Joodse teksten, gekopieerd en bewaard tussen ca. 250 v.Chr. en 70 n.Chr."
+        },
+        {
+          "id": "lex-10",
+          "prompt": "**diatribe (diatribe)**",
+          "answer": "Retorische stijl waarbij een schrijver discussieert met een denkbeeldige tegenstander door bezwaren te geven en daarop te reageren."
+        },
+        {
+          "id": "lex-11",
+          "prompt": "**pagans (heidenen)**",
+          "answer": "Niet-bekeerde niet-Joden, vaak geassocieerd met afgoderij, polytheïsme en andere religieuze praktijken."
+        },
+        {
+          "id": "lex-12",
+          "prompt": "**fertility (vruchtbaarheid)**",
+          "answer": "Het vermogen om nakomelingen voort te brengen (bij mensen) of gewassen te laten groeien (bij land)."
+        },
+        {
+          "id": "lex-13",
+          "prompt": "**eucharistic meal / Eucharist (eucharistie)**",
+          "answer": "Christelijke rite/maaltijd (Heilig Avondmaal), afkomstig van een Grieks woord voor ‘dankzegging’."
+        },
+        {
+          "id": "lex-14",
+          "prompt": "**divination (waarzeggerij)**",
+          "answer": "Praktijken om de wil van goddelijke machten te achterhalen of de toekomst te voorspellen."
+        },
+        {
+          "id": "lex-15",
+          "prompt": "**oracle (orakel)**",
+          "answer": "Persoon (vaak vrouwelijk) die boodschappen van goden ontvangt en doorgeeft, vaak als antwoord op vragen over de toekomst."
+        },
+        {
+          "id": "lex-16",
+          "prompt": "**heresy (ketterij)**",
+          "answer": "Onjuiste leer, of leer die niet overeenkomt met de officiële normen van een religieuze gemeenschap."
+        },
+        {
+          "id": "lex-17",
+          "prompt": "**dualistic (dualistisch)**",
+          "answer": "De neiging hebben om dingen op te delen in twee sterk tegenovergestelde categorieën."
+        },
+        {
+          "id": "lex-18",
+          "prompt": "**ascetic (ascetisch)**",
+          "answer": "Streng religieus levend, met nadruk op zelfonthouding en het afzien van wereldse genoegens."
+        },
+        {
+          "id": "lex-19",
+          "prompt": "**patron-client relationship (patroon-cliëntrelatie)**",
+          "answer": "Sociaal systeem waarin machtige personen (patrons) bescherming en hulp bieden aan minder machtigen (cliënten), in ruil voor loyaliteit."
+        },
+        {
+          "id": "lex-20",
+          "prompt": "**liberation theology (bevrijdingstheologie)**",
+          "answer": "Theologische stroming (vooral uit 20e-eeuws Latijns-Amerika) die zich richt op bevrijding van onderdrukking."
+        },
+        {
+          "id": "lex-21",
+          "prompt": "**Hellenistic (hellenistisch)**",
+          "answer": "Beïnvloed door de Griekse cultuur, ideeën en manier van denken."
+        },
+        {
+          "id": "lex-22",
+          "prompt": "**Hanukkah (Chanoeka)**",
+          "answer": "Joods feest van 8 dagen dat de herinwijding van de tempel in 164 v.Chr. herdenkt."
+        },
+        {
+          "id": "lex-23",
+          "prompt": "**Torah (Thora)**",
+          "answer": "De wet van Mozes, zoals beschreven in de eerste vijf boeken van de Bijbel."
+        },
+        {
+          "id": "lex-24",
+          "prompt": "**Mishnah (Misjna)**",
+          "answer": "Verzameling van rabbijnse discussies over de interpretatie van de wet van Mozes."
+        },
+        {
+          "id": "lex-25",
+          "prompt": "**Talmud (Talmoed)**",
+          "answer": "Uitgebreide verzameling Joodse wetten en interpretaties (incl. de Misjna)."
+        },
+        {
+          "id": "lex-26",
+          "prompt": "**the law (de wet)**",
+          "answer": "De wet van Mozes en alle regels die trouw aan het verbond met God bepalen."
+        },
+        {
+          "id": "lex-27",
+          "prompt": "**priests (priesters)**",
+          "answer": "Mensen die verantwoordelijk waren voor offers en tempeldienst in Jeruzalem."
+        },
+        {
+          "id": "lex-28",
+          "prompt": "**scribes (schriftgeleerden)**",
+          "answer": "Joodse experts in het onderwijzen, kopiëren en uitleggen van de wet."
+        },
+        {
+          "id": "lex-29",
+          "prompt": "**rabbis (rabbijnen)**",
+          "answer": "Joodse leraren, vaak met leerlingen of volgelingen."
+        },
+        {
+          "id": "lex-30",
+          "prompt": "**apocalyptic ideas (apocalyptische ideeën)**",
+          "answer": "Geloof dat de wereld slecht eindigt, maar dat een kleine groep gered zal worden."
+        },
+        {
+          "id": "lex-31",
+          "prompt": "**gentiles (heidenen)**",
+          "answer": "Mensen die geen Jood zijn."
+        },
+        {
+          "id": "lex-32",
+          "prompt": "**God-fearers (godvrezenden)**",
+          "answer": "Niet-Joden die sympathie hebben voor het Joodse geloof en levensstijl."
+        },
+        {
+          "id": "lex-33",
+          "prompt": "**pagan (heidens)**",
+          "answer": "Niet-Joodse/Grieks-Romeinse religie, vaak gezien als moreel en religieus onzuiver."
+        },
+        {
+          "id": "lex-34",
+          "prompt": "**syncretism (syncretisme)**",
+          "answer": "Het vermengen van verschillende religies of overtuigingen."
+        },
+        {
+          "id": "lex-35",
+          "prompt": "**purity codes (reinheidswetten)**",
+          "answer": "Regels uit de Thora die bepalen wat ‘rein’ of ‘onrein’ is."
+        }
+      ]
+    },
+    "nt-begrippen-hs3": {
+      "title": "Begrippen (hs 3)",
+      "shuffle": true,
+      "items": [
+        {
+          "id": "p3-apostolic-tradition",
+          "prompt": "**apostolic tradition (apostolische traditie)**",
+          "answer": "Mondelinge of geschreven overleveringen die nauw verbonden zijn met Jezus, zijn discipelen of Paulus, of in lijn zijn met wat zij onderwezen."
+        },
+        {
+          "id": "p3-scripture",
+          "prompt": "**Scripture (Schrift)**",
+          "answer": "Heilige geschriften van een religie, gezien als door God geïnspireerd en gezaghebbend voor geloof en leven."
+        },
+        {
+          "id": "p3-canon",
+          "prompt": "**canon (canon)**",
+          "answer": "Letterlijk «maatstaf» of «norm»; een officiële lijst van boeken die als gezaghebbende Schrift worden erkend."
+        },
+        {
+          "id": "p3-catholic-letters",
+          "prompt": "**General or Catholic Letters (algemene/katholieke brieven)**",
+          "answer": "Zeven brieven die gericht zijn aan de kerk in het algemeen (niet aan één specifieke gemeente): Jakobus, 1 & 2 Petrus, 1, 2 & 3 Johannes, Judas."
+        },
+        {
+          "id": "p3-apostle",
+          "prompt": "**apostle (apostel)**",
+          "answer": "Iemand die «gezonden» is; leider onder de eerste volgelingen van Jezus, vooral de twaalf discipelen en Paulus."
+        },
+        {
+          "id": "p3-covenant",
+          "prompt": "**covenant (verbond)**",
+          "answer": "Overeenkomst tussen God en mensen die de relatie en voorwaarden daarvan vastlegt."
+        },
+        {
+          "id": "p3-testament",
+          "prompt": "**testament (testament)**",
+          "answer": "Hier: schriftelijke vastlegging van een verbond; daarom spreken we van het Oude en Nieuwe Testament."
+        },
+        {
+          "id": "p3-variant",
+          "prompt": "**variant (variant)**",
+          "answer": "In tekstkritiek: een alternatieve lezing van een tekst, ondersteund door bepaalde handschriften."
+        },
+        {
+          "id": "p3-postmodern",
+          "prompt": "**postmodern philosophy (postmoderne filosofie)**",
+          "answer": "Denkwijze die uitgaat van relativisme en het bestaan van absolute waarheden en objectiviteit in twijfel trekt."
+        }
+      ]
+    },
+    "nt-personen": {
+      "title": "Belangrijke personen",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "open-alle-personen",
+          "prompt": "Noem zoveel mogelijk belangrijke personen met betrekking tot het NT:",
+          "answer": "- **Alexander de Grote**\n- **Antiochus IV Epiphanes**\n- **Judas de Makkabeër**\n- **Pontius Pilatus**\n- **Herodes de Grote**\n- **Herodes Antipas**\n- **Herodes Agrippa I**\n- **Herodes Agrippa II**\n\n**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+        },
+        {
+          "id": "twee-griekse-heersers",
+          "prompt": "Noem de belangrijke 2 Griekse heersers uit het Nieuwe Testament.",
+          "answer": "**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+        },
+        {
+          "id": "joodse-bevrijders",
+          "prompt": "Wat was de naam van de Joodse bevrijders?",
+          "answer": "**Judas de Makkabeër**\n\nZijn bijnaam ‘Makkabeër’ betekent ‘de hamer’, wat verwijst naar de felheid waarmee hij de guerrilla-oorlog tegen de Seleuciden voerde. Hij heroverde de tempel in 164 v.Chr. en wijdde deze opnieuw in, een gebeurtenis die nog steeds gevierd wordt met het Chanoeka-feest."
+        },
+        {
+          "id": "romeinse-bestuurder",
+          "prompt": "Noem de Romeinse bestuurder.",
+          "answer": "**Pontius Pilatus**\n\nHij was de Romeinse prefect (gouverneur) die over Judea regeerde van 26 tot 36 n.Chr. In de bronnen staat hij bekend als een meedogenloze bestuurder die weinig begrip had voor de Joodse gevoeligheden. Hij is degene die Jezus uiteindelijk ter dood veroordeelde."
+        },
+        {
+          "id": "herodessen",
+          "prompt": "Noem de verschillende Herodessen.",
+          "answer": "**Herodes de Grote** (37–4 v.Chr.)\n\nHij heerste over heel Palestina toen Jezus werd geboren. Hij was een meesterbouwer (hij breidde de tempel in Jeruzalem enorm uit), maar ook extreem paranoïde; hij liet zelfs drie van zijn eigen zonen en zijn vrouw vermoorden.\n\n**Herodes Antipas** (4 v.Chr.–39 n.Chr.)\n\nEen zoon van Herodes de Grote die regeerde over Galilea en Perea tijdens de bediening van Jezus. Hij liet Johannes de Doper onthoofden en wordt door Jezus in de Bijbel een “vos” genoemd.\n\n**Herodes Agrippa I** (41–44 n.Chr.)\n\nDe kleinzoon van Herodes de Grote die kortstondig weer over het hele Joodse land regeerde. Hij vervolgde de vroege kerk, liet de apostel Jacobus ter dood brengen en Petrus gevangen zetten.\n\n**Herodes Agrippa II** (ca. 50–100 n.Chr.)\n\nDe zoon van Agrippa I. Hij regeerde over gebieden in het noordoosten en trad vaak op als adviseur voor Romeinse gouverneurs bij Joodse religieuze kwesties. Hij is de koning Agrippa die de apostel Paulus verhoorde in het boek Handelingen."
+        },
+        {
+          "id": "alle-namen-achter-elkaar",
+          "prompt": "Noem ze nu allemaal achter elkaar op.",
+          "answer": "- **Alexander de Grote**\n- **Antiochus IV Epiphanes**\n- **Judas de Makkabeër**\n- **Pontius Pilatus**\n- **Herodes de Grote**\n- **Herodes Antipas**\n- **Herodes Agrippa I**\n- **Herodes Agrippa II**\n\n**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+        }
+      ]
+    },
+    "nt-stromingen": {
+      "title": "Stromingen",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "intro-typering",
+          "prompt": "Tijdens de periode van het Nieuwe Testament was de Joodse bevolking in Palestina zeer divers. Geef een typering van de 8 belangrijkste religieuze en sociale stromingen:\n\n(Bedenk de stromingen; ze zullen hierna in beeld komen.)",
+          "answer": "Noteer voor jezelf welke acht je kunt bedenken. Hierna volgt **elke stroming afzonderlijk** met een korte typering."
+        },
+        {
+          "id": "farizeeen",
+          "prompt": "**Farizeeën**",
+          "answer": "Zij waren vooral vrome leken en leraren die de nadruk legden op strikte trouw aan de Thora en de “overlevering van de oudsten”. Ze waren de drijvende kracht achter de synagoges en geloofden, in tegenstelling tot de sadduceeën, wel in de opstanding uit de dood en het bestaan van engelen."
+        },
+        {
+          "id": "sadduceeen",
+          "prompt": "**Sadduceeën**",
+          "answer": "Deze priesterlijke elite was gecentreerd rond de tempel in Jeruzalem en domineerde de Sanhedrin. Ze waren theologisch conservatief: ze accepteerden alleen de Pentateuch (de eerste vijf boeken van de Bijbel) als gezaghebbend en verwierpen het geloof in een opstanding."
+        },
+        {
+          "id": "essenen",
+          "prompt": "**Essenen**",
+          "answer": "Een ascetische groep die zich vaak terugtrok in afgezonderde gemeenschappen, zoals bij Qumran (bekend van de Dode Zee-rollen). Ze hanteerden strikte reinheidswetten en hadden een sterk apocalyptisch wereldbeeld."
+        },
+        {
+          "id": "zealoten",
+          "prompt": "**Zealoten**",
+          "answer": "Deze radicale Joden streefden naar gewapend verzet tegen de Romeinse overheersing om de onafhankelijkheid van Israël te herstellen. Hun acties droegen uiteindelijk bij aan de Joodse oorlog van 66–73 n.Chr."
+        },
+        {
+          "id": "samaritanen",
+          "prompt": "**Samaritanen**",
+          "answer": "Zij woonden tussen Judea en Galilea en claimden dat zij het “ware Israël” waren. Ze hadden hun eigen tempel op de berg Gerizim en accepteerden alleen hun eigen versie van de Pentateuch, wat leidde tot diepe vijandigheid met de Joden."
+        },
+        {
+          "id": "heidenen-godvrezenden",
+          "prompt": "**Heidenen (en Godvrezenden)**",
+          "answer": "Naast de traditionele Grieks-Romeinse religies waren er “Godvrezenden”: niet-Joden die zich aangetrokken voelden tot de Joodse ethiek en monotheïsme, maar zich niet volledig bekeerden (bijvoorbeeld door de besnijdenis te weigeren)."
+        },
+        {
+          "id": "gnostiek",
+          "prompt": "**Gnostiek (opkomend)**",
+          "answer": "Deze stroming hing een radicaal dualisme aan, waarbij de geest als goed en de materie als slecht werd gezien. Verlossing was volgens hen alleen mogelijk door geheime kennis (gnosis)."
+        },
+        {
+          "id": "alle-stromingen-achter-elkaar",
+          "prompt": "Noem de acht stromingen nu allemaal achter elkaar op.",
+          "answer": "**Farizeeën**, **Sadduceeën**, **Essenen**, **Zealoten**, **Samaritanen**, **Heidenen (en Godvrezenden)**, **Gnostiek**, **Grieks-Romeins polytheïsme en mysteriegodsdiensten**"
+        }
+      ]
+    },
+    "nt-opbouw": {
+      "title": "Opbouw/type boeken NT",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "nt-opbouw-intro",
+          "prompt": "De opbouw van het Nieuwe Testament bestaat uit een verzameling van 27 boeken die door vrijwel alle christelijke denominaties wereldwijd als gezaghebbend worden erkend. Hoewel deze boeken gezamenlijk het Nieuwe Verbond vormen, staan ze niet in chronologische volgorde van schrijven.\n\nHet Nieuwe Testament wordt gebruikelijk onderverdeeld in zeven categorieën. Welke zijn dat?",
+          "answer": "De zeven categorieën lees je in de volgende stappen, telkens met de **naam** eerst en daarna de **uitleg** (na «Laat antwoord zien»).\n\nGeef na elke uitleg aan of je dit al wist (**Goed** / **Fout**)."
+        },
+        {
+          "id": "nt-opbouw-cat-1",
+          "prompt": "**1. De vier evangeliën (Matteüs, Marcus, Lucas, Johannes)**",
+          "answer": "De evangeliën vormen het fundament en vertellen vier verschillende accenten op hetzelfde kernverhaal: het leven, de bediening, de dood en de opstanding van Jezus. Er is veel overlap in de inhoud; tegelijk biedt elk boek een eigen perspectief op zijn missie. De titels verwijzen naar de personen die de traditie als auteurs toeschrijft; de handschriften zelf zijn vaak anoniem."
+        },
+        {
+          "id": "nt-opbouw-cat-2",
+          "prompt": "**2. Het boek Handelingen (Handelingen van de apostelen)**",
+          "answer": "Dit boek wordt vaak gezien als het tweede deel van het evangelie naar Lucas. Het staat in een aparte categorie omdat het het enige boek is dat de vroege geschiedenis van de christelijke kerk beschrijft, direct na de gebeurtenissen uit de evangeliën."
+        },
+        {
+          "id": "nt-opbouw-cat-3",
+          "prompt": "**3. Brieven van Paulus aan gemeenten**",
+          "answer": "Negen brieven zijn geschreven door de missionaris Paulus en zijn gericht aan specifieke christelijke gemeenschappen. De titels verwijzen naar geografische locaties (bijvoorbeeld de gemeente in Efeze, vandaar de naam «Efeziërs»). In het Nieuwe Testament staan ze gerangschikt op lengte, van het langste boek tot het kortste:\n\n**Romeinen**\n\n**1 en 2 Korintiërs**\n\n**Galaten**\n\n**Efeziërs**\n\n**Filippenzen**\n\n**Kolossenzen**\n\n**1 en 2 Tessalonicenzen**"
+        },
+        {
+          "id": "nt-opbouw-cat-4",
+          "prompt": "**4. Brieven van Paulus aan individuen**",
+          "answer": "Naast de brieven aan gemeenten zijn er vier brieven van Paulus gericht aan specifieke personen. Ook deze staan op lengte gerangschikt. In totaal worden dertien brieven in het Nieuwe Testament officieel aan Paulus toegeschreven:\n\n**1 en 2 Timoteüs**\n\n**Titus**\n\n**Filemon**"
+        },
+        {
+          "id": "nt-opbouw-cat-5",
+          "prompt": "**5. De brief aan de Hebreeën**",
+          "answer": "Dit is een anoniem geschrift dat in een eigen categorie valt. De auteur is onbekend; traditioneel spreekt men van «de brief aan de Hebreeën» omdat het oorspronkelijk waarschijnlijk voor Joodse christenen is geschreven."
+        },
+        {
+          "id": "nt-opbouw-cat-6",
+          "prompt": "**6. De algemene (of katholieke) brieven**",
+          "answer": "Deze zeven brieven zijn niet naar de ontvangers vernoemd (zoals bij Paulus), maar naar de personen die traditioneel als auteurs gelden. «Katholiek» betekent hier «universeel» of «algemeen»: ze waren voor een breder publiek bedoeld.\n\n**Jakobus**\n\n**1 en 2 Petrus**\n\n**1, 2 en 3 Johannes**\n\n**Judas**"
+        },
+        {
+          "id": "nt-opbouw-cat-7",
+          "prompt": "**7. Het boek Openbaring**",
+          "answer": "Dit boek staat op zichzelf. In de traditie wordt het ook wel **Apocalyps van Johannes** genoemd. Het verhaalt visionaire ervaringen toegeschreven aan iemand die Johannes heette."
+        }
+      ]
+    },
+    "nt-achtenmeier": {
+      "title": "Canonvorming NT",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "nt-am-toets-pers-marcion",
+          "kind": "quiz",
+          "prompt": "**Marcion** (ca. 144 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
+          "answer": "Hij is een van de belangrijkste figuren voor de **versnelling** van dit proces. Marcion verwierp het Oude Testament en alles wat «Joods» was in het christendom. Hij stelde een **beperkte canon** samen: een bewerkte versie van het Evangelie van Lucas en tien brieven van Paulus. De kerk reageerde door juist de **breedte van de traditie** te bevestigen, inclusief de vier evangeliën en de Joodse wortels van het geloof."
+        },
+        {
+          "id": "nt-am-toets-pers-montanus",
+          "kind": "quiz",
+          "prompt": "**Montanus** (midden 2e eeuw)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
+          "answer": "Hij claimde dat de **Heilige Geest** via hem en zijn profetessen (**Priscilla** en **Maximilla**) nieuwe openbaringen gaf die even gezaghebbend waren als die van de apostelen. De kerk reageerde door te stellen dat de **«apostolische periode» normatief** was en dat latere openbaringen aan die standaard moesten worden getoetst."
+        },
+        {
+          "id": "nt-am-toets-pers-justin",
+          "kind": "quiz",
+          "prompt": "**Justin Martyr** (ca. 150 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
+          "answer": "Hij beschreef hoe de **«memoires van de apostelen»** (de evangeliën) in de eredienst op gelijke voet met de **profeten** werden gelezen. Dat toont dat canonisering **van onderaf in de liturgie** begon."
+        },
+        {
+          "id": "nt-am-toets-pers-irenaeus",
+          "kind": "quiz",
+          "prompt": "**Irenaeus van Lyon** (ca. 180 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
+          "answer": "Hij verdedigde fel de **vierheid van de evangeliën** tegenover Marcion en de gnostiek. Voor hem stond de **Regula Fidei** (de regel van het geloof) centraal: geschriften moesten overeenkomen met de kern van de christelijke prediking."
+        },
+        {
+          "id": "nt-am-toets-pers-athanasius",
+          "kind": "quiz",
+          "prompt": "**Athanasius** (367 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
+          "answer": "Als bisschop van Alexandrië schreef hij in zijn **39e Paasbrief** voor het eerst een lijst met precies de **27 boeken** die wij nu kennen. Hij presenteerde dit niet als zijn eigen uitvinding, maar als de **vastlegging van de consensus** die over de eeuwen heen in de kerk was gegroeid."
+        },
+        {
+          "id": "nt-am-toets-theo-1",
+          "kind": "quiz",
+          "prompt": "**1. De hand van God in een menselijk proces**",
+          "answer": "Een belangrijk theologisch standpunt is dat de vorming van de canon weliswaar een **menselijk proces** was (met discussies, lijsten en kerkvaders), maar dat gelovigen daarin de **hand van God** herkennen. De gedachte is dat de **Heilige Geest** de vroege kerk heeft geleid om precies die geschriften te herkennen en te bewaren die de authentieke boodschap van Jezus bevatten. De canon is dus geen willekeurig toeval of een politiek dictaat, maar het resultaat van een **door God geleid groeiproces** in de geloofsgemeenschap."
+        },
+        {
+          "id": "nt-am-toets-theo-2",
+          "kind": "quiz",
+          "prompt": "**2. De canon als «richtsnoer» (normativiteit)**",
+          "answer": "Het woord **canon** betekent «regel» of «richtsnoer». Theologisch betekent dit dat de canon de **norm** is voor christelijk leven en denken: een meetlat waaraan alles wat in de kerk wordt geleerd of geloofd, wordt getoetst. Zonder canon zou de boodschap van Jezus kunnen vervagen of vervormen door nieuwe ideeën (zoals de gnostiek in de tweede eeuw). De canon **bewaart de zuiverheid** van het geloof."
+        },
+        {
+          "id": "nt-am-toets-theo-3",
+          "kind": "quiz",
+          "prompt": "**3. Inspiratie door de Heilige Geest**",
+          "answer": "Theologisch houdt waardering in dat je erkent dat deze boeken **geïnspireerd** zijn: in deze teksten hoort de kerk de stem van God. Hoewel de auteurs feilbare mensen waren, gelooft de kerk dat de **Heilige Geest** hen bijstond om de waarheid over God en Jezus Christus op te schrijven."
+        },
+        {
+          "id": "nt-am-toets-theo-4",
+          "kind": "quiz",
+          "prompt": "**4. Eenheid in diversiteit**",
+          "answer": "De canon bevat boeken die sterk van elkaar verschillen — denk aan de **vier evangeliën** of de spanning tussen Paulus (**geloof**) en Jakobus (**werken**). Theologisch is dat een **rijkdom**: God spreekt via verschillende mensen en stijlen, maar samen vormen ze één getuigenis van het Nieuwe Verbond. De canon is breed genoeg voor verschillende perspectieven op Jezus, zolang ze binnen de **regel van het geloof** blijven."
+        },
+        {
+          "id": "nt-am-toets-theo-5",
+          "kind": "quiz",
+          "prompt": "**5. De verbinding tussen kerk en Schrift**",
+          "answer": "Theologisch horen **kerk** en **Bijbel** bij elkaar: de canon is ontstaan **in en door** de gemeenschap van gelovigen. De boeken die in de canon terechtkwamen, hadden hun kracht al bewezen in **eredienst** en **dagelijks leven**. De waardering ligt hierin dat de canon de **collectieve ervaring** van de kerk met God door de eeuwen heen weerspiegelt."
+        }
+      ]
+    }
+  }
+}

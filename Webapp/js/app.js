@@ -484,9 +484,10 @@
 
   function setView(v) {
     view = v;
-    const isComing = v === "coming-ot" || v === "coming-nt";
+    if (window.StudieOtNt?.isActive?.()) {
+      window.StudieOtNt.close();
+    }
     $("#view-launcher").classList.toggle("hidden", v !== "launcher");
-    $("#view-coming").classList.toggle("hidden", !isComing);
     $("#view-setup").classList.toggle("hidden", v !== "setup");
     $("#view-manage").classList.toggle("hidden", v !== "manage");
     $("#view-session").classList.toggle("hidden", v !== "session");
@@ -501,18 +502,6 @@
     if (v === "launcher") {
       document.title = "Studie";
       $("#title").textContent = "Studie";
-    } else if (v === "coming-ot") {
-      document.title = "Oude Testament — binnenkort";
-      $("#title").textContent = "Oude Testament";
-      $("#coming-title").textContent = "Oude Testament";
-      $("#coming-body").textContent =
-        "Hier komen straks aparte oefeningen voor het Oude Testament. Tot die tijd kun je onder Dogmatiek verder oefenen.";
-    } else if (v === "coming-nt") {
-      document.title = "Nieuwe Testament — binnenkort";
-      $("#title").textContent = "Nieuwe Testament";
-      $("#coming-title").textContent = "Nieuwe Testament";
-      $("#coming-body").textContent =
-        "Hier komen straks aparte oefeningen voor het Nieuwe Testament. Tot die tijd kun je onder Dogmatiek verder oefenen.";
     } else if (v === "setup") {
       document.title = "Dogmatiek — oefenen";
       $("#title").textContent = "Dogmatiek oefenen";
@@ -538,7 +527,8 @@
 
   function requestExit() {
     if (view === "launcher") return;
-    if (view === "coming-ot" || view === "coming-nt") {
+    if (window.StudieOtNt?.isActive?.()) {
+      if (window.StudieOtNt.handleBack()) return;
       setView("launcher");
       return;
     }
@@ -793,8 +783,12 @@
     setView("launcher");
 
     $("#launch-dogmatiek").addEventListener("click", () => setView("setup"));
-    $("#launch-ot").addEventListener("click", () => setView("coming-ot"));
-    $("#launch-nt").addEventListener("click", () => setView("coming-nt"));
+    $("#launch-ot").addEventListener("click", () => {
+      if (window.StudieOtNt?.openOt) window.StudieOtNt.openOt();
+    });
+    $("#launch-nt").addEventListener("click", () => {
+      if (window.StudieOtNt?.openNt) window.StudieOtNt.openNt();
+    });
 
     $("#btn-back").addEventListener("click", () => requestExit());
     $("#dlg-exit-cancel").addEventListener("click", () => $("#dlg-exit").close());
@@ -1054,6 +1048,11 @@
     }
   }
 
+  window.StudieApp = {
+    showLauncher: () => setView("launcher"),
+  };
+
   init();
   load();
+  if (window.StudieOtNt?.init) window.StudieOtNt.init();
 })();
