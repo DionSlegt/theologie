@@ -3,28 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Dogmatiek — oefenen</title>
-  <link rel="stylesheet" href="css/style.css?v=202604096" />
+  <title>Studie</title>
+  <link rel="stylesheet" href="css/style.css?v=202604100" />
 </head>
 <body>
   <div id="app">
     <header class="topbar">
       <button type="button" id="btn-back" class="btn-back hidden" aria-label="Terug">← Terug</button>
-      <h1 id="title">Dogmatiek oefenen</h1>
+      <h1 id="title">Studie</h1>
     </header>
 
     <main id="main">
-      <!-- Setup -->
-      <section id="view-setup" class="view">
+      <section id="view-launcher" class="view" aria-label="Kies vak">
+        <p class="launcher-intro muted">Kies waar je wilt oefenen.</p>
+        <div class="launcher-grid">
+          <button type="button" class="launcher-card launcher-card-featured" id="launch-dogmatiek">
+            <span class="launcher-card-title">Dogmatiek</span>
+            <span class="launcher-card-desc">Oefenen met meerkeuze of zelf invullen.</span>
+          </button>
+          <button type="button" class="launcher-card" id="launch-ot">
+            <span class="launcher-card-title">Oude Testament</span>
+            <span class="launcher-card-desc">Komt later beschikbaar.</span>
+          </button>
+          <button type="button" class="launcher-card" id="launch-nt">
+            <span class="launcher-card-title">Nieuwe Testament</span>
+            <span class="launcher-card-desc">Komt later beschikbaar.</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="view-coming" class="view hidden" aria-label="Binnenkort">
+        <div class="panel">
+          <h2 id="coming-title">—</h2>
+          <p id="coming-body" class="muted coming-body"></p>
+        </div>
+      </section>
+
+      <!-- Setup (Dogmatiek) -->
+      <section id="view-setup" class="view hidden">
         <div class="panel">
           <h2>Oefenmodus</h2>
           <div class="segmented" role="group" aria-label="Soort oefening">
-            <button type="button" class="seg active" data-mix="typing">Typen</button>
-            <button type="button" class="seg" data-mix="mcq">Meerkeuze</button>
-            <button type="button" class="seg" data-mix="both">Typen + meerkeuze</button>
-            <button type="button" class="seg" data-mix="blank">Leeg vlak</button>
+            <button type="button" class="seg active" data-mix="mcq">Meerkeuze</button>
+            <button type="button" class="seg" data-mix="blank">Zelf invullen</button>
           </div>
-          <p class="small muted" id="mix-hint">Alleen typen: typ je antwoord, tik op Antwoord tonen en geef zelf Goed of Fout. Na de ronde zie je fouten hieronder op het overzicht en kun je ze apart nog een keer doen.</p>
+          <p class="small muted" id="mix-hint">Meerkeuze: kies het juiste antwoord uit vier opties. Na de ronde zie je fouten op het overzicht en kun je ze apart nog een keer doen.</p>
         </div>
 
         <div class="panel">
@@ -122,7 +145,7 @@
         </div>
         <div id="wrong-review-wrap" class="panel wrong-review-wrap hidden">
           <h3 class="wrong-review-heading">Fouten uit deze ronde</h3>
-          <p class="small muted wrong-review-intro">Ook bij typen: hier zie je wat fout ging; daarna dezelfde modus opnieuw voor alleen deze kaarten.</p>
+          <p class="small muted wrong-review-intro">Hier zie je wat fout ging; daarna dezelfde modus opnieuw voor alleen deze kaarten.</p>
           <ul id="wrong-review-list" class="wrong-review-list"></ul>
         </div>
         <div class="summary-actions">
@@ -184,6 +207,6 @@
     </div>
   </dialog>
 
-  <script src="js/app.js?v=202604097"></script>
+  <script src="js/app.js?v=202604100"></script>
 </body>
 </html>

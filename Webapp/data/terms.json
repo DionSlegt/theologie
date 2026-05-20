@@ -7,7 +7,7 @@
   },
   {
     "term": "Oecumenisch",
-    "definition": "De gehele bewoonde aarde; Gods liefde is voor de hele bewoonde aarde, alle naties, landen en personen. Interkerkelijk verbonden, los van denominaties of culturen.",
+    "definition": "Oecumenisch betekent betrekking hebbend op de gehele (universele) kerk, dus wat door christenen wereldwijd en door verschillende tradities wordt gedeeld of erkend.\n\nKomt van het Griekse oikoumenē = \"de bewoonde wereld\".",
     "chapter": "Inleiding",
     "sourcePage": 7
   },
@@ -25,7 +25,7 @@
   },
   {
     "term": "Wesleyaans kwadrilateraal",
-    "definition": "Het model van John Wesley in de 18e eeuw met vier bronnen: Geschrift, Traditie, Verstand en Ervaring. Geschrift vormt een bron voor doctrines; traditie, verstand en ervaring helpen deze bron te begrijpen. Geschrift is leidend.",
+    "definition": "Het model van John Wesley in de 18e eeuw met vier bronnen: Geschrift, Traditie, Rede en Ervaring. Geschrift vormt een bron voor doctrines; traditie, rede en ervaring helpen deze bron te begrijpen. Geschrift is leidend.",
     "chapter": "Hoofdstuk 1",
     "sourcePage": 16
   },
@@ -37,13 +37,13 @@
   },
   {
     "term": "Geloofsregel",
-    "definition": "De meest breed gedragen autoritaire Christelijke tradities van de Christelijke doctrine worden genoemd geloofsregel.",
+    "definition": "De geloofsregel (regula fidei) is een vroege samenvatting van de kern van het christelijk geloof, die diende als norm om juiste leer te onderscheiden van verkeerde leer en om de interpretatie van de Schrift te sturen.",
     "chapter": "Hoofdstuk 1",
     "sourcePage": 20
   },
   {
     "term": "Geloofsbelijdenissen",
-    "definition": "De geloofsregel kreeg een meer uitgewerkte vorm in de oecumenische geloofsbelijdenissen.",
+    "definition": "Geloofsbelijdenissen zijn officiele, beknopte formuleringen van het christelijk geloof die door de kerk zijn vastgesteld om de kern van de leer samen te vatten en te bewaren, en die oecumenisch worden gedeeld door christenen over kerkgrenzen en denominaties heen.",
     "chapter": "Hoofdstuk 1",
     "sourcePage": 20
   },
@@ -60,14 +60,20 @@
     "sourcePage": 20
   },
   {
-    "term": "Geestelijke disciplines/handelingen",
-    "definition": "Handelingen die geestelijke groei bevorderen zoals bidden, vasten of bijbel lezen (gericht op geestelijke groei).",
+    "term": "Geestelijke diciplines",
+    "definition": "Geestelijke handelingen zijn bewuste, herhaalde oefeningen (zoals gebed, vasten en Schriftlezing) waardoor een gelovige zich openstelt voor Gods genade en gevormd wordt in het proces van heiliging en discipelschap.",
+    "chapter": "Hoofdstuk 1",
+    "sourcePage": 26
+  },
+  {
+    "term": "Geestelijke handelingen",
+    "definition": "Geestelijke handelingen zijn herhaalde, concrete handelingen die ontstaan uit geestelijke disciplines en die, door hun herhaling, je verlangens en gedrag vormen, waardoor je karakter geleidelijk verandert in de richting van Christus.\n\n(Voorbeeld)\n\nGeestelijke discipline:\nJe bidt dagelijks bewust om geduld en liefde voor anderen\n\nHandeling (practise):\nIn gesprekken luister je rustiger, reageer je minder snel geirriteerd en neem je bewust even pauze voordat je antwoordt\n\nVorming (resultaat):\nNa verloop van tijd word je daadwerkelijk een geduldiger en vriendelijker persoon, en reageer je vanzelf anders zonder dat je er steeds over hoeft na te denken",
     "chapter": "Hoofdstuk 1",
     "sourcePage": 26
   },
   {
     "term": "Genademiddelen",
-    "definition": "Middelen die God geeft om ons in aanraking te komen met de genade die er altijd al was, bijvoorbeeld de doop, avondmaal of aanbidding. In deze handelingen belooft God in de Bijbel er te zijn en genade aan ons bekend te maken.",
+    "definition": "Genademiddelen zijn de middelen of manieren waardoor God zijn genade aan mensen geeft en hen in contact brengt met die genade. (bijvoorbeeld doop, avondmaal, Bijbel lezen, predeking of gebed)",
     "chapter": "Hoofdstuk 1",
     "sourcePage": 27
   },
@@ -90,8 +96,8 @@
     "sourcePage": 35
   },
   {
-    "term": "Voortgaande continuïteit (algemene / speciale openbaring)",
-    "definition": "Er is tussen algemene en speciale openbaring een voortgaande continuïteit; speciale openbaring vervangt algemene openbaring niet maar bouwt erop voort.",
+    "term": "Voortdurende continuïteit",
+    "definition": "Voortdurende continuïteit betekent dat algemene openbaring (o.i. in de schepping) en speciale openbaring (zoals o.i. in de Schrift) blijvend met elkaar verbonden zijn en elkaar aanvullen, zonder dat de ene de andere opheft.",
     "chapter": "Hoofdstuk 2",
     "sourcePage": 36
   },
@@ -109,7 +115,7 @@
   },
   {
     "term": "Geopenbaarde continuïteit",
-    "definition": "Zonde vervaagt onze blik zo erg dat we algemene openbaring en Gods wil niet meer accuraat kunnen zien; zonde beïnvloedt de natuur zelf ook. Speciale openbaring is als een bril waardoor we Gods wil weer scherp kunnen zien. De relatie tussen algemene en speciale openbaring is dus geopenbaarde continuïteit.",
+    "definition": "De Schrift, als centrale vorm van Gods speciale openbaring, werkt als een bril waardoor we Gods openbaring in de wereld (algemene openbaring) juist kunnen zien en begrijpen.",
     "chapter": "Hoofdstuk 2",
     "sourcePage": 37
   },
@@ -163,7 +169,7 @@
   },
   {
     "term": "Apostolische successie",
-    "definition": "De waarheid van traditie wordt als gegarandeerd gezien door de apostolische successie, vanaf Paulus tot aan de huidige paus, om de traditie te bewaken.",
+    "definition": "Ononderbroken opvolging van bisschoppen vanaf de apostelen, waardoor de (Rooms katholieke/Orthodoxe) kerkelijke traditie bewaard blijft.",
     "chapter": "Hoofdstuk 2",
     "sourcePage": 47
   },
@@ -210,12 +216,6 @@
     "sourcePage": 60
   },
   {
-    "term": "Geloofsbelijdenis van Nicea",
-    "definition": "Als reactie op het arianisme kwam de kerk tot de geloofsbelijdenis van Nicea. Die definieerde dat Jezus Christus volledig en eeuwig God is, gelijk in wezen aan de Vader.",
-    "chapter": "Hoofdstuk 3",
-    "sourcePage": 64
-  },
-  {
     "term": "Tritheïsme",
     "definition": "De opvatting dat er drie aparte goden zijn.",
     "chapter": "Hoofdstuk 3",
@@ -235,7 +235,7 @@
   },
   {
     "term": "Concilie van Nicea",
-    "definition": "Eerste oecumenische concilie (325) waar werd vastgesteld dat de Zoon één in wezen is met de Vader.",
+    "definition": "Als reactie op het arianisme stelde het eerste oecumenische concilie van Nicea (325) vast dat de Zoon volledig en eeuwig God is, één in wezen met de Vader.",
     "chapter": "Hoofdstuk 3",
     "sourcePage": 64
   },
@@ -295,29 +295,8 @@
   },
   {
     "term": "Voorzienigheid",
-    "definition": "Gods voortdurende, actieve zorg en bestuur over de schepping.",
+    "definition": "Gods voortdurende, actieve zorg en bestuur over de schepping.\n\nWelke 3 categorieën horen bij Gods voorzienigheid?\n\nInstandhouding — God houdt de schepping voortdurend in bestaan.\n\nMedewerking — God werkt in en door geschapen oorzaken heen.\n\nBestuur — God leidt de geschiedenis naar Zijn doel.",
     "chapter": "Hoofdstuk 4",
-    "sourcePage": 90
-  },
-  {
-    "term": "Instandhouding",
-    "definition": "God houdt de schepping voortdurend in bestaan.",
-    "chapter": "Hoofdstuk 4",
-    "subgroup": "Instandhouding, medewerking en bestuur",
-    "sourcePage": 90
-  },
-  {
-    "term": "Medewerking",
-    "definition": "God werkt in en door geschapen oorzaken heen.",
-    "chapter": "Hoofdstuk 4",
-    "subgroup": "Instandhouding, medewerking en bestuur",
-    "sourcePage": 90
-  },
-  {
-    "term": "Bestuur",
-    "definition": "God leidt de geschiedenis naar zijn doel.",
-    "chapter": "Hoofdstuk 4",
-    "subgroup": "Instandhouding, medewerking en bestuur",
     "sourcePage": 90
   },
   {
@@ -357,11 +336,10 @@
     "sourcePage": 102
   },
   {
-    "term": "Imago Dei",
+    "term": "Imago Dei - Welke 3 visies zijn er over de Imago Dei?",
     "definition": "In Latijn: evenbeeld van God. De leer dat wij naar Gods evenbeeld geschapen zijn.",
     "chapter": "Hoofdstuk 5",
     "subgroup": "Imago Dei",
-    "contextNote": "Deze 3 visies focussen op de mens die zonder zonde geschapen is. We kunnen het niet hebben over in Gods evenbeeld geschapen zijn zonder te benoemen dat het evenbeeld gebroken en vervaagd is door zonde.",
     "sourcePage": 103
   },
   {
@@ -381,7 +359,7 @@
     "sourcePage": 104
   },
   {
-    "term": "Relationele visie (Imago Dei)",
+    "term": "Relationele view (Imago Dei)",
     "definition": "Zoals Vader, Zoon en Heilige Geest in perfecte relatie tot elkaar staan, zo zouden ook wij mensen in relatie met elkaar moeten staan.",
     "chapter": "Hoofdstuk 5",
     "subgroup": "Imago Dei",
@@ -407,14 +385,14 @@
     "sourcePage": 111
   },
   {
-    "term": "Onveranderlijkheid",
-    "definition": "Gods goedheid is perfect, Gods liefde is perfect en Hij is perfect in Zijn rechtvaardigheid. Gods onveranderlijkheid is een gevolg van zijn goddelijke volmaaktheid.",
+    "term": "Ondveranderlijkheid van God",
+    "definition": "Het idee dat God niet verandert in zijn wezen, karakter of trouw.",
     "chapter": "Hoofdstuk 6",
     "sourcePage": 122
   },
   {
-    "term": "Onlijdelijkheid/onaangedaanheid",
-    "definition": "God is niet onderworpen aan hartstochten of lijden.",
+    "term": "Onlijdelijkheid",
+    "definition": "Het idee dat God niet onderhevig is aan lijden of menselijke emoties die Hem beïnvloeden. God wordt niet “meegesleept” door emoties of lijden.",
     "chapter": "Hoofdstuk 6",
     "sourcePage": 124
   },
@@ -449,7 +427,7 @@
     "sourcePage": 130
   },
   {
-    "term": "Persoon en natuur van Jezus",
+    "term": "Omschrijf de persoon en natuur van Jezus.",
     "definition": "Persoon = wie Jezus is, namelijk de persoon, de Zoon van God. Deze persoon bestaat eeuwig als God en is mens geworden in de incarnatie. De natuur = een goddelijke natuur (volledig God) en menselijke natuur (volledig mens: lichaam en ziel).",
     "chapter": "Hoofdstuk 6",
     "sourcePage": 131
@@ -491,7 +469,7 @@
     "sourcePage": 145
   },
   {
-    "term": "Rechtvaardiging",
+    "term": "Manier van redding: Rechtvaardiging",
     "definition": "Gods daad waarbij zondaars worden vergeven en recht voor God worden verklaard, door geloof en niet door werken.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 145
@@ -528,31 +506,31 @@
   },
   {
     "term": "Calvinisme",
-    "definition": "De opvatting dat God als enige en soevereine actor handelt in de redding, waarbij Zijn genade doorslaggevend en bepalend is voor het heil.",
+    "definition": "De opvatting dat God als enige en soevereine actor handelt in de redding, waarbij Zijn genade doorslaggevend en bepalend is voor het heil. God bepaalt dus wie er gered word.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 153
   },
   {
     "term": "Arminianisme",
-    "definition": "De opvatting dat Gods genade ruimte schept voor menselijke medewerking, waarbij mensen daadwerkelijk kunnen reageren op Gods genade in het proces van redding.",
+    "definition": "Arminianisme leert dat God iedereen wil redden en mensen de vrijheid geeft om op zijn genade te reageren of die te weigeren.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 153
   },
   {
     "term": "Voorafgaande genade",
-    "definition": "De genade van God die voorafgaat aan menselijk handelen en alle mensen in staat stelt om op God te reageren en tot geloof te komen, mits zij deze genade niet weerstaan.",
+    "definition": "Voorafgaande genade is Gods genade die al vóór ons werkt en ons in staat stelt om voor Hem te kiezen, zonder ons te dwingen.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 154
   },
   {
     "term": "Monergisme",
-    "definition": "De opvatting dat God alleen handelt in het proces van redding en de enige actor is in het tot stand brengen van het heil.",
+    "definition": "Monergisme is Calvijnse soteriologie\n\nDe opvatting dat God alleen handelt in het proces van redding en de enige actor is in het tot stand brengen van het heil.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 156
   },
   {
     "term": "Synergisme",
-    "definition": "De opvatting dat God en mens samenwerken in het proces van redding, waarbij Gods genade ruimte laat voor menselijke respons en medewerking.",
+    "definition": "Synergisme is Arminianistische soteriologie\n\nis het idee dat God en mens samen betrokken zijn in het proces van redding: God neemt het initiatief door genade, en de mens kan daar vrij op reageren.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 156
   },
@@ -563,25 +541,25 @@
     "sourcePage": 158
   },
   {
-    "term": "Vergoddelijking",
+    "term": "Verzoeningsmodel: vergoddelijking",
     "definition": "Volgens Athanasius het proces waarin mensen door het werk van Christus worden opgenomen in het leven van God en zo daadwerkelijk worden getransformeerd tot gemeenschap met God, zonder het onderscheid tussen Schepper en schepping op te heffen.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 158
   },
   {
-    "term": "Christus Victor",
+    "term": "Verzoeningsmodel: Christus Victor",
     "definition": "Een verzoeningsmodel waarin Christus door zijn dood en opstanding de machten van zonde, dood en kwaad overwint en zo de mensheid bevrijdt en met God verzoent.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 159
   },
   {
-    "term": "Plaatsvervanging",
+    "term": "Verzoeningsmodel: plaatsvervanging",
     "definition": "Christus die in de plaats van zondaren optreedt door hun schuld en straf op zich te nemen en zo de prijs van de zonde te betalen.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 160
   },
   {
-    "term": "Voldoeningstheorie",
+    "term": "Verzoeningsmodel: voldoeningstheorie",
     "definition": "Een verzoeningsleer waarin Christus, als zowel God als mens, de schuld (eer-/zondeschuld) van de mensheid voldoet door in onze plaats de 'schuld' te betalen en zo Gods rechtvaardigheid herstelt.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 160
@@ -593,10 +571,40 @@
     "sourcePage": 160
   },
   {
-    "term": "Moreel voorbeeld",
+    "term": "Verzoeningsmodel: moreel voorbeeld",
     "definition": "Een verzoeningsmodel waarin Christus' liefde, vooral zichtbaar in zijn kruis, dient als voorbeeld dat mensen innerlijk verandert en hen beweegt om zelf in liefde te leven.",
     "chapter": "Hoofdstuk 7",
     "sourcePage": 161
+  },
+  {
+    "term": "Pneumatologie",
+    "definition": "Pneumatologie is de studie van de Heilige Geest en zijn werk in het leven van mensen.",
+    "chapter": "Hoofdstuk 8"
+  },
+  {
+    "term": "Filioque",
+    "definition": "(“en van de Zoon”) Filioque is de toevoeging aan de geloofsbelijdenis dat de Heilige Geest voortkomt uit de Vader én de Zoon, en niet alleen uit de Vader.",
+    "chapter": "Hoofdstuk 8"
+  },
+  {
+    "term": "Antropomorfisme",
+    "definition": "Antropomorfisme betekent dat we God beschrijven in menselijke termen, zoals emoties of geslacht.",
+    "chapter": "Hoofdstuk 8"
+  },
+  {
+    "term": "Cessationisme",
+    "definition": "Cessationisme is het geloof dat de bijzondere gaven van de Heilige Geest (zoals tongentaal, profetie, genezing) zijn gestopt na de tijd van het Nieuwe Testament.",
+    "chapter": "Hoofdstuk 8"
+  },
+  {
+    "term": "Continuationisme",
+    "definition": "Continuationisme is het geloof dat de gaven van de Heilige Geest nog steeds actief zijn in de kerk vandaag.",
+    "chapter": "Hoofdstuk 8"
+  },
+  {
+    "term": "Collecte / Gebed van de dag",
+    "definition": "Een collect is een kort gebed in de kerk dat de gebeden van de gemeente samenvat en tot God richt.",
+    "chapter": "Hoofdstuk 8"
   },
   {
     "term": "Ecclesiologie",
@@ -629,8 +637,8 @@
     "sourcePage": 201
   },
   {
-    "term": "Gemengd lichaam",
-    "definition": "De kerk op aarde bestaat uit zowel oprechte gelovigen als zondaars; volmaakte zuiverheid komt pas bij het oordeel.",
+    "term": "Gemixt lichaam",
+    "definition": "De kerk is een gemixt lichaam van ware en onware gelovigen, die pas bij het laatste oordeel van elkaar gescheiden worden. (tarwe en onkruid (Mattheüs 13))",
     "chapter": "Hoofdstuk 9",
     "sourcePage": 201
   },
@@ -642,7 +650,7 @@
   },
   {
     "term": "Sacramenten",
-    "definition": "Een door God ingesteld teken waaraan hij genade belooft te schenken.",
+    "definition": "Een door God ingesteld teken waaraan hij genade belooft te schenken.\n\nProtestant → 2 (doop + avondmaal)\nKatholiek → 7 sacramenten",
     "chapter": "Hoofdstuk 9",
     "sourcePage": 207
   },

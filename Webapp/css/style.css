@@ -91,6 +91,68 @@ body {
   display: none;
 }
 
+.launcher-intro {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+}
+
+.launcher-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.launcher-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  margin: 0;
+  padding: 16px 18px;
+  text-align: left;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.launcher-card:hover {
+  border-color: #a1a1a6;
+}
+
+.launcher-card:active {
+  transform: scale(0.99);
+}
+
+.launcher-card-featured {
+  border-color: var(--accent);
+  background: rgba(0, 113, 227, 0.06);
+}
+
+.launcher-card-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.launcher-card-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.coming-body {
+  margin: 0;
+  line-height: 1.5;
+}
+
 .panel {
   background: var(--card);
   border: 1px solid var(--border);

@@ -5,8 +5,8 @@
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
   let allCards = [];
-  let view = "setup";
-  let settings = { mix: "typing", dir: "termDef", chapters: new Set() };
+  let view = "launcher";
+  let settings = { mix: "mcq", dir: "termDef", chapters: new Set() };
   let deck = [];
   let turns = [];
   let currentIndex = 0;
@@ -135,21 +135,8 @@
       }
       return out;
     }
-    const typing = settings.mix !== "mcq";
-    const mcq = settings.mix !== "typing";
     for (const card of list) {
-      const hasMcq = true;
-      if (typing && mcq && hasMcq) {
-        if (randomBool()) {
-          out.push({ card, mode: "mcq", pickDefinition: mcqPicksDefinition() });
-        } else {
-          out.push({ card, mode: "typing", showTermFirst: showTermFirstForTyping() });
-        }
-      } else if (mcq) {
-        out.push({ card, mode: "mcq", pickDefinition: mcqPicksDefinition() });
-      } else {
-        out.push({ card, mode: "typing", showTermFirst: showTermFirstForTyping() });
-      }
+      out.push({ card, mode: "mcq", pickDefinition: mcqPicksDefinition() });
     }
     return out;
   }
@@ -318,22 +305,14 @@
   }
 
   function openManage() {
-    view = "manage";
-    $("#view-setup").classList.add("hidden");
-    $("#view-manage").classList.remove("hidden");
-    $("#btn-back").classList.remove("hidden");
-    $("#title").textContent = "Termen beheren";
+    setView("manage");
     updateManageStatusLine();
     fillChapterSuggestions();
     renderManageList();
   }
 
   function closeManage() {
-    view = "setup";
-    $("#view-manage").classList.add("hidden");
-    $("#view-setup").classList.remove("hidden");
-    $("#btn-back").classList.add("hidden");
-    $("#title").textContent = "Dogmatiek oefenen";
+    setView("setup");
   }
 
   function renderManageList() {
@@ -505,23 +484,68 @@
 
   function setView(v) {
     view = v;
-    $("#view-manage").classList.add("hidden");
+    const isComing = v === "coming-ot" || v === "coming-nt";
+    $("#view-launcher").classList.toggle("hidden", v !== "launcher");
+    $("#view-coming").classList.toggle("hidden", !isComing);
     $("#view-setup").classList.toggle("hidden", v !== "setup");
+    $("#view-manage").classList.toggle("hidden", v !== "manage");
     $("#view-session").classList.toggle("hidden", v !== "session");
     $("#view-summary").classList.toggle("hidden", v !== "summary");
-    $("#btn-back").classList.toggle("hidden", v === "setup");
-    if (v === "setup") $("#title").textContent = "Dogmatiek oefenen";
-    else if (v === "summary") $("#title").textContent = "Ronde afgerond";
-    else if (v === "session")
+
+    const backHidden = v === "launcher";
+    $("#btn-back").classList.toggle("hidden", backHidden);
+    if (!backHidden) {
+      $("#btn-back").textContent = v === "setup" ? "← Vakken" : "← Terug";
+    }
+
+    if (v === "launcher") {
+      document.title = "Studie";
+      $("#title").textContent = "Studie";
+    } else if (v === "coming-ot") {
+      document.title = "Oude Testament — binnenkort";
+      $("#title").textContent = "Oude Testament";
+      $("#coming-title").textContent = "Oude Testament";
+      $("#coming-body").textContent =
+        "Hier komen straks aparte oefeningen voor het Oude Testament. Tot die tijd kun je onder Dogmatiek verder oefenen.";
+    } else if (v === "coming-nt") {
+      document.title = "Nieuwe Testament — binnenkort";
+      $("#title").textContent = "Nieuwe Testament";
+      $("#coming-title").textContent = "Nieuwe Testament";
+      $("#coming-body").textContent =
+        "Hier komen straks aparte oefeningen voor het Nieuwe Testament. Tot die tijd kun je onder Dogmatiek verder oefenen.";
+    } else if (v === "setup") {
+      document.title = "Dogmatiek — oefenen";
+      $("#title").textContent = "Dogmatiek oefenen";
+    } else if (v === "manage") {
+      document.title = "Termen beheren";
+      $("#title").textContent = "Termen beheren";
+    } else if (v === "summary") {
+      document.title = "Dogmatiek — ronde afgerond";
+      $("#title").textContent = "Ronde afgerond";
+    } else if (v === "session") {
+      document.title = replayWrongOnly
+        ? "Dogmatiek — fouten opnieuw"
+        : settings.mix === "blank"
+          ? "Dogmatiek — zelf invullen"
+          : "Dogmatiek — oefenen";
       $("#title").textContent = replayWrongOnly
         ? "Fouten opnieuw"
         : settings.mix === "blank"
-          ? "Oefenen · leeg vlak"
+          ? "Oefenen · zelf invullen"
           : "Oefenen";
+    }
   }
 
   function requestExit() {
-    if (view === "setup") return;
+    if (view === "launcher") return;
+    if (view === "coming-ot" || view === "coming-nt") {
+      setView("launcher");
+      return;
+    }
+    if (view === "setup") {
+      setView("launcher");
+      return;
+    }
     if (view === "manage") {
       closeManage();
       return;
@@ -689,7 +713,7 @@
 
   function modeLabel(mode) {
     if (mode === "mcq") return "Meerkeuze";
-    if (mode === "blank") return "Leeg vlak";
+    if (mode === "blank") return "Zelf invullen";
     return "Typen";
   }
 
@@ -766,26 +790,30 @@
   }
 
   function init() {
+    setView("launcher");
+
+    $("#launch-dogmatiek").addEventListener("click", () => setView("setup"));
+    $("#launch-ot").addEventListener("click", () => setView("coming-ot"));
+    $("#launch-nt").addEventListener("click", () => setView("coming-nt"));
+
     $("#btn-back").addEventListener("click", () => requestExit());
     $("#dlg-exit-cancel").addEventListener("click", () => $("#dlg-exit").close());
     $("#dlg-exit-confirm").addEventListener("click", () => confirmExit());
 
+    const mixHints = {
+      mcq: "Meerkeuze: kies het juiste antwoord uit vier opties.",
+      blank:
+        "Zelf invullen: je ziet de prompt, denkt na, tik op Laat antwoord zien en kiest daarna zelf Goed of Fout.",
+    };
     $$(".seg").forEach((b) => {
       b.addEventListener("click", () => {
         $$(".seg").forEach((x) => x.classList.remove("active"));
         b.classList.add("active");
         settings.mix = b.dataset.mix;
-        const hints = {
-          typing:
-            "Typ het antwoord, tik op Antwoord tonen en kies zelf Goed of Fout. Na afloop: fouten op het overzicht en ‘Fouten opnieuw oefenen’.",
-          mcq: "Alleen meerkeuze: kies het juiste antwoord uit vier opties.",
-          both: "Per kaart willekeurig typen óf meerkeuze.",
-          blank:
-            "Alleen leeg vlak: je ziet de prompt, denkt na, laat het antwoord zien en kiest zelf Goed of Fout.",
-        };
-        $("#mix-hint").textContent = hints[settings.mix] || hints.typing;
+        $("#mix-hint").textContent = mixHints[settings.mix] || mixHints.mcq;
       });
     });
+    $("#mix-hint").textContent = mixHints[settings.mix] || mixHints.mcq;
 
     $$(".seg-dir").forEach((b) => {
       b.addEventListener("click", () => {
@@ -886,7 +914,7 @@
     const expected = showTerm ? turn.card.definition : turn.card.term;
     pushAnswer({
       ok,
-      user: "(leeg vlak)",
+      user: "(zelf invullen)",
       expected,
       card: turn.card,
       mode: "blank",
