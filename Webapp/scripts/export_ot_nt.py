@@ -120,10 +120,33 @@ def field_value(body: str, field: str, full_content: str) -> str | None:
     return None
 
 
-def clean_text(s: str) -> str:
-    lines = [ln.strip() for ln in s.split("\n")]
-    out: list[str] = []
+def _normaliseer_streepjes_inspringing(lines: list[str]) -> list[str]:
+    inspringingen: list[int] = []
     for ln in lines:
+        m = re.match(r"^(\s*)-\s", ln)
+        if m:
+            inspringingen.append(len(m.group(1)))
+    if not inspringingen:
+        return lines
+    basis = min(inspringingen)
+    uit: list[str] = []
+    for ln in lines:
+        m = re.match(r"^(\s*)-\s+(.*)$", ln.rstrip())
+        if m:
+            rel = len(m.group(1)) - basis
+            uit.append((" " * rel) + "- " + m.group(2))
+        else:
+            uit.append(ln.strip())
+    return uit
+
+
+def clean_text(s: str) -> str:
+    ruw = [raw.rstrip() for raw in s.split("\n")]
+    ruw = _normaliseer_streepjes_inspringing(ruw)
+    out: list[str] = []
+    for ln in ruw:
+        if not re.match(r"^\s*-\s", ln):
+            ln = ln.strip()
         if ln == "" and out and out[-1] == "":
             continue
         out.append(ln)
@@ -141,18 +164,30 @@ def parse_init_body(body: str, full_content: str) -> tuple[str | None, str | Non
         if prompt:
             break
 
-    builder = re.search(
-        r"OTPersoonPromptBuilder\.drieVragen\(\s*nummer:\s*(\d+),\s*naam:\s*\"([^\"]+)\",\s*gebiedEnPeriodeVraag:\s*\"([^\"]+)\"\s*\)",
-        body,
-    )
-    if builder:
-        n, naam, gebied = builder.groups()
-        prompt = (
-            f"**{n}. {naam}**\n\n"
-            f"- {gebied}\n"
-            f"- Typeer deze periode.\n"
-            f"- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode."
+        builder = re.search(
+            r'OTPersoonPromptBuilder\.persoonPrompt\(naam:\s*"([^"]+)"\)',
+            body,
         )
+        if builder:
+            naam = builder.group(1)
+            prompt = (
+                f"**{naam}**\n\n"
+                f"**Gebied en Archeologische periode**\n\n"
+                f"**Politiek**\n\n"
+                f"**Typering**"
+            )
+        old_builder = re.search(
+            r"OTPersoonPromptBuilder\.drieVragen\(\s*nummer:\s*(\d+),\s*naam:\s*\"([^\"]+)\",\s*gebiedEnPeriodeVraag:\s*\"([^\"]+)\"\s*\)",
+            body,
+        )
+        if old_builder and not builder:
+            n, naam, gebied = old_builder.groups()
+            prompt = (
+                f"**{n}. {naam}**\n\n"
+                f"- {gebied}\n"
+                f"- Typeer deze periode.\n"
+                f"- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode."
+            )
 
     answer = None
     for key in ("antwoordMarkdown", "antwoord"):
@@ -367,8 +402,13 @@ def main() -> None:
     }
     packs["ot-hs2-verschil"] = {
         "title": "Verschil ‘achter’ en ‘in’ de tekst",
-        "shuffle": True,
+        "shuffle": False,
         "items": extract_from_enum(hs2, "Hs2VerschilAchterInTekstVragenData"),
+    }
+    packs["ot-hs2-deuterocanoniek"] = {
+        "title": "Deuterocanonieke boeken",
+        "shuffle": False,
+        "items": extract_from_enum(hs2, "Hs2DeuterocanoniekeBoekenVragenData"),
     }
 
     nt_tijd = read_swift("NieuweTestamentTijdsperiodeQuizView.swift")
@@ -457,6 +497,7 @@ def main() -> None:
                     "links": [
                         {"label": "Opbouw OT", "pack": "ot-hs2-opbouw"},
                         {"label": "Canon OT", "pack": "ot-hs2-canon"},
+                        {"label": "Deuterocanonieke boeken", "pack": "ot-hs2-deuterocanoniek"},
                         {"label": "Ontwikkeling OT", "pack": "ot-hs2-ontwikkeling"},
                         {"label": "Verschil ‘achter’ en ‘in’ de tekst", "pack": "ot-hs2-verschil"},
                         {"label": "Begrippen", "pack": "ot-hs2-begrippen"},
@@ -466,20 +507,7 @@ def main() -> None:
         },
         "nt": {
             "title": "Nieuwe Testament",
-            "combinedOrder": [
-                "nt-tijdsperiode",
-                "nt-begrippen-hs12",
-                "nt-personen",
-                "nt-stromingen",
-                "nt-opbouw",
-                "nt-begrippen-hs3",
-                "nt-achtenmeier",
-            ],
             "sections": [
-                {
-                    "header": "Oefenen",
-                    "links": [{"label": "Gecombineerd oefenen", "combined": True}],
-                },
                 {
                     "header": "Hs 1–2 Powell",
                     "links": [

@@ -19,21 +19,31 @@
   }
 
   /** Eenvoudige markdown: **vet**, regels en bullets. */
-  function renderMarkdown(text) {
+  function renderMarkdown(text, { eersteBlokIsNaam = false } = {}) {
     const parts = String(text || "").split(/\n\n+/);
     return parts
-      .map((block) => {
+      .map((block, blockIndex) => {
         const lines = block.split("\n").filter((l) => l.trim() !== "");
         if (lines.length === 0) return "";
+        const rubriekMatch = lines.length === 1 && /^\*\*(.+)\*\*$/.test(lines[0].trim());
+        if (rubriekMatch) {
+          const rubriekClass =
+            eersteBlokIsNaam && blockIndex === 0 ? "md-naam" : "md-rubriek";
+          return `<p class="${rubriekClass}">${inlineMd(lines[0].trim())}</p>`;
+        }
         const isList = lines.every((l) => /^\s*[-•]/.test(l));
         if (isList) {
           const items = lines
             .map((l) => {
-              const t = l.replace(/^\s*[-•]\s*/, "");
-              return `<li>${inlineMd(t)}</li>`;
+              const m = l.match(/^(\s*)[-•]\s*(.*)$/);
+              const depth = m ? Math.floor(m[1].length / 2) : 0;
+              const t = m ? m[2] : l.replace(/^\s*[-•]\s*/, "");
+              const nestedClass = depth > 0 ? " md-li-nested" : "";
+              const teken = depth > 0 ? "·" : "–";
+              return `<li class="md-li${nestedClass}" style="--md-depth:${depth}"><span class="md-dash" aria-hidden="true">${teken}</span><span class="md-li-text">${inlineMd(t)}</span></li>`;
             })
             .join("");
-          return `<ul class="md-list">${items}</ul>`;
+          return `<ul class="md-list md-list-dash">${items}</ul>`;
         }
         return `<p>${lines.map(inlineMd).join("<br>")}</p>`;
       })
@@ -237,6 +247,7 @@
       title: pack.title,
       items: buildItems(packId, pack),
       returnTo: activeView,
+      packId,
     });
   }
 
@@ -265,6 +276,7 @@
       answers: [],
       replayWrong: false,
       returnTo: cfg.returnTo,
+      packId: cfg.packId ?? null,
       againCfg: cfg,
     };
     setActiveView("reveal");
@@ -282,7 +294,9 @@
     $("#reveal-progress").textContent = `Vraag ${session.index + 1} van ${session.items.length}`;
     $("#reveal-prompt-label").textContent =
       item.kind === "info" ? "Lees" : "Vraag";
-    $("#reveal-prompt").innerHTML = renderMarkdown(item.prompt);
+    const persoonMd =
+      session.packId === "ot-personen" ? { eersteBlokIsNaam: true } : {};
+    $("#reveal-prompt").innerHTML = renderMarkdown(item.prompt, persoonMd);
     $("#reveal-answer").innerHTML = renderMarkdown(item.answer);
     $("#reveal-answer-wrap").classList.add("hidden");
     $("#reveal-actions").classList.remove("hidden");

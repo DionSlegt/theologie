@@ -901,6 +901,53 @@ body {
   padding-left: 1.25rem;
 }
 
+.md-content ul.md-list-dash {
+  list-style: none;
+  padding-left: 0;
+}
+
+.md-content ul.md-list-dash .md-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0 0 6px;
+  margin-left: calc(var(--md-depth, 0) * 2rem);
+  padding-left: 0;
+}
+
+.md-content ul.md-list-dash .md-dash {
+  flex-shrink: 0;
+  font-weight: 400;
+}
+
+.md-content ul.md-list-dash .md-li-text {
+  flex: 1;
+  min-width: 0;
+}
+
 .md-content strong {
+  font-weight: 700;
+}
+
+/* OT-personen: Abraham groot; rubrieken (Gebied, Politiek, Typering) tussen kop en body. */
+.md-content .md-rubriek {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+
+.md-content .md-rubriek strong {
+  font-weight: 600;
+}
+
+.md-content .md-naam {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+
+.md-content .md-naam strong {
   font-weight: 700;
 }

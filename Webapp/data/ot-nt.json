@@ -32,6 +32,10 @@
             "pack": "ot-hs2-canon"
           },
           {
+            "label": "Deuterocanonieke boeken",
+            "pack": "ot-hs2-deuterocanoniek"
+          },
+          {
             "label": "Ontwikkeling OT",
             "pack": "ot-hs2-ontwikkeling"
           },
@@ -49,25 +53,7 @@
   },
   "nt": {
     "title": "Nieuwe Testament",
-    "combinedOrder": [
-      "nt-tijdsperiode",
-      "nt-begrippen-hs12",
-      "nt-personen",
-      "nt-stromingen",
-      "nt-opbouw",
-      "nt-begrippen-hs3",
-      "nt-achtenmeier"
-    ],
     "sections": [
-      {
-        "header": "Oefenen",
-        "links": [
-          {
-            "label": "Gecombineerd oefenen",
-            "combined": true
-          }
-        ]
-      },
       {
         "header": "Hs 1–2 Powell",
         "links": [
@@ -568,22 +554,22 @@
         {
           "id": "ot-kaders-p3-rechters",
           "prompt": "**3. Vestiging in het land en de Rechters (ca. 1200–1000 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**\n\n**Wereldrijken:**",
-          "answer": "**Bijbelse context:**\n\nNa de woestijnreis trekt Israël onder Jozua het beloofde land Kanaän binnen. Er volgt een periode van een losse stammenbond onder leiding van «rechters» (charismatische leiders).\n\n**Archeologische periode:**\n\n**IJzertijd I** (ca. 1200–930 v.Chr.).\n\n**Historische context:**\n\nDe overgang van Brons naar IJzer ging gepaard met grote chaos. De zogenaamde «Zeevolken» (waaronder de Filistijnen) vielen de kustgebieden aan en zorgden voor een nieuwe sociale orde.\n\n**Wereldrijken:**\n\nEr was een machtsvacuüm; de grote rijken (Egypte, Hettieten) verloren hun grip op de regio, waardoor kleinere groepen zoals de Israëlieten en Arameeërs de ruimte kregen om zich te ontwikkelen."
+          "answer": "**Bijbelse context:**\n\nNa de woestijnreis trekt Israël onder Jozua het beloofde land Kanaän binnen. Er volgt een periode van een losse stammenbond onder leiding van \"rechters\".\n\n**Archeologische periode:**\n\n**IJzertijd I** (ca. 1200–930 v.Chr.).\n\n**Historische context:**\n\nDe overgang van Brons naar IJzer ging gepaard met grote chaos. De zogenaamde \"Zeevolken\" (waaronder de Filistijnen) vielen de kustgebieden aan en zorgden voor een nieuwe sociale orde.\n\n**Wereldrijken:**\n\nEr was een machtsvacuüm; de grote rijken (Egypte, Hettieten) verloren hun grip op de regio, waardoor kleinere groepen zoals de Israëlieten en Arameeërs de ruimte kregen om zich te ontwikkelen."
         },
         {
           "id": "ot-kaders-p4-verenigd",
           "prompt": "**4. De Verenigde Monarchie (ca. 1025–922 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Historische context:**",
-          "answer": "**Bijbelse context:**\n\nVanwege de dreiging van omringende volken (vooral de Filistijnen) vraagt Israël om een koning. Saul, David en Salomo regeren achtereenvolgens over de twaalf verenigde stammen.\n\n**Archeologische periode:**\n\nLate **IJzertijd I**.\n\n**Historische context:**\n\nOnder David bereikte Israël voor korte tijd de status van een regionaal rijk. Jeruzalem werd de hoofdstad en Salomo bouwde de eerste tempel."
+          "answer": "**Bijbelse context:**\n\nVanwege de dreiging van omringende volken (vooral de Filistijnen) vraagt Israël om een koning. Saul, David en Salomo regeren achtereenvolgens over de twaalf verenigde stammen.\n\n**Archeologische periode:**\n\nOvergang **IJzertijd I–II**.\n\n**Historische context:**\n\nOnder David bereikte Israël voor korte tijd de status van een regionaal rijk. Jeruzalem werd de hoofdstad en Salomo bouwde de eerste tempel."
         },
         {
           "id": "ot-kaders-p5-verdeeld",
           "prompt": "**5. De Verdeelde Monarchie (ca. 922–586 v.Chr.)**\n\n**Bijbelse context:**\n\n**Overige belangrijke personen:**\n\n**Archeologische periode:**\n\n**Wereldrijken en ondergang:**",
-          "answer": "**Bijbelse context:**\n\nNa de dood van Salomo scheurt het rijk in tweeën: het Noordrijk (Israël) en het Zuidrijk (Juda).\n\n**Overige belangrijke personen:**\n\nJerobeam I & II (Noordrijk), Hizkia, Josia, Jesaja\n\n**Archeologische periode:**\n\nIJzertijd II (ca. 930–539 v.Chr.).\n\n**Wereldrijken en ondergang:**\n\n- **Het Nieuw-Assyrische Rijk:** Vanaf de 9e eeuw v.Chr. breidt Assyrië zijn macht uit. In **722 v.Chr.** veroveren de Assyriërs Samaria, waarmee een einde komt aan het Noordrijk.\n- **Het Nieuw-Babylonische Rijk:** Babylonië neemt de macht over van de Assyriërs. Koning Nebukadnezar verovert Jeruzalem en verwoest de tempel in **587/586 v.Chr.**, wat het begin van de ballingschap markeert."
+          "answer": "**Bijbelse context:**\n\nNa de dood van Salomo scheurt het rijk in tweeën: het Noordrijk (Israël) en het Zuidrijk (Juda).\n\n**Overige belangrijke personen:**\n\nJerobeam I & II (Noordrijk), Hizkia, Josia, Jesaja\n\n**Archeologische periode:**\n\nIJzertijd II (ca. 930–539 v.Chr.).\n\n**Wereldrijken en ondergang:**\n\n- **Het Nieuw-Assyrische Rijk:** Vanaf de 9e eeuw v.Chr. breidt Assyrië zijn macht uit. In **722 v.Chr.** veroveren de Assyriërs Samaria, waarmee een einde komt aan het Noordrijk.\n- **Het Nieuw-Babylonische Rijk:** Babylonië neemt de macht over van de Assyriërs. Koning Nebukadnezar verovert Jeruzalem en verwoest de tempel in **587/586 v.Chr.**, wat het keerpunt vormt van de Babylonische ballingschap."
         },
         {
           "id": "ot-kaders-p6-ballingschap",
           "prompt": "**6. De Ballingschap en de Perzische Periode (ca. 539–333 v.Chr.)**\n\n**Bijbelse context:**\n\n**Archeologische periode:**\n\n**Wereldrijken:**",
-          "answer": "**Bijbelse context:**\n\nEen periode waarin veel Judeeërs in Babylonië woonden. Na de verovering van Babylon door de Perzen mogen zij terugkeren om Jeruzalem en de tempel te herbouwen (onder leiding van figuren als Ezra en Nehemia).\n\n**Archeologische periode:**\n\nIJzertijd III (ca. 539–332 v.Chr.).\n\n**Wereldrijken:**\n\nHet **Perzische Rijk** (onder Cyrus de Grote) was het grootste rijk dat de wereld tot dan toe had gezien. Juda was geen onafhankelijk koninkrijk meer, maar een provincie genaamd «Jehoed»."
+          "answer": "**Bijbelse context:**\n\nEen periode waarin veel Judeeërs in Babylonië woonden. Na de verovering van Babylon door de Perzen mogen zij terugkeren om Jeruzalem en de tempel te herbouwen (onder leiding van figuren als Ezra en Nehemia).\n\n**Archeologische periode:**\n\nIJzertijd III (ca. 539–332 v.Chr.).\n\n**Wereldrijken:**\n\nHet **Perzische Rijk** (onder Cyrus de Grote) was het grootste rijk dat de wereld tot dan toe had gezien. Juda was geen onafhankelijk koninkrijk meer, maar een provincie genaamd \"Jehoed\"."
         },
         {
           "id": "ot-kaders-p7-hellenistisch",
@@ -598,48 +584,68 @@
       "items": [
         {
           "id": "ot-persoon-abraham",
-          "prompt": "**1. Abraham**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde in de **Midden-Bronstijd** (ongeveer 2000–1550 v.Chr.).\n- Zijn geografische route liep door de **Vruchtbare Halve Maan**: van Ur (Mesopotamië) naar Haran en uiteindelijk naar Sichem in Kanaän.\n\n**Typering van de periode:**\n\n- Wordt beschouwd als de tijd van de **aartsvaders** (stamvaders en stammoeders) van Israël.\n- Een tijd van grote sociale mobiliteit en migratie van half-nomadische groepen.\n- Technologische ontwikkelingen zoals de opkomst van steden en de verspreiding van schriftselsels (spijkerschrift en hiërogliefen).\n\n**Politieke situatie in het ONO:**\n\n- In Mesopotamië namen de **Amorieten** de macht over van de eerdere Ur-dynastieën.\n- Bloei van het **Oud-Babylonische Rijk**, met name onder koning **Hammurabi** (bekend van zijn wetscodex).\n- Egypte werd gedomineerd door het **Middenrijk**."
+          "prompt": "**Abraham**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- Midden bronstijd (2000 – 1550 v.Chr.)\n- Abraham en aartsvaders hadden half nomadisch bestaan\n- Mesopotamië in Ur, huidige Irak\n- Via Haran naar Sichem in Kanaän omdat dat de vruchtbare halve maan volgt\n\n**Politiek**\n\n- Machtsverschuiving\n  - De gevestigde dynastieën waren ingestort\n  - Half nomadische stammen (Amorieten) de macht in Mesopotamië\n  - Dit is de optrap naar het Oud-Babylonische rijk (Hammurabi) als eerste koning. (Hammurabi codex, verzameling wetten)\n\n**Typering**\n\n- Explosieve stedelijke ontwikkeling en gigantische bureaucratie\n- Tijd van uitvinding en spreiding van het schrift\n  - Mesopotamië spijkerschrift\n  - Egypte hiërogliefen op papyrus"
         },
         {
           "id": "ot-persoon-mozes",
-          "prompt": "**2. Mozes**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde in de **Late Bronstijd** (ongeveer 1550–1240 v.Chr.).\n- Geografisch verbonden met Egypte (Nijldelta), de Sinaï-woestijn en de grenzen van het land Kanaän.\n\n**Typering van de periode:**\n\n- Gekenmerkt door de **slavernij** van de Israëlieten in Egypte en de daaropvolgende **Exodus** (uittocht).\n- Ontvangst van de **Wet** (Thora) bij de berg Sinaï en de veertigjarige woestijnreis.\n\n**Politieke situatie in het ONO:**\n\n- Het **Nieuwe Rijk van Egypte** was op het hoogtepunt van zijn macht en domineerde de regio Kanaän/Syrië en de belangrijke handelsroutes.\n- Er heerste een internationaal **machtsevenwicht** tussen grootmachten zoals Egypte, de Hettieten en de Kassieten (die Mesopotamië controleerden).\n- De **Amarnabrieven** uit deze tijd tonen de diplomatieke relaties tussen de farao en vazalkoningen in Kanaän."
+          "prompt": "**Mozes**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- Late bronstijd (1550 – 1200 v.Chr.)\n- Slavernij in Egypte, uittocht (Exodus), 40 jaar tochten door de woestijn.\n\n**Politiek**\n\n- Balance of powers\n  - In Mesopotamië (Kasieten heerst)\n  - Egypte nieuwe rijk (Kanaän en Egypte)\n- Akkadisch (Internationale diplomatieke taal)\n- Amarna brieven (Contact over Egypte en andere machten)\n\n**Typering**\n\n- Plagen waren geen willekeurige rampen maar theologische oorlogsvoering\n  - Hagel was een aanval op Horus (god van de lucht) of op Osiris (god van de landbouw)\n  - Ze lieten zien: Onze God breekt de macht van jullie goden."
         },
         {
           "id": "ot-persoon-jozua",
-          "prompt": "**3. Jozua**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde tijdens de overgang van de Late Bronstijd naar de **IJzertijd I** (rond 1200 v.Chr.).\n- Geconcentreerd op het land Kanaän (het beloofde land).\n\n**Typering van de periode:**\n\n- De periode van de **intocht**, verovering en vestiging van de Israëlitische stammen in Kanaän.\n- Ontstaan van de **stammenbond**, een losse federatie van twaalf stammen zonder centrale menselijke koning.\n\n**Politieke situatie in het ONO:**\n\n- Een tijd van grote chaos door de inval van de **Zeevolken** (waaronder de Filistijnen), die de oude machtsstructuren ontregelden.\n- Er ontstond een **machtsvacuüm** doordat de grote rijken (Egypte en de Hettieten) hun grip op de regio verloren.\n- Opkomst van nieuwe etnische groepen in de regio, zoals de Arameeërs en de Israëlieten."
+          "prompt": "**Jozua**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- Late bronstijd (1550 – 1200 v.Chr.)\n- Kanaän / Israël\n\n**Politiek**\n\n- Tijd van de vestiging en richters\n- Balance of powers viel weg wat ruimte gaf voor de Israëlieten\n\n**Typering**\n\n- Tijden van droogte, hongersnoden en migraties laat de grote rijken instorten\n  - Hierdoor konden zeevolken ontwikkelen (Filistijnen)"
         },
         {
-          "id": "ot-persoon-david-salomo",
-          "prompt": "**4. David & Salomo**\n\n- In welk gebied en in welke (archeologische) periode leefden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de **IJzertijd I** (ca. 1025–922 v.Chr.).\n- Regeerden over het verenigde koninkrijk Israël vanuit de nieuwe hoofdstad **Jeruzalem**.\n\n**Typering van de periode:**\n\n- De periode van de **Verenigde Monarchie**: de twaalf stammen werden voor het eerst onder één koning verenigd.\n- Onder David bereikte de natie kortstondig de status van een regionaal rijk.\n- Salomo bouwde de **Eerste Tempel** in Jeruzalem om de religieuze cultus te centraliseren.\n\n**Politieke situatie in het ONO:**\n\n- Zowel Egypte als de rijken in Mesopotamië waren in deze periode relatief zwak en verdeeld door interne problemen.\n- Deze afwezigheid van een dominante wereldmacht gaf Israël de ruimte om uit te groeien tot een aanzienlijke regionale macht.\n- Voortdurende rivaliteit met naburige volken zoals de **Filistijnen**."
+          "id": "ot-persoon-david",
+          "prompt": "**David**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 1 (1200 - 930 v.Chr.)\n- Datering David 1000 v.Chr.\n\n**Politiek**\n\n- Geopolitiek machtsvacuüm (Egypte en de rijken in Mesopotamië waren tijdelijk zwak waren of waren ingestort)\n- Filistijnen al vijand\n  - Pentapolis: Ekron – Asdod – Ashkelon – Gath – Gaza\n\n**Typering**\n\n- Verenigde monarchie (Hoofdstad Jeruzalem)\n- Overgang bronstijd naar ijzertijd"
         },
         {
-          "id": "ot-persoon-jerobeam-1",
-          "prompt": "**5. Jerobeam I**\n\n- In welk gebied en in welke (archeologische) periode leefde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefde aan het begin van de **IJzertijd II** (rond 922 v.Chr.).\n- Regeerde over het **Noordrijk** (Israël).\n\n**Typering van de periode:**\n\n- De **scheuring van het rijk**: na de dood van Salomo splitste de natie zich in Israël (Noordrijk) en Juda (Zuidrijk).\n- Instelling van alternatieve religieuze centra in **Dan en Bethel** (de gouden kalveren) om de politieke breuk met Jeruzalem te bekrachtigen.\n\n**Politieke situatie in het ONO:**\n\n- Egypte was geen belangrijke militaire speler meer in de regio.\n- Begin van de heropleving van machten in Mesopotamië, wat later zou leiden tot de expansie van het **Nieuw-Assyrische Rijk**."
+          "id": "ot-persoon-salomo",
+          "prompt": "**Salomo**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 1 (1200 - 930 v.Chr.)\n- Verenigde Koninkrijk Israël\n\n**Politiek**\n\n- Machtsvacuüm (Egypte en de rijken in Mesopotamië waren tijdelijk zwak waren of waren ingestort)\n- Beheerde handelsroutes (Egypte, Arabische woestijn en Syrië)\n- Vazallen: Andere volken in de regio moesten hem eer bewijzen en schattingen betalen\n\n**Typering**\n\n- Gouden eeuw - Een tijd van grote internationale prestige en economische voorspoed\n- Bouw van de eerste tempel in Jeruzalem\n- Dictatuur (Hoge belastingen en herendiensten. (Tijdelijke slavernij voor eigen inwoners))"
         },
         {
-          "id": "ot-persoon-jerobeam-2",
-          "prompt": "**6. Jerobeam II**\n\n- In welk gebied en in welke (archeologische) periode regeerde hij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Regeerde in de **IJzertijd II** (8e eeuw v.Chr.).\n- Machtscentrum in het Noordrijk (Israël), met Samaria als hoofdstad.\n\n**Typering van de periode:**\n\n- Een tijd van grote **territoriale expansie** en economische voorspoed voor het Noordrijk.\n- Echter ook een tijd van diepe religieuze ontrouw en sociale ongelijkheid (waartegen profeten als Amos ageerden).\n\n**Politieke situatie in het ONO:**\n\n- Het **Nieuw-Assyrische Rijk** werd onder koningen als Tiglath-pileser III een agressieve expansiemacht die de regio begon te domineren.\n- Andere regionale machten zoals **Aram** (Syrië) zorgden voor constante geopolitieke spanningen (zoals de Syro-Efraïmitische oorlog)."
+          "id": "ot-persoon-jerobeam-i",
+          "prompt": "**Jerobeam I**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Scheuring rijk (930 v.Chr.)\n- Koning Noordrijk\n\n**Politiek**\n\n- Veel oorlog tussen Juda, Israël en Aram\n- Egypte speelde geen rol maar in de verte begon Assyrië weer te groeien.\n\n**Typering**\n\n- Een tijd van interne politieke onrust en wisselende dynastieën in het noorden\n- Begin van \"kwaad doen in de ogen van God,\"\n- Tempel staat in zuiden. Om te voorkomen dat het volk naar het zuiden reist:\n  - Creëert 2 heiligdommen (Dan en Bethel)\n  - Gouden kalveren\n  - Religieuze instabiliteit (Ook i.v.m. Baal diensten)."
         },
         {
-          "id": "ot-persoon-hizkia-josia",
-          "prompt": "**7. Hizkia & Josia**\n\n- In welk gebied en in welke (archeologische) periode leefden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de late **IJzertijd II** (Hizkia ca. 715–687 v.Chr.; Josia ca. 640–609 v.Chr.).\n- Regeerden over het Zuidrijk (Juda) vanuit Jeruzalem.\n\n**Typering van de periode:**\n\n- **Hizkia:** Religieuze hervorming en de overleving van Jeruzalem tijdens het Assyrische beleg.\n- **Josia:** Radicalere centralisatie van de cultus na de ontdekking van het «boek van de wet» (Deuteronomium) in de tempel.\n\n**Politieke situatie in het ONO:**\n\n- **Hizkia:** Het Nieuw-Assyrische Rijk was op zijn absolute hoogtepunt; het Noordrijk was al verwoest in **722 v.Chr.**\n- **Josia:** De macht van Assyrië brokkelde snel af, terwijl het **Nieuw-Babylonische Rijk** in opkomst was."
+          "id": "ot-persoon-jerobeam-ii",
+          "prompt": "**Jerobeam II**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Noordrijk Israël - hoofdstad Samaria\n\n**Politiek**\n\n- Machtsvacuüm (De expansie van Israël was mogelijk omdat het Nieuw-Assyrische Rijk op dat moment kampte met interne problemen en tijdelijk zwak was)\n- Na de dood van Jerobeam II herpakten de Assyriërs zich. Israël werd eerst een vazalstaat en werd uiteindelijk in 722 v.Chr. definitief van de kaart geveegd na de val van Samaria\n\n**Typering**\n\n- Laatste bloei voor de val (Economische bloei en uitbreiding grondgebied)\n  - Oude grenzen van David hersteld\n- Sociale corruptie: De profeet Amos klaagde de elite aan vanwege hun luxe (zoals \"ivoren bedden\") en de uitbuiting van de armen\n- Profetie: Amos voorspelde dat de paleizen in puin zouden vallen als straf voor deze corruptie"
+        },
+        {
+          "id": "ot-persoon-hiskia",
+          "prompt": "**Hiskia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Juda (Jeruzalem)\n\n**Politiek**\n\n- Het Nieuw-Assyrische Rijk was op het hoogtepunt van zijn macht\n- Juda was in deze periode een vazalstaat\n- Machtverschuiving: Terwijl Assyrië domineerde, begon Babylon aan de macht te komen als de volgende grote speler\n- Jesaja was adviseur van de Koning\n\n**Typering**\n\n- Wordt gezien als \"goede koning\"\n- Regeerde in de schaduw van de ondergang van het Noordrijk (722 v.Chr.) en moest Jeruzalem behoeden voor eenzelfde lot\n- Religieuze centralisatie\n  - Sloopt lokale heiligdommen\n  - Aanbidding in exclusief Jeruzalem"
+        },
+        {
+          "id": "ot-persoon-josia",
+          "prompt": "**Josia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- (regeerde ca. 640–609 v.Chr.).\n- Gebied: Het Zuidrijk (Juda).\n\n**Politiek**\n\n- Assyrië stort in door druk van Babylonische rebellen (Ninevé valt)\n- Machtsvacuüm ontstaat Josia pakt zijn kans\n- Egypte grijpt in, Josia dacht de Farao tegen te kunnen houden\n- Josia sterft in strijd met Egypte bij Megido\n- Einde van een tijdperk: Hij was de laatste goede koning vóór de verwoesting van Jeruzalem en de daaropvolgende ballingschap\n\n**Typering**\n\n- Hervormingskoning: Josia wordt getypeerd als een hervormingsgezinde en de laatste \"goede\" koning van Juda. Zorgt voor zuivering van Syrische en heidense invloeden\n- Vondst van de Wet: Tijdens herstelwerkzaamheden in de tempel werd het \"boek van de wet\" (waarschijnlijk een vroege vorm van Deuteronomium) teruggevonden, wat leidde tot een grote religieuze ommekeer\n- Herstel: Hij probeerde de corruptie van zijn voorgangers ongedaan te maken en de exclusieve aanbidding van God te herstellen"
         },
         {
           "id": "ot-persoon-jeremia",
-          "prompt": "**8. Jeremia**\n\n- In welk gebied en in welke (archeologische) periode was hij actief?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Actief aan het einde van de **IJzertijd II** (rond 586 v.Chr.) en het begin van de **Ballingschap**.\n- Werkzaam in Jeruzalem tijdens de belegeringen en later weggevoerd.\n\n**Typering van de periode:**\n\n- De totale catastrofe: de **verwoesting van Jeruzalem** en de tempel in 586 v.Chr.\n- De gedwongen wegvoering van de Judese bevolking naar Mesopotamië (**Ballingschap**).\n\n**Politieke situatie in het ONO:**\n\n- Absolute dominantie van het **Nieuw-Babylonische Rijk** onder koning **Nebukadnezar**.\n- Juda was een opstandige vazalstaat die uiteindelijk door de Babylonische overmacht werd vernietigd."
+          "prompt": "**Jeremia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Zuidrijk (Juda)\n\n**Politiek**\n\n- Neo-Babylonische dominantie\n- Rebellie tegen Babylon\n- Exilische periode\n\n**Typering**\n\n- De Ondergang\n- Predikt in Jeruzalem\n- Conflict met de macht (koning Jojakim)\n- Juda kwam in opstand tegen Babyloniërs – Gevolg:\n  - Uithongering\n  - Deportaties\n  - Vernietiging van de tempel\n- Vlucht naar Egypte"
         },
         {
-          "id": "ot-persoon-zerubbabel-ezra-nehemia",
-          "prompt": "**9. Zerubbabel, Ezra & Nehemia**\n\n- In welk gebied en in welke (archeologische) periode speelden zij?\n- Typeer deze periode.\n- Typeer de politieke situatie in het Oude Nabije Oosten in deze periode.",
-          "answer": "**Gebied en (archeologische) periode:**\n\n- Leefden in de **IJzertijd III** (de Perzische periode, ca. 539–332 v.Chr.).\n- Werkzaam in de provincie **Jehoed** (Juda) en Jeruzalem.\n\n**Typering van de periode:**\n\n- De **terugkeer uit de ballingschap** na het decreet van Cyrus in 539 v.Chr.\n- Herstel van de gemeenschap: herbouw van de **Tweede Tempel** (Zerubbabel), de muren van de stad (Nehemia) en de herintroductie van de Thora (Ezra).\n\n**Politieke situatie in het ONO:**\n\n- Heerschappij van het **Perzische Rijk** onder **Cyrus de Grote** en zijn opvolgers.\n- De Perzen voerden een beleid van religieuze tolerantie en lieten volkeren hun eigen cultuur en tempels herstellen.\n- Juda was geen onafhankelijk koninkrijk meer, maar een semi-autonome provincie (**Jehoed**) met door de Perzen aangestelde gouverneurs."
+          "id": "ot-persoon-zerubbabel",
+          "prompt": "**Zerubbabel**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Perzisch rijk → provincie Jehud (Jeruzalem)\n\n**Politiek**\n\n- Perzische hegemonie\n- Vroege Perzische periode\n  - Religieuze tolerantie\n  - Loyaliteit van grensprovincies\n\n**Typering**\n\n- De terugkeer\n- Herbouw van de tempel"
+        },
+        {
+          "id": "ot-persoon-ezra",
+          "prompt": "**Ezra**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Perzisch rijk\n\n**Politiek**\n\n- Ezra als officieel van het Perzische hof\n- Autonomie van Jehud onder Perzen\n\n**Typering**\n\n- Wetsgeleerde\n- De tweede terugkeer\n- Verlegde focus van tempel naar Thora\n  - Nadruk op de geschriften in plaats van alleen de tempel\n  - Centrale rol van de wet in het gemeenschapsleven"
+        },
+        {
+          "id": "ot-persoon-nehemia",
+          "prompt": "**Nehemia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Gebied: reisde vanuit Perzisch rijk naar Jehud (Jeruzalem)\n\n**Politiek**\n\n- Nehemia als aangestelde landvoogd\n- Perzische hegemonie (absoluut wereldrijk, lokale autonomie voor Jehud)\n\n**Typering**\n\n- De herbouwer: Nehemia was verantwoordelijk voor de herbouw van de stadsmuren\n- Derde terugkeer: hij vertegenwoordigt de derde groep ballingschapstergenoten die terugkeerde\n- Restauratie: herstel van Jeruzalem als religieus en politiek centrum\n- Strikte sociale grenzen\n  - Gedwongen scheidingen van buitenlandse vrouwen\n  - Overleven door isolatie"
         }
       ]
     },
@@ -732,7 +738,7 @@
         {
           "id": "canon-joods",
           "prompt": "**De Joodse canon**",
-          "answer": "De **TaNaK**\n\n**Thora** (Wet / onderwijzing)\n\n**Nevi’im** (Profeten)\n\nvroege profeten\n\nlate profeten\n\n**Ketuvim** (Geschriften)"
+          "answer": "**Torah (Wet)**\n\n– Genesis\n\n– Exodus\n\n– Leviticus\n\n– Numeri\n\n– Deuteronomium\n\n**Profeten**\n\n**Vroege profeten**\n\n– Jozua\n\n– Richteren\n\n– Samuël\n\n– Koningen\n\n**Late profeten**\n\n– Jesaja\n\n– Jeremia\n\n– Ezechiël\n\n**De rol van de Twaalf:**\n\n– Hosea\n\n– Joël\n\n– Amos\n\n– Obadja\n\n– Jona\n\n– Micha\n\n– Nahum\n\n– Habakuk\n\n– Sefanja\n\n– Haggai\n\n– Zacharia\n\n– Maleachi\n\n**Geschriften**\n\n– Psalmen\n\n– Job\n\n– Spreuken\n\n– Ruth\n\n– Hooglied\n\n– Prediker\n\n– Klaagliederen\n\n– Ester\n\n– Daniël\n\n– Ezra-Nehemia\n\n– Kronieken"
         },
         {
           "id": "canon-rooms-katholiek",
@@ -743,27 +749,43 @@
           "id": "canon-oosters-orthodox",
           "prompt": "**Oosters-orthodoxe canon**",
           "answer": "De oosters-orthodoxe kerken baseren zich primair op de **Septuaginta (LXX)**.\n\n**Pentateuch**\n\n**Historische boeken**\n\n1 Esdras (3 Ezra) — extra (alleen orthodox)\n\nTobit — deuterocanoniek\n\nJudit — deuterocanoniek\n\nEster (met toevoegingen) — deuterocanoniek\n\n1 Makkabeeën — deuterocanoniek\n\n2 Makkabeeën — deuterocanoniek\n\n3 Makkabeeën — extra (orthodox)\n\n4 Makkabeeën — soms als appendix\n\n**Poëzie & Wijsheid**\n\nWijsheid van Salomo\n\nWijsheid van Jezus Sirach\n\nPsalm 151 — extra (orthodox)\n\nOden (incl. Gebed van Manasse) — extra (orthodox)\n\n**Grote profeten**\n\nBaruch — deuterocanoniek\n\nBrief van Jeremia — deuterocanoniek\n\nDaniël (met toevoegingen) — deuterocanoniek\n\n**Kleine profeten**"
+        },
+        {
+          "id": "canon-verschillen",
+          "prompt": "**Verklaar de verschillen in canons**",
+          "answer": "**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.\n\n**Protestantse canon:** Bevat precies dezelfde boeken als de Tenach, maar volgt de Griekse volgorde. Protestanten verwierpen de extra boeken uit de Vulgata als \"apocrief\" omdat ze terug wilden naar de oorspronkelijke Hebreeuwse bron.\n\n**Rooms-katholieke canon:** Bevat de Hebreeuwse boeken plus een selectie Griekse boeken, de deuterocanonieke boeken. Deze lijst is gebaseerd op de **Vulgata** (eind van de 4e eeuw n.Chr.), de Latijnse vertaling van Hiëronymus die eeuwenlang de officiële tekst van de katholieke kerk was en een specifieke selectie uit de Griekse bronnen bevatte.\n\n**Orthodoxe canon:** De meest uitgebreide canon, gebaseerd op de volledige Griekse Septuaginta (tussen 300 en 200 v.Chr. ontstaan). Omdat de Orthodoxe kerken de Griekse traditie bleven volgen en niet overstapten op de Latijnse Vulgata, behielden zij extra boeken (zoals 3 Makkabeeën) die in de Vulgata ontbraken."
         }
       ]
     },
     "ot-hs2-verschil": {
       "title": "Verschil ‘achter’ en ‘in’ de tekst",
-      "shuffle": true,
+      "shuffle": false,
       "items": [
         {
-          "id": "verschil-in-tekst",
-          "prompt": "**Hoe verklaar je de wereld ‘in’ de tekst?**",
-          "answer": "**Kern:** De wereld *in* de tekst is de wereld die de woorden zelf oproepen: de verhalen en historische claims die de bijbel maakt.\n\n**Aanpak:** Je beoordeelt hoe de tekst het verleden *portretteert*, los van de vraag of dat exact overeenkomt met wetenschappelijke of historische reconstructies.\n\n**Waarom het onderscheid telt:** Waar je meent dat een tekst vandaan komt (**achter**), beïnvloedt vaak hoe je de inhoud (**in**) uitlegt."
-        },
-        {
           "id": "verschil-achter-tekst",
-          "prompt": "**Hoe verklaar je de wereld ‘achter’ de tekst?**",
-          "answer": "**Kern:** De wereld *achter* de tekst verwijst naar de feitelijke geschiedenis rond de auteur: sociale omstandigheden, politiek, economie en religieuze praktijken op het moment dat de tekst werd geschreven.\n\n**Reconstructie:** Omdat auteurs hun eigen wereld als vanzelfsprekend achtten, moet de moderne lezer die wereld reconstrueren met deductie en soms met “geraden.”\n\n**Betekenis:** De achtergrond van de auteur (zoals sociale positie of herkomst) beïnvloedt hoe een tekst oorspronkelijk bedoeld was.\n\n**Waarom het onderscheid telt:** Waar een lezer denkt dat een tekst vandaan komt (**achter**), bepaalt vaak hoe de inhoud (**in**) wordt geïnterpreteerd."
+          "prompt": "**De wereld ‘achter’ de tekst**",
+          "answer": "Dit is de historische context van de auteur. Het gaat om de specifieke tijd, sociale gebruiken, religieuze praktijken en politieke gebeurtenissen waarin de tekst is ontstaan en die bepaalden wat de tekst oorspronkelijk betekende."
         },
         {
-          "id": "verschil-voorbeelden-bijlage",
-          "prompt": "**Welke voorbeelden uit de bijlage horen bij de wereld in en achter de tekst?**",
-          "answer": "**Wereld *in* de tekst**\n\n**2 Koningen:** De manier waarop 2 Koningen de inname van Jeruzalem in **586 v.Chr.** beschrijft, illustreert de wereld *in* de tekst.\n\n**Het verhaal van Abraham (*in* de tekst):**\n\n**De grote reis:** Abraham krijgt een persoonlijke roeping van God om zijn land te verlaten en reist van Ur via Haran naar Sichem in Kanaän.\n\n**De familie als fundament:** Hij wordt gepresenteerd als een machtige aartsvader die met zijn vrouw Sara, zijn neef Lot en al hun bezittingen reist.\n\n**De God van de vader:** Abraham sluit een persoonlijk verbond met God, die hem nageslacht en land belooft.\n\n**De politieke context:** Hij ontmoet lokale koningen en sluit bondgenootschappen, zoals met de Amoriet Mamre.\n\n**Wereld *achter* de tekst — Abraham (Midden-Bronstijd, ca. 2000–1550 v.Chr.)**\n\n**De grote reis:** De route volgt de **Vruchtbare Halve Maan**, de enige bewoonbare strook tussen de grote rijken Mesopotamië en Egypte in die periode.\n\n**De familie als fundament:** Abraham is het schoolvoorbeeld van het hoofd van een **huishouden** (*bet av*): de kleinste eenheid in een **verwantschapssamenleving**, waarin drie generaties samenleefden voor economische en sociale zekerheid.\n\n**De God van de vader:** De wereld was “betoverd” en vol goden; Abrahams religie wordt gekarakteriseerd als **henotheïsme**: één God als de hoogste vereren, zonder het bestaan van andere goden in de omgeving (zoals die van de Kanaänieten) te ontkennen.\n\n**De politieke context:** Dit past bij de realiteit waarin **Amorieten** de macht in Mesopotamië hadden en Kanaän een mozaïek van kleine stadstaten was."
+          "id": "verschil-in-tekst",
+          "prompt": "**De wereld ‘in’ de tekst**",
+          "answer": "Dit is de geschiedenis zoals die in het verhaal zelf wordt verteld. Dit zijn de historische claims of verhalen die de tekst presenteert over het verleden."
+        },
+        {
+          "id": "verschil-voorbeelden",
+          "prompt": "**Voorbeelden: achter en in de tekst**",
+          "answer": "**Voorbeeld 1: Exodus**\n\n**Wereld achter de tekst:**\n\nJe onderzoekt de historische achtergrond: slavernij in Egypte, de macht van Egypte, de positie van kleine volken in het Nabije Oosten en de vraag hoe Israël als volk is ontstaan.\n\n**Wereld in de tekst:**\n\nJe kijkt naar het verhaal zelf: Mozes, farao, de plagen, de doortocht door de zee, de woestijnreis en hoe God wordt voorgesteld als bevrijder.\n\n**Kort:** Achter de tekst = historische Egypte-context. In de tekst = het verhaal van Mozes en de bevrijding.\n\n**Voorbeeld 2: Daniël**\n\n**Wereld achter de tekst:**\n\nJe kijkt naar de Hellenistische periode, vooral de druk op Joden onder Antiochus IV Epiphanes en de spanning rond hellenisering.\n\n**Wereld in de tekst:**\n\nJe kijkt naar Daniël aan het hof, dromen, visioenen, koningen, beesten en de boodschap dat God uiteindelijk sterker is dan aardse rijken.\n\n**Kort:** Achter de tekst = Joodse onderdrukking in de Hellenistische tijd. In de tekst = Daniël, visioenen en Gods koningschap.\n\n**Voorbeeld 3: 1 en 2 Koningen**\n\n**Wereld achter de tekst:**\n\nJe onderzoekt de historische situatie van Israël en Juda, de Assyrische dreiging, de Babylonische verovering en de ballingschap.\n\n**Wereld in de tekst:**\n\nJe kijkt naar hoe de boeken het verhaal vertellen: goede en slechte koningen, afval van God, profeten zoals Elia en Elisa, en uiteindelijk de val van Israël en Juda.\n\n**Kort:** Achter de tekst = Assyrië, Babylon en politieke geschiedenis. In de tekst = koningen, profeten en trouw/ontrouw aan God.\n\n**Voorbeeld 4: Genesis**\n\n**Wereld achter de tekst:**\n\nJe kijkt naar oude tradities uit het Nabije Oosten, mondelinge overlevering en de wereld van familiegroepen, migratie en stammen.\n\n**Wereld in de tekst:**\n\nJe kijkt naar Adam en Eva, Noach, Abraham, Sara, Isaak, Jakob, Jozef en de thema’s schepping, verbond, belofte en familie.\n\n**Kort:** Achter de tekst = oude Nabije Oosten en overlevering. In de tekst = de verhalen van schepping, aartsvaders en Gods belofte."
+        }
+      ]
+    },
+    "ot-hs2-deuterocanoniek": {
+      "title": "Deuterocanonieke boeken",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "deuterocanoniek-alle",
+          "prompt": "**Noem alle deuterocanonieke boeken**",
+          "answer": "**1. Historische boeken**\n\n**Tobit** en **Judith**\n\n**1 en 2 Makkabeeën**\n\n**1 Esdras** (alleen orthodox)\n\n**3 Makkabeeën** (alleen orthodox)\n\n**2. Wijsheidsliteratuur en poëzie**\n\n**Wijsheid van Salomo** en **Jezus Sirach** (Ecclesiasticus)\n\n**Psalm 151** (alleen orthodox)\n\n**Gebed van Manasse** (alleen orthodox)\n\n**3. Profeten (en toevoegingen)**\n\n**Baruch** en de **Brief van Jeremia**\n\n**Toevoegingen aan Esther**\n\n**Toevoegingen aan Daniël** (Susanna, Bel en de Draak)"
         }
       ]
     },
