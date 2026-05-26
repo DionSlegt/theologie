@@ -133,7 +133,7 @@
   },
   {
     "term": "Hermeneutiek",
-    "definition": "De studie van hoe we de Bijbel correct interpreteren.",
+    "definition": "Hermeneutiek is de theorie en methode van interpretatie, vooral gericht op het begrijpen en uitleggen van Bijbelteksten binnen hun oorspronkelijke én hedendaagse context.",
     "chapter": "Hoofdstuk 2",
     "sourcePage": 43
   },
@@ -336,7 +336,7 @@
     "sourcePage": 102
   },
   {
-    "term": "Imago Dei - Welke 3 visies zijn er over de Imago Dei?",
+    "term": "Wat is 'Imago Dei'?",
     "definition": "In Latijn: evenbeeld van God. De leer dat wij naar Gods evenbeeld geschapen zijn.",
     "chapter": "Hoofdstuk 5",
     "subgroup": "Imago Dei",
@@ -689,5 +689,95 @@
     "definition": "Doop en avondmaal zijn gehoorzame handelingen die Christus heeft ingesteld, maar ze zijn geen middelen van genade op zichzelf.",
     "chapter": "Hoofdstuk 9",
     "sourcePage": 209
+  },
+  {
+    "term": "Eschatologie",
+    "definition": "De christelijke leer over de toekomst die God belooft, vooral rond opstanding, wederkomst van Christus, oordeel, nieuw leven en nieuwe schepping.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Eschatologische spanning",
+    "definition": "De spanning tussen wat door Jezus al werkelijkheid is geworden, en wat nog niet volledig voltooid is. Het ‘nu al’ en het ‘nog niet’.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Wat is het verschil tussen eschatologische ‘nu al’ en ‘nog niet’",
+    "definition": "Eschatologische spanning betekent dat Gods toekomst al begonnen is door de opstanding van Jezus, maar nog niet volledig is voltooid. Christenen leven daarom tussen het “nu al” van Christus’ overwinning en het “nog niet” van de volledige vernieuwing van de schepping.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Overgerealiseerde eschatologie",
+    "definition": "Overgerealiseerde eschatologie betekent dat iemand doet alsof Gods toekomstige beloften nu al volledig werkelijkheid zijn, terwijl de Bijbel juist spreekt over de spanning tussen nu al en nog niet.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Premillennialisme",
+    "definition": "De visie dat Christus vóór het millennium (duizendjarig vrederijk) terugkomt. Vaak verwacht deze visie dat de wereld slechter wordt richting de wederkomst.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Postmillennialisme",
+    "definition": "De visie dat Christus ná het millennium (duizendjarig vrederijk) terugkomt. Deze visie is vaak optimistischer en verwacht dat de wereld door het evangelie steeds meer onder Christus’ heerschappij komt.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Amillennialisme",
+    "definition": "De visie dat het millennium (duizendjarig vrederijk) niet letterlijk als toekomstige periode van duizend jaar moet worden gelezen, maar symbolisch verwijst naar Christus’ koningschap dat nu al begonnen is en nog niet volledig voltooid is.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Eschatologisch voorbehoud",
+    "definition": "Eschatologisch voorbehoud betekent dat Gods toekomst in Christus al begonnen is, maar dat de volledige verlossing en vernieuwing nog verwacht worden.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Parousia",
+    "definition": "Betekent de 2e wederkomst van Christus: het moment waarop Jezus terugkomt en Gods Koninkrijk volledig zichtbaar en voltooid wordt.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Opstanding",
+    "definition": "Het geloof dat Jezus lichamelijk uit de dood is opgewekt en dat God nieuw leven geeft aan de hele mens.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Algemene opstanding",
+    "definition": "De toekomstige opstanding van de doden bij Christus’ wederkomst.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Staat tussen dood en opstanding",
+    "definition": "De toestand tussen het sterven van een mens en de toekomstige lichamelijke opstanding bij Christus’ wederkomst.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Zieleslaap",
+    "definition": "Betekent de opvatting dat de ziel na de dood niet bewust verder leeft, maar als het ware “slaapt” tot de opstanding.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Hel",
+    "definition": "De toestand van definitieve scheiding van God en oordeel over het kwaad.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Universalisme",
+    "definition": "De opvatting dat uiteindelijk alle mensen gered zullen worden.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Evangelisatie na de dood",
+    "definition": "De opvatting dat mensen na hun sterven nog een kans krijgen om op Christus te reageren.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Annihilationisme / vernietigingsleer",
+    "definition": "De opvatting dat wie uiteindelijk van God gescheiden blijft, niet eeuwig bewust lijdt, maar uiteindelijk ophoudt te bestaan.",
+    "chapter": "Hoofdstuk 10"
+  },
+  {
+    "term": "Vagevuur",
+    "definition": "De opvatting dat gelovigen na de dood nog een proces van reiniging of zuivering doormaken voordat zij volledig bij God zijn.",
+    "chapter": "Hoofdstuk 10"
   }
 ]
