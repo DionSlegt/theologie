@@ -110,6 +110,18 @@
     return out;
   }
 
+  function dedupeCardsByTerm(cards) {
+    const seen = new Set();
+    const out = [];
+    for (const c of cards) {
+      const k = normalize(c.term);
+      if (seen.has(k)) continue;
+      seen.add(k);
+      out.push(c);
+    }
+    return out;
+  }
+
   function randomBool() {
     return Math.random() < 0.5;
   }
@@ -162,17 +174,83 @@
     return shuffle([correct, ...pick]).map((text) => ({ text, correct: text === correct }));
   }
 
+  function chapterSortRank(ch) {
+    const n = normalize(ch);
+    if (n === "inleiding") return [0, 0];
+    if (n === "overig") return [9_999, 0];
+    const m = ch.match(/hoofdstuk\s+(\d+)/i);
+    if (m) return [Number(m[1]), 0];
+    return [5_000, ch];
+  }
+
   function chaptersFromCards(cards) {
     const arr = [...new Set(cards.map((c) => c.chapter))];
-    const introIdx = arr.findIndex((c) => normalize(c) === "inleiding");
-    let first = [];
-    let rest = arr;
-    if (introIdx >= 0) {
-      first = [arr[introIdx]];
-      rest = arr.filter((_, i) => i !== introIdx);
+    arr.sort((a, b) => {
+      const ra = chapterSortRank(a);
+      const rb = chapterSortRank(b);
+      if (ra[0] !== rb[0]) return ra[0] - rb[0];
+      if (ra[1] !== rb[1]) return String(ra[1]).localeCompare(String(rb[1]), "nl");
+      return a.localeCompare(b, "nl");
+    });
+    return arr;
+  }
+
+  /** Nieuwe termen uit terms.json toevoegen (zoals in de iOS-app). */
+  function mergeBundledTerms(storedCards, bundledRows) {
+    const seen = new Set(storedCards.map((c) => normalize(c.term)));
+    const out = [...storedCards];
+    for (const row of bundledRows) {
+      const term = String(row.term || "").trim();
+      const definition = String(row.definition || "").trim();
+      if (!term || !definition) continue;
+      const key = normalize(term);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(
+        ...cardsFromJsonRows(
+          [
+            {
+              term,
+              definition,
+              chapter: row.chapter,
+              subgroup: row.subgroup,
+              contextNote: row.contextNote,
+              sourcePage: row.sourcePage,
+            },
+          ],
+          false
+        )
+      );
     }
-    rest.sort((a, b) => a.localeCompare(b, "nl"));
-    return [...first, ...rest];
+    return out;
+  }
+
+  /** Definities en hoofdstukken bijwerken voor bestaande termen uit de bundel. */
+  function applyBundledUpdates(storedCards, bundledRows) {
+    const byTerm = new Map(bundledRows.map((r) => [normalize(r.term), r]));
+    const renames = new Map([
+      [normalize("Imago Dei"), "Wat is 'Imago Dei'?"],
+      [
+        normalize("Imago Dei - Welke 3 visies zijn er over de Imago Dei?"),
+        "Wat is 'Imago Dei'?",
+      ],
+    ]);
+    for (const card of storedCards) {
+      const nk = normalize(card.term);
+      if (renames.has(nk)) {
+        card.term = renames.get(nk);
+      }
+      const row = byTerm.get(normalize(card.term));
+      if (!row) continue;
+      if (row.definition) card.definition = String(row.definition).trim();
+      if (row.chapter) card.chapter = String(row.chapter).trim();
+      if (row.subgroup != null) card.subgroup = String(row.subgroup).trim();
+      if (row.contextNote != null) card.contextNote = String(row.contextNote).trim();
+      if (row.sourcePage != null) {
+        const n = Number(row.sourcePage);
+        card.sourcePage = Number.isFinite(n) && n > 0 ? n : null;
+      }
+    }
   }
 
   function renderChapterList() {
@@ -1032,10 +1110,19 @@
       } catch (_) {
         fromStorage = null;
       }
-      allCards = cardsFromJsonRows(
+      let cards = cardsFromJsonRows(
         fromStorage && fromStorage.length ? fromStorage : raw,
         !!fromStorage
       );
+      if (fromStorage && fromStorage.length) {
+        applyBundledUpdates(cards, raw);
+        cards = mergeBundledTerms(cards, raw);
+        cards = dedupeCardsByTerm(cards);
+        allCards = cards;
+        persistLibrary();
+      } else {
+        allCards = cards;
+      }
       renderChapterList();
       fillChapterSuggestions();
       updateStartEnabled();
