@@ -294,8 +294,10 @@
     $("#reveal-progress").textContent = `Vraag ${session.index + 1} van ${session.items.length}`;
     $("#reveal-prompt-label").textContent =
       item.kind === "info" ? "Lees" : "Vraag";
-    const persoonMd =
-      session.packId === "ot-personen" ? { eersteBlokIsNaam: true } : {};
+    const naamPacks = new Set(["ot-personen", "nt-stromingen"]);
+    const persoonMd = naamPacks.has(session.packId)
+      ? { eersteBlokIsNaam: true }
+      : {};
     $("#reveal-prompt").innerHTML = renderMarkdown(item.prompt, persoonMd);
     $("#reveal-answer").innerHTML = renderMarkdown(item.answer);
     $("#reveal-answer-wrap").classList.add("hidden");

@@ -842,7 +842,7 @@
     },
     "nt-begrippen-hs12": {
       "title": "Begrippen (hs 1–2)",
-      "shuffle": true,
+      "shuffle": false,
       "items": [
         {
           "id": "ptolemeeen",
@@ -871,182 +871,182 @@
         },
         {
           "id": "lex-0",
-          "prompt": "**phylactery (tefillin)**",
+          "prompt": "**tefillin**",
           "answer": "Een klein doosje met bijbelteksten dat door vrome Joden op het voorhoofd of de linkerarm wordt gedragen, als gehoorzaamheid aan o.a. Exodus 13 en Deuteronomium 6."
         },
         {
           "id": "lex-1",
-          "prompt": "**casting lots (loten werpen)**",
+          "prompt": "**loten werpen**",
           "answer": "Een manier om een keuze te maken (zoals loten trekken), waarbij stenen of voorwerpen werden gebruikt om iemand te selecteren voor een taak."
         },
         {
           "id": "lex-2",
-          "prompt": "**BCE (Before Common Era)**",
+          "prompt": "**vóór de gewone jaartelling**",
           "answer": "Afkorting voor ‘voor de gewone jaartelling’; wordt in de wetenschap gebruikt in plaats van ‘v.Chr.’"
         },
         {
           "id": "lex-3",
-          "prompt": "**CE (Common Era)**",
+          "prompt": "**gewone jaartelling**",
           "answer": "Afkorting voor ‘gewone jaartelling’; wordt in de wetenschap gebruikt in plaats van ‘n.Chr.’"
         },
         {
           "id": "lex-4",
-          "prompt": "**magi (magiërs / wijzen)**",
+          "prompt": "**magiërs / wijzen**",
           "answer": "Astrologen of magiërs die verbonden waren met de Perzische religie."
         },
         {
           "id": "lex-5",
-          "prompt": "**tetrarch (tetrarch)**",
+          "prompt": "**tetrarch**",
           "answer": "Heerser over een kwart van een gebied of provincie."
         },
         {
           "id": "lex-6",
-          "prompt": "**prefect (prefect)**",
+          "prompt": "**prefect**",
           "answer": "Hoge Romeinse bestuurder of ambtenaar met verschillende taken en bevoegdheden."
         },
         {
           "id": "lex-7",
-          "prompt": "**procurator (procurator)**",
+          "prompt": "**procurator**",
           "answer": "Door de Romeinse keizer aangestelde gouverneur die een provincie bestuurde."
         },
         {
           "id": "lex-8",
-          "prompt": "**Essenes (Essenen)**",
+          "prompt": "**Essenen**",
           "answer": "Streng levende, afgescheiden Joden die in gesloten gemeenschappen leefden."
         },
         {
           "id": "lex-9",
-          "prompt": "**Dead Sea Scrolls (Dode Zeerollen)**",
+          "prompt": "**Dode Zeerollen**",
           "answer": "Verzameling Joodse teksten, gekopieerd en bewaard tussen ca. 250 v.Chr. en 70 n.Chr."
         },
         {
           "id": "lex-10",
-          "prompt": "**diatribe (diatribe)**",
+          "prompt": "**diatribe**",
           "answer": "Retorische stijl waarbij een schrijver discussieert met een denkbeeldige tegenstander door bezwaren te geven en daarop te reageren."
         },
         {
           "id": "lex-11",
-          "prompt": "**pagans (heidenen)**",
+          "prompt": "**heidenen**",
           "answer": "Niet-bekeerde niet-Joden, vaak geassocieerd met afgoderij, polytheïsme en andere religieuze praktijken."
         },
         {
           "id": "lex-12",
-          "prompt": "**fertility (vruchtbaarheid)**",
+          "prompt": "**vruchtbaarheid**",
           "answer": "Het vermogen om nakomelingen voort te brengen (bij mensen) of gewassen te laten groeien (bij land)."
         },
         {
           "id": "lex-13",
-          "prompt": "**eucharistic meal / Eucharist (eucharistie)**",
+          "prompt": "**eucharistie**",
           "answer": "Christelijke rite/maaltijd (Heilig Avondmaal), afkomstig van een Grieks woord voor ‘dankzegging’."
         },
         {
           "id": "lex-14",
-          "prompt": "**divination (waarzeggerij)**",
+          "prompt": "**waarzeggerij**",
           "answer": "Praktijken om de wil van goddelijke machten te achterhalen of de toekomst te voorspellen."
         },
         {
           "id": "lex-15",
-          "prompt": "**oracle (orakel)**",
+          "prompt": "**orakel**",
           "answer": "Persoon (vaak vrouwelijk) die boodschappen van goden ontvangt en doorgeeft, vaak als antwoord op vragen over de toekomst."
         },
         {
           "id": "lex-16",
-          "prompt": "**heresy (ketterij)**",
+          "prompt": "**ketterij**",
           "answer": "Onjuiste leer, of leer die niet overeenkomt met de officiële normen van een religieuze gemeenschap."
         },
         {
           "id": "lex-17",
-          "prompt": "**dualistic (dualistisch)**",
+          "prompt": "**dualistisch**",
           "answer": "De neiging hebben om dingen op te delen in twee sterk tegenovergestelde categorieën."
         },
         {
           "id": "lex-18",
-          "prompt": "**ascetic (ascetisch)**",
+          "prompt": "**ascetisch**",
           "answer": "Streng religieus levend, met nadruk op zelfonthouding en het afzien van wereldse genoegens."
         },
         {
           "id": "lex-19",
-          "prompt": "**patron-client relationship (patroon-cliëntrelatie)**",
+          "prompt": "**patroon-cliëntrelatie**",
           "answer": "Sociaal systeem waarin machtige personen (patrons) bescherming en hulp bieden aan minder machtigen (cliënten), in ruil voor loyaliteit."
         },
         {
           "id": "lex-20",
-          "prompt": "**liberation theology (bevrijdingstheologie)**",
+          "prompt": "**bevrijdingstheologie**",
           "answer": "Theologische stroming (vooral uit 20e-eeuws Latijns-Amerika) die zich richt op bevrijding van onderdrukking."
         },
         {
           "id": "lex-21",
-          "prompt": "**Hellenistic (hellenistisch)**",
+          "prompt": "**hellenistisch**",
           "answer": "Beïnvloed door de Griekse cultuur, ideeën en manier van denken."
         },
         {
           "id": "lex-22",
-          "prompt": "**Hanukkah (Chanoeka)**",
+          "prompt": "**Chanoeka**",
           "answer": "Joods feest van 8 dagen dat de herinwijding van de tempel in 164 v.Chr. herdenkt."
         },
         {
           "id": "lex-23",
-          "prompt": "**Torah (Thora)**",
+          "prompt": "**Thora**",
           "answer": "De wet van Mozes, zoals beschreven in de eerste vijf boeken van de Bijbel."
         },
         {
           "id": "lex-24",
-          "prompt": "**Mishnah (Misjna)**",
+          "prompt": "**Misjna**",
           "answer": "Verzameling van rabbijnse discussies over de interpretatie van de wet van Mozes."
         },
         {
           "id": "lex-25",
-          "prompt": "**Talmud (Talmoed)**",
+          "prompt": "**Talmoed**",
           "answer": "Uitgebreide verzameling Joodse wetten en interpretaties (incl. de Misjna)."
         },
         {
           "id": "lex-26",
-          "prompt": "**the law (de wet)**",
+          "prompt": "**de wet**",
           "answer": "De wet van Mozes en alle regels die trouw aan het verbond met God bepalen."
         },
         {
           "id": "lex-27",
-          "prompt": "**priests (priesters)**",
+          "prompt": "**priesters**",
           "answer": "Mensen die verantwoordelijk waren voor offers en tempeldienst in Jeruzalem."
         },
         {
           "id": "lex-28",
-          "prompt": "**scribes (schriftgeleerden)**",
+          "prompt": "**schriftgeleerden**",
           "answer": "Joodse experts in het onderwijzen, kopiëren en uitleggen van de wet."
         },
         {
           "id": "lex-29",
-          "prompt": "**rabbis (rabbijnen)**",
+          "prompt": "**rabbijnen**",
           "answer": "Joodse leraren, vaak met leerlingen of volgelingen."
         },
         {
           "id": "lex-30",
-          "prompt": "**apocalyptic ideas (apocalyptische ideeën)**",
+          "prompt": "**apocalyptische ideeën**",
           "answer": "Geloof dat de wereld slecht eindigt, maar dat een kleine groep gered zal worden."
         },
         {
           "id": "lex-31",
-          "prompt": "**gentiles (heidenen)**",
+          "prompt": "**heidenen**",
           "answer": "Mensen die geen Jood zijn."
         },
         {
           "id": "lex-32",
-          "prompt": "**God-fearers (godvrezenden)**",
+          "prompt": "**godvrezenden**",
           "answer": "Niet-Joden die sympathie hebben voor het Joodse geloof en levensstijl."
         },
         {
           "id": "lex-33",
-          "prompt": "**pagan (heidens)**",
+          "prompt": "**heidens**",
           "answer": "Niet-Joodse/Grieks-Romeinse religie, vaak gezien als moreel en religieus onzuiver."
         },
         {
           "id": "lex-34",
-          "prompt": "**syncretism (syncretisme)**",
+          "prompt": "**syncretisme**",
           "answer": "Het vermengen van verschillende religies of overtuigingen."
         },
         {
           "id": "lex-35",
-          "prompt": "**purity codes (reinheidswetten)**",
+          "prompt": "**reinheidswetten**",
           "answer": "Regels uit de Thora die bepalen wat ‘rein’ of ‘onrein’ is."
         }
       ]
@@ -1068,7 +1068,7 @@
         {
           "id": "p3-canon",
           "prompt": "**canon (canon)**",
-          "answer": "Letterlijk «maatstaf» of «norm»; een officiële lijst van boeken die als gezaghebbende Schrift worden erkend."
+          "answer": "Letterlijk “maatstaf” of “norm”; een officiële lijst van boeken die als gezaghebbende Schrift worden erkend."
         },
         {
           "id": "p3-catholic-letters",
@@ -1078,7 +1078,7 @@
         {
           "id": "p3-apostle",
           "prompt": "**apostle (apostel)**",
-          "answer": "Iemand die «gezonden» is; leider onder de eerste volgelingen van Jezus, vooral de twaalf discipelen en Paulus."
+          "answer": "Iemand die “gezonden” is; leider onder de eerste volgelingen van Jezus, vooral de twaalf discipelen en Paulus."
         },
         {
           "id": "p3-covenant",
@@ -1109,7 +1109,7 @@
         {
           "id": "open-alle-personen",
           "prompt": "Noem zoveel mogelijk belangrijke personen met betrekking tot het NT:",
-          "answer": "- **Alexander de Grote**\n- **Antiochus IV Epiphanes**\n- **Judas de Makkabeër**\n- **Pontius Pilatus**\n- **Herodes de Grote**\n- **Herodes Antipas**\n- **Herodes Agrippa I**\n- **Herodes Agrippa II**\n\n**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
         },
         {
           "id": "twee-griekse-heersers",
@@ -1134,7 +1134,7 @@
         {
           "id": "alle-namen-achter-elkaar",
           "prompt": "Noem ze nu allemaal achter elkaar op.",
-          "answer": "- **Alexander de Grote**\n- **Antiochus IV Epiphanes**\n- **Judas de Makkabeër**\n- **Pontius Pilatus**\n- **Herodes de Grote**\n- **Herodes Antipas**\n- **Herodes Agrippa I**\n- **Herodes Agrippa II**\n\n**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
         }
       ]
     },
@@ -1143,49 +1143,39 @@
       "shuffle": false,
       "items": [
         {
-          "id": "intro-typering",
-          "prompt": "Tijdens de periode van het Nieuwe Testament was de Joodse bevolking in Palestina zeer divers. Geef een typering van de 8 belangrijkste religieuze en sociale stromingen:\n\n(Bedenk de stromingen; ze zullen hierna in beeld komen.)",
-          "answer": "Noteer voor jezelf welke acht je kunt bedenken. Hierna volgt **elke stroming afzonderlijk** met een korte typering."
+          "id": "nt-stroming-farizeeen",
+          "prompt": "**Farizeeën**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Streefden naar een heilig leven door navolging van de Thora.\n- Kenden gezag toe aan de mondelinge wet als aanvulling op de geschreven wet.\n- Geloofden in de opstanding van de doden, engelen en demonen en in de komst van een Messias.\n- Vonden dat het hele volk de reinheidswetten van de priester diende te houden: elk huis = tempel, elke tafel = altaar.\n\n**Culturele context**\n\n- Vrome leken en schriftgeleerden uit de middenklasse.\n- Drijvende kracht achter de lokale synagoges, waar zij onderwezen in de Thora.\n- Hun machtsbasis lag buiten Jeruzalem.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- In de evangeliën staan zij vaak tegenover Jezus, vooral in discussies over de juiste uitleg / interpretatie van de wet.\n- Jezus en de Farizeeën hadden ook theologische overeenkomsten, wat debat mogelijk maakte; Paulus was bijvoorbeeld een Farizeeër."
         },
         {
-          "id": "farizeeen",
-          "prompt": "**Farizeeën**",
-          "answer": "Zij waren vooral vrome leken en leraren die de nadruk legden op strikte trouw aan de Thora en de “overlevering van de oudsten”. Ze waren de drijvende kracht achter de synagoges en geloofden, in tegenstelling tot de sadduceeën, wel in de opstanding uit de dood en het bestaan van engelen."
+          "id": "nt-stroming-sadduceeen",
+          "prompt": "**Sadduceeën**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Theologisch conservatief: accepteerden alleen de Pentateuch als gezaghebbende Schrift.\n- Verwierpen de opstanding, het laatste oordeel, engelen en geestelijke machten.\n- Religieuze focus lag volledig op het offerstelsel en de ceremoniële cultus in de tempel.\n\n**Culturele context**\n\n- Rijke, priesterlijke elite van Jeruzalem.\n- Hadden veel invloed in het Sanhedrin, de Joodse hoge raad.\n- Werkten politiek samen met de Romeinse bezetter om hun positie en de tempelorde te behouden.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Zagen Jezus als bedreiging, omdat zijn optreden onrust rond de tempel en Rome kon veroorzaken.\n- Waren betrokken bij het verzet tegen Jezus en later ook tegen de apostelen.\n- Na de verwoesting van de tempel in 70 n.Chr. verdwenen zij als groep uit de geschiedenis."
         },
         {
-          "id": "sadduceeen",
-          "prompt": "**Sadduceeën**",
-          "answer": "Deze priesterlijke elite was gecentreerd rond de tempel in Jeruzalem en domineerde de Sanhedrin. Ze waren theologisch conservatief: ze accepteerden alleen de Pentateuch (de eerste vijf boeken van de Bijbel) als gezaghebbend en verwierpen het geloof in een opstanding."
+          "id": "nt-stroming-essenen",
+          "prompt": "**Essenen**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Ascetische afscheidingsbeweging die de tempelcultus in Jeruzalem als corrupt en onrein zag.\n- Hielden zich aan strenge reinheidswetten, rituele baden en gezamenlijke maaltijden.\n- Zagen zichzelf als de “kinderen van het licht” en verwachtten een eindstrijd tussen goed en kwaad.\n\n**Culturele context**\n\n- Leefden vaak in afgezonderde, kloosterachtige gemeenschappen in de woestijn.\n- Hielden zich verre van de mainstream samenleving en wijdden zich aan arbeid en de bestudering van de Schriften.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Worden niet direct genoemd in het Nieuwe Testament.\n- Er zijn wel parallellen met Johannes de Doper, zoals bekering, doop en leven in de woestijn.\n- Ook lijken sommige praktijken op die van de vroege christelijke gemeenschap, zoals eenvoud, gezamenlijke maaltijden en sterk gemeenschapsleven."
         },
         {
-          "id": "essenen",
-          "prompt": "**Essenen**",
-          "answer": "Een ascetische groep die zich vaak terugtrok in afgezonderde gemeenschappen, zoals bij Qumran (bekend van de Dode Zee-rollen). Ze hanteerden strikte reinheidswetten en hadden een sterk apocalyptisch wereldbeeld."
+          "id": "nt-stroming-samaritanen",
+          "prompt": "**Samaritanen**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Zagen zichzelf als afstammelingen van het noordelijke rijk Israël.\n- Accepteerden alleen hun eigen versie van de Pentateuch en verwierpen de overige Joodse geschriften.\n- Geloofden dat de berg Gerizim, en niet de tempel in Jeruzalem, de ware plaats van aanbidding was.\n\n**Culturele context**\n\n- Woonden in Samaria, tussen Judea en Galilea.\n- Joden zagen hen vaak als religieuze afvalligen of ketters, waardoor er een diepe vijandschap tussen Joden en Samaritanen bestond en religieus contact strikt verboden was.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Jezus doorbrak de sociale en religieuze grens door openlijk met Samaritanen om te gaan.\n- Voorbeelden hiervan zijn de Samaritaanse vrouw bij de bron en de gelijkenis van de barmhartige Samaritaan.\n- Na de opstanding werd Samaria een van de eerste gebieden waar het evangelie zich buiten Judea verspreidde."
         },
         {
-          "id": "zealoten",
-          "prompt": "**Zealoten**",
-          "answer": "Deze radicale Joden streefden naar gewapend verzet tegen de Romeinse overheersing om de onafhankelijkheid van Israël te herstellen. Hun acties droegen uiteindelijk bij aan de Joodse oorlog van 66–73 n.Chr."
+          "id": "nt-stroming-opkomende-gnostiek",
+          "prompt": "**Opkomende gnostiek**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Gnostiek ging uit van een sterk dualisme: de geestelijke wereld was goed, de materiële wereld slecht.\n- De mens had volgens deze gedachte een goddelijke vonk die gevangen zat in het lichaam.\n- Verlossing kwam door geheime goddelijke kennis, *gnosis*, die de mens bevrijdde.\n- Zij geloofden vaak dat de materiële wereld was geschapen door een lagere, dwalende godheid, de Demiurg.\n\n**Culturele context**\n\n- De gnostiek kwam als volledige beweging vooral in de tweede eeuw n.Chr. tot bloei.\n- In de eerste eeuw waren er al vroege, “proto-gnostische” ideeën aanwezig in de Grieks-Romeinse wereld.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Gnostici zagen Jezus vaak vooral als geestelijke brenger van kennis.\n- Zij ontkenden of verzwakten vaak dat Jezus werkelijk mens van vlees en bloed was.\n- Sommige nieuwtestamentische geschriften, zoals de brieven van Johannes, lijken te waarschuwen tegen zulke vroege ideeën."
         },
         {
-          "id": "samaritanen",
-          "prompt": "**Samaritanen**",
-          "answer": "Zij woonden tussen Judea en Galilea en claimden dat zij het “ware Israël” waren. Ze hadden hun eigen tempel op de berg Gerizim en accepteerden alleen hun eigen versie van de Pentateuch, wat leidde tot diepe vijandigheid met de Joden."
+          "id": "nt-stroming-polytheisme-grieks-romeins",
+          "prompt": "**Polytheïsme van de traditionele Grieks-Romeinse godsdienst**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- De Grieks-Romeinse godsdienst kende veel goden, zoals Zeus, Apollo, Aphrodite en Artemis, die verschillende aspecten van het leven beheersten.\n- Religie draaide vooral om orthopraxis (juist handelen) door rituelen, offers en publieke eerbied, minder om persoonlijke geloofsovertuiging.\n- Keizerverering werd hieraan toegevoegd als een uiting van loyaliteit en patriottisme aan de staat.\n\n**Culturele context**\n\n- De godsdienst was overal aanwezig in de publieke ruimte door tempels, festivals en rituelen.\n- Het was diep verweven met de sociale en politieke structuren van het Romeinse Rijk.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Christenen weigerden andere goden en de keizer als god te vereren.\n- Daardoor werden zij soms gezien als atheïsten, omdat zij de traditionele goden afwezen.\n- Hun exclusieve geloof in één God botste met de religieuze en politieke verwachtingen van de Grieks-Romeinse samenleving."
         },
         {
-          "id": "heidenen-godvrezenden",
-          "prompt": "**Heidenen (en Godvrezenden)**",
-          "answer": "Naast de traditionele Grieks-Romeinse religies waren er “Godvrezenden”: niet-Joden die zich aangetrokken voelden tot de Joodse ethiek en monotheïsme, maar zich niet volledig bekeerden (bijvoorbeeld door de besnijdenis te weigeren)."
-        },
-        {
-          "id": "gnostiek",
-          "prompt": "**Gnostiek (opkomend)**",
-          "answer": "Deze stroming hing een radicaal dualisme aan, waarbij de geest als goed en de materie als slecht werd gezien. Verlossing was volgens hen alleen mogelijk door geheime kennis (gnosis)."
-        },
-        {
-          "id": "alle-stromingen-achter-elkaar",
-          "prompt": "Noem de acht stromingen nu allemaal achter elkaar op.",
-          "answer": "**Farizeeën**, **Sadduceeën**, **Essenen**, **Zealoten**, **Samaritanen**, **Heidenen (en Godvrezenden)**, **Gnostiek**, **Grieks-Romeins polytheïsme en mysteriegodsdiensten**"
+          "id": "nt-stroming-mysteriegodsdiensten",
+          "prompt": "**Mysteriegodsdiensten**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
+          "answer": "**Belangrijkste overtuigingen**\n\n- Meer persoonlijke vorm van religie dan de publieke staatsgodsdienst.\n- Zij waren georganiseerd rond geheime mythen van godheden zoals Isis, Mithras of Dionysus.\n- Via geheime inwijdingsriten en ceremonies zocht de gelovige verbondenheid met een godheid, vaak met de belofte van bescherming en een gezegend leven na de dood.\n\n**Culturele context**\n\n- Deze cultussen waren wijdverspreid.\n- Boden mensen in de anonimiteit van het Romeinse Rijk een gevoel van identiteit en behoren bij een besloten groep.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Sommige Romeinen zagen het vroege christendom als een nieuwe mysteriegodsdienst vanwege de eigen inwijdingsrituelen (doop) en geheime maaltijden (eucharistie).\n- Vroege berichten over de christelijke eredienst bevatten beschuldigingen van orgieën en kannibalisme, waarschijnlijk omdat christenen hun eucharistische maaltijd een “liefdesmaaltijd” noemden en spraken over “het lichaam van Christus eten”."
         }
       ]
     },
@@ -1196,7 +1186,7 @@
         {
           "id": "nt-opbouw-intro",
           "prompt": "De opbouw van het Nieuwe Testament bestaat uit een verzameling van 27 boeken die door vrijwel alle christelijke denominaties wereldwijd als gezaghebbend worden erkend. Hoewel deze boeken gezamenlijk het Nieuwe Verbond vormen, staan ze niet in chronologische volgorde van schrijven.\n\nHet Nieuwe Testament wordt gebruikelijk onderverdeeld in zeven categorieën. Welke zijn dat?",
-          "answer": "De zeven categorieën lees je in de volgende stappen, telkens met de **naam** eerst en daarna de **uitleg** (na «Laat antwoord zien»).\n\nGeef na elke uitleg aan of je dit al wist (**Goed** / **Fout**)."
+          "answer": "De 4 Evangeliën (verhalen over het leven en de leer van Jezus)\n\nHet boek Handelingen (de vroege geschiedenis van de kerk)\n\nBrieven van Paulus aan gemeenten\n\nBrieven van Paulus aan individuen (vaak de pastorale brieven genoemd)\n\nDe brief aan de Hebreeën\n\nDe algemene of katholieke brieven (zoals Jakobus, Petrus en Johannes)\n\nHet boek Openbaring"
         },
         {
           "id": "nt-opbouw-cat-1",
@@ -1211,7 +1201,7 @@
         {
           "id": "nt-opbouw-cat-3",
           "prompt": "**3. Brieven van Paulus aan gemeenten**",
-          "answer": "Negen brieven zijn geschreven door de missionaris Paulus en zijn gericht aan specifieke christelijke gemeenschappen. De titels verwijzen naar geografische locaties (bijvoorbeeld de gemeente in Efeze, vandaar de naam «Efeziërs»). In het Nieuwe Testament staan ze gerangschikt op lengte, van het langste boek tot het kortste:\n\n**Romeinen**\n\n**1 en 2 Korintiërs**\n\n**Galaten**\n\n**Efeziërs**\n\n**Filippenzen**\n\n**Kolossenzen**\n\n**1 en 2 Tessalonicenzen**"
+          "answer": "Negen brieven zijn geschreven door de missionaris Paulus en zijn gericht aan specifieke christelijke gemeenschappen. De titels verwijzen naar geografische locaties (bijvoorbeeld de gemeente in Efeze, vandaar de naam “Efeziërs”). In het Nieuwe Testament staan ze gerangschikt op lengte, van het langste boek tot het kortste:\n\n**Romeinen**\n\n**1 en 2 Korintiërs**\n\n**Galaten**\n\n**Efeziërs**\n\n**Filippenzen**\n\n**Kolossenzen**\n\n**1 en 2 Tessalonicenzen**"
         },
         {
           "id": "nt-opbouw-cat-4",
@@ -1221,12 +1211,12 @@
         {
           "id": "nt-opbouw-cat-5",
           "prompt": "**5. De brief aan de Hebreeën**",
-          "answer": "Dit is een anoniem geschrift dat in een eigen categorie valt. De auteur is onbekend; traditioneel spreekt men van «de brief aan de Hebreeën» omdat het oorspronkelijk waarschijnlijk voor Joodse christenen is geschreven."
+          "answer": "Dit is een anoniem geschrift dat in een eigen categorie valt. De auteur is onbekend; traditioneel spreekt men van “de brief aan de Hebreeën” omdat het oorspronkelijk waarschijnlijk voor Joodse christenen is geschreven."
         },
         {
           "id": "nt-opbouw-cat-6",
           "prompt": "**6. De algemene (of katholieke) brieven**",
-          "answer": "Deze zeven brieven zijn niet naar de ontvangers vernoemd (zoals bij Paulus), maar naar de personen die traditioneel als auteurs gelden. «Katholiek» betekent hier «universeel» of «algemeen»: ze waren voor een breder publiek bedoeld.\n\n**Jakobus**\n\n**1 en 2 Petrus**\n\n**1, 2 en 3 Johannes**\n\n**Judas**"
+          "answer": "Deze zeven brieven zijn niet naar de ontvangers vernoemd (zoals bij Paulus), maar naar de personen die traditioneel als auteurs gelden. “Katholiek” betekent hier “universeel” of “algemeen”: ze waren voor een breder publiek bedoeld.\n\n**Jakobus**\n\n**1 en 2 Petrus**\n\n**1, 2 en 3 Johannes**\n\n**Judas**"
         },
         {
           "id": "nt-opbouw-cat-7",
@@ -1243,19 +1233,19 @@
           "id": "nt-am-toets-pers-marcion",
           "kind": "quiz",
           "prompt": "**Marcion** (ca. 144 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
-          "answer": "Hij is een van de belangrijkste figuren voor de **versnelling** van dit proces. Marcion verwierp het Oude Testament en alles wat «Joods» was in het christendom. Hij stelde een **beperkte canon** samen: een bewerkte versie van het Evangelie van Lucas en tien brieven van Paulus. De kerk reageerde door juist de **breedte van de traditie** te bevestigen, inclusief de vier evangeliën en de Joodse wortels van het geloof."
+          "answer": "Hij is een van de belangrijkste figuren voor de **versnelling** van dit proces. Marcion verwierp het Oude Testament en alles wat “Joods” was in het christendom. Hij stelde een **beperkte canon** samen: een bewerkte versie van het Evangelie van Lucas en tien brieven van Paulus. De kerk reageerde door juist de **breedte van de traditie** te bevestigen, inclusief de vier evangeliën en de Joodse wortels van het geloof."
         },
         {
           "id": "nt-am-toets-pers-montanus",
           "kind": "quiz",
           "prompt": "**Montanus** (midden 2e eeuw)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
-          "answer": "Hij claimde dat de **Heilige Geest** via hem en zijn profetessen (**Priscilla** en **Maximilla**) nieuwe openbaringen gaf die even gezaghebbend waren als die van de apostelen. De kerk reageerde door te stellen dat de **«apostolische periode» normatief** was en dat latere openbaringen aan die standaard moesten worden getoetst."
+          "answer": "Hij claimde dat de **Heilige Geest** via hem en zijn profetessen (**Priscilla** en **Maximilla**) nieuwe openbaringen gaf die even gezaghebbend waren als die van de apostelen. De kerk reageerde door te stellen dat de **“apostolische periode” normatief** was en dat latere openbaringen aan die standaard moesten worden getoetst."
         },
         {
           "id": "nt-am-toets-pers-justin",
           "kind": "quiz",
           "prompt": "**Justin Martyr** (ca. 150 n.Chr.)\n\nWat kenmerkt deze persoon in het kader van de canonvorming?",
-          "answer": "Hij beschreef hoe de **«memoires van de apostelen»** (de evangeliën) in de eredienst op gelijke voet met de **profeten** werden gelezen. Dat toont dat canonisering **van onderaf in de liturgie** begon."
+          "answer": "Hij beschreef hoe de **“memoires van de apostelen”** (de evangeliën) in de eredienst op gelijke voet met de **profeten** werden gelezen. Dat toont dat canonisering **van onderaf in de liturgie** begon."
         },
         {
           "id": "nt-am-toets-pers-irenaeus",
@@ -1278,8 +1268,8 @@
         {
           "id": "nt-am-toets-theo-2",
           "kind": "quiz",
-          "prompt": "**2. De canon als «richtsnoer» (normativiteit)**",
-          "answer": "Het woord **canon** betekent «regel» of «richtsnoer». Theologisch betekent dit dat de canon de **norm** is voor christelijk leven en denken: een meetlat waaraan alles wat in de kerk wordt geleerd of geloofd, wordt getoetst. Zonder canon zou de boodschap van Jezus kunnen vervagen of vervormen door nieuwe ideeën (zoals de gnostiek in de tweede eeuw). De canon **bewaart de zuiverheid** van het geloof."
+          "prompt": "**2. De canon als “richtsnoer” (normativiteit)**",
+          "answer": "Het woord **canon** betekent “regel” of “richtsnoer”. Theologisch betekent dit dat de canon de **norm** is voor christelijk leven en denken: een meetlat waaraan alles wat in de kerk wordt geleerd of geloofd, wordt getoetst. Zonder canon zou de boodschap van Jezus kunnen vervagen of vervormen door nieuwe ideeën (zoals de gnostiek in de tweede eeuw). De canon **bewaart de zuiverheid** van het geloof."
         },
         {
           "id": "nt-am-toets-theo-3",
