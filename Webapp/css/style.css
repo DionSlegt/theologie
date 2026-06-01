@@ -166,6 +166,40 @@ body {
   font-size: 1rem;
 }
 
+.setup-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.setup-summary-label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+}
+
+.setup-summary-line {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#btn-toggle-settings[aria-expanded="true"]::after {
+  content: " ▴";
+}
+#btn-toggle-settings[aria-expanded="false"]::after {
+  content: " ▾";
+}
+
+.setup-advanced {
+  display: block;
+}
+
+.setup-advanced.hidden {
+  display: none;
+}
+
 .segmented {
   display: flex;
   flex-wrap: wrap;

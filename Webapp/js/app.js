@@ -6,7 +6,7 @@
 
   let allCards = [];
   let view = "launcher";
-  let settings = { mix: "mcq", dir: "termDef", chapters: new Set() };
+  let settings = { mix: "blank", dir: "termDef", chapters: new Set() };
   let deck = [];
   let turns = [];
   let currentIndex = 0;
@@ -558,6 +558,68 @@
 
   function updateStartEnabled() {
     $("#btn-start").disabled = settings.chapters.size === 0;
+    updateSetupSummary();
+  }
+
+  function summariseChapters() {
+    const totalCh = chaptersFromCards(allCards).length;
+    const selected = settings.chapters.size;
+    if (totalCh === 0) return "geen hoofdstukken beschikbaar";
+    if (selected === 0) return "geen hoofdstukken gekozen";
+    if (selected === totalCh) return `alle ${totalCh} hoofdstukken`;
+    if (selected === 1) {
+      const only = [...settings.chapters][0];
+      return `1 hoofdstuk (${only})`;
+    }
+    return `${selected} van ${totalCh} hoofdstukken`;
+  }
+
+  function updateSetupSummary() {
+    const el = $("#setup-summary");
+    if (!el) return;
+    const mixLabel = settings.mix === "blank" ? "Zelf invullen" : "Meerkeuze";
+    const dirLabel =
+      settings.dir === "termDef"
+        ? "Term → definitie"
+        : settings.dir === "defTerm"
+          ? "Definitie → term"
+          : "Gemengd";
+    el.innerHTML =
+      `<strong>${escapeHtml(mixLabel)}</strong> · ` +
+      `${escapeHtml(dirLabel)} · ` +
+      `${escapeHtml(summariseChapters())}`;
+  }
+
+  function collapseSetupAdvanced() {
+    const wrap = $("#setup-advanced");
+    const btn = $("#btn-toggle-settings");
+    if (wrap) wrap.classList.add("hidden");
+    if (btn) {
+      btn.setAttribute("aria-expanded", "false");
+      btn.textContent = "Instellingen aanpassen";
+    }
+  }
+
+  function toggleSetupAdvanced() {
+    const wrap = $("#setup-advanced");
+    const btn = $("#btn-toggle-settings");
+    if (!wrap || !btn) return;
+    const isHidden = wrap.classList.contains("hidden");
+    if (isHidden) {
+      wrap.classList.remove("hidden");
+      btn.setAttribute("aria-expanded", "true");
+      btn.textContent = "Instellingen verbergen";
+    } else {
+      collapseSetupAdvanced();
+    }
+  }
+
+  function ensureChaptersDefaultSelection() {
+    if (settings.chapters.size > 0) return;
+    const all = chaptersFromCards(allCards);
+    if (all.length === 0) return;
+    settings.chapters = new Set(all);
+    syncChapterCheckboxesWithSettings();
   }
 
   function setView(v) {
@@ -583,6 +645,9 @@
     } else if (v === "setup") {
       document.title = "Dogmatiek — oefenen";
       $("#title").textContent = "Dogmatiek oefenen";
+      ensureChaptersDefaultSelection();
+      collapseSetupAdvanced();
+      updateSetupSummary();
     } else if (v === "manage") {
       document.title = "Termen beheren";
       $("#title").textContent = "Termen beheren";
@@ -883,6 +948,7 @@
         b.classList.add("active");
         settings.mix = b.dataset.mix;
         $("#mix-hint").textContent = mixHints[settings.mix] || mixHints.mcq;
+        updateSetupSummary();
       });
     });
     $("#mix-hint").textContent = mixHints[settings.mix] || mixHints.mcq;
@@ -892,8 +958,12 @@
         $$(".seg-dir").forEach((x) => x.classList.remove("active"));
         b.classList.add("active");
         settings.dir = b.dataset.dir;
+        updateSetupSummary();
       });
     });
+
+    const toggleBtn = $("#btn-toggle-settings");
+    if (toggleBtn) toggleBtn.addEventListener("click", toggleSetupAdvanced);
 
     $("#chk-all").addEventListener("change", (e) => {
       const on = e.target.checked;
@@ -1125,7 +1195,9 @@
       }
       renderChapterList();
       fillChapterSuggestions();
+      ensureChaptersDefaultSelection();
       updateStartEnabled();
+      updateSetupSummary();
       updateManageStatusLine();
     } catch (e) {
       $("#chapter-list").innerHTML =

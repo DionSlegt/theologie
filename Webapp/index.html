@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Studie</title>
-  <link rel="stylesheet" href="css/style.css?v=202605262" />
+  <link rel="stylesheet" href="css/style.css?v=202606011" />
 </head>
 <body>
   <div id="app">
@@ -87,31 +87,40 @@
 
       <!-- Setup (Dogmatiek) -->
       <section id="view-setup" class="view hidden">
-        <div class="panel">
-          <h2>Oefenmodus</h2>
-          <div class="segmented" role="group" aria-label="Soort oefening">
-            <button type="button" class="seg active" data-mix="mcq">Meerkeuze</button>
-            <button type="button" class="seg" data-mix="blank">Zelf invullen</button>
-          </div>
-          <p class="small muted" id="mix-hint">Meerkeuze: kies het juiste antwoord uit vier opties. Na de ronde zie je fouten op het overzicht en kun je ze apart nog een keer doen.</p>
-        </div>
-
-        <div class="panel">
-          <h2>Richting</h2>
-          <div class="segmented" role="group" aria-label="Richting">
-            <button type="button" class="seg-dir active" data-dir="termDef">Term → definitie</button>
-            <button type="button" class="seg-dir" data-dir="defTerm">Definitie → term</button>
-            <button type="button" class="seg-dir" data-dir="mixed">Gemengd</button>
-          </div>
-        </div>
-
-        <div class="panel">
-          <h2>Hoofdstukken</h2>
-          <label class="check-all"><input type="checkbox" id="chk-all" /> <strong>Alle hoofdstukken</strong> <span id="total-terms" class="muted"></span></label>
-          <div id="chapter-list" class="chapter-list"></div>
+        <div class="setup-summary panel">
+          <p class="setup-summary-label small muted">Huidige oefening</p>
+          <p class="setup-summary-line" id="setup-summary"></p>
         </div>
 
         <button type="button" id="btn-start" class="btn primary" disabled>Start oefening</button>
+        <button type="button" id="btn-toggle-settings" class="btn secondary" aria-expanded="false" aria-controls="setup-advanced">Instellingen aanpassen</button>
+
+        <div id="setup-advanced" class="setup-advanced hidden">
+          <div class="panel">
+            <h2>Oefenmodus</h2>
+            <div class="segmented" role="group" aria-label="Soort oefening">
+              <button type="button" class="seg" data-mix="mcq">Meerkeuze</button>
+              <button type="button" class="seg active" data-mix="blank">Zelf invullen</button>
+            </div>
+            <p class="small muted" id="mix-hint">Zelf invullen: je ziet de prompt, denkt na, tik op Laat antwoord zien en kiest daarna zelf Goed of Fout.</p>
+          </div>
+
+          <div class="panel">
+            <h2>Richting</h2>
+            <div class="segmented" role="group" aria-label="Richting">
+              <button type="button" class="seg-dir active" data-dir="termDef">Term → definitie</button>
+              <button type="button" class="seg-dir" data-dir="defTerm">Definitie → term</button>
+              <button type="button" class="seg-dir" data-dir="mixed">Gemengd</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Hoofdstukken</h2>
+            <label class="check-all"><input type="checkbox" id="chk-all" /> <strong>Alle hoofdstukken</strong> <span id="total-terms" class="muted"></span></label>
+            <div id="chapter-list" class="chapter-list"></div>
+          </div>
+        </div>
+
         <button type="button" id="btn-open-manage" class="btn secondary">Termen beheren…</button>
       </section>
 
@@ -253,7 +262,7 @@
     </div>
   </dialog>
 
-  <script src="js/ot-nt.js?v=202605262"></script>
-  <script src="js/app.js?v=202605262"></script>
+  <script src="js/ot-nt.js?v=202606011"></script>
+  <script src="js/app.js?v=202606011"></script>
 </body>
 </html>
