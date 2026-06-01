@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Studie</title>
-  <link rel="stylesheet" href="css/style.css?v=202606011" />
+  <link rel="stylesheet" href="css/style.css?v=202606012" />
 </head>
 <body>
   <div id="app">
@@ -88,11 +88,10 @@
       <!-- Setup (Dogmatiek) -->
       <section id="view-setup" class="view hidden">
         <div class="setup-summary panel">
-          <p class="setup-summary-label small muted">Huidige oefening</p>
+          <p class="setup-summary-label small muted">Manier van leren</p>
           <p class="setup-summary-line" id="setup-summary"></p>
         </div>
 
-        <button type="button" id="btn-start" class="btn primary" disabled>Start oefening</button>
         <button type="button" id="btn-toggle-settings" class="btn secondary" aria-expanded="false" aria-controls="setup-advanced">Instellingen aanpassen</button>
 
         <div id="setup-advanced" class="setup-advanced hidden">
@@ -113,14 +112,15 @@
               <button type="button" class="seg-dir" data-dir="mixed">Gemengd</button>
             </div>
           </div>
-
-          <div class="panel">
-            <h2>Hoofdstukken</h2>
-            <label class="check-all"><input type="checkbox" id="chk-all" /> <strong>Alle hoofdstukken</strong> <span id="total-terms" class="muted"></span></label>
-            <div id="chapter-list" class="chapter-list"></div>
-          </div>
         </div>
 
+        <div class="panel">
+          <h2>Hoofdstukken</h2>
+          <label class="check-all"><input type="checkbox" id="chk-all" /> <strong>Alle hoofdstukken</strong> <span id="total-terms" class="muted"></span></label>
+          <div id="chapter-list" class="chapter-list"></div>
+        </div>
+
+        <button type="button" id="btn-start" class="btn primary" disabled>Start oefening</button>
         <button type="button" id="btn-open-manage" class="btn secondary">Termen beheren…</button>
       </section>
 
@@ -262,7 +262,7 @@
     </div>
   </dialog>
 
-  <script src="js/ot-nt.js?v=202606011"></script>
-  <script src="js/app.js?v=202606011"></script>
+  <script src="js/ot-nt.js?v=202606012"></script>
+  <script src="js/app.js?v=202606012"></script>
 </body>
 </html>

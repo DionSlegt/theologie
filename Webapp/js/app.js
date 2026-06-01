@@ -561,19 +561,6 @@
     updateSetupSummary();
   }
 
-  function summariseChapters() {
-    const totalCh = chaptersFromCards(allCards).length;
-    const selected = settings.chapters.size;
-    if (totalCh === 0) return "geen hoofdstukken beschikbaar";
-    if (selected === 0) return "geen hoofdstukken gekozen";
-    if (selected === totalCh) return `alle ${totalCh} hoofdstukken`;
-    if (selected === 1) {
-      const only = [...settings.chapters][0];
-      return `1 hoofdstuk (${only})`;
-    }
-    return `${selected} van ${totalCh} hoofdstukken`;
-  }
-
   function updateSetupSummary() {
     const el = $("#setup-summary");
     if (!el) return;
@@ -585,9 +572,7 @@
           ? "Definitie → term"
           : "Gemengd";
     el.innerHTML =
-      `<strong>${escapeHtml(mixLabel)}</strong> · ` +
-      `${escapeHtml(dirLabel)} · ` +
-      `${escapeHtml(summariseChapters())}`;
+      `<strong>${escapeHtml(mixLabel)}</strong> · ${escapeHtml(dirLabel)}`;
   }
 
   function collapseSetupAdvanced() {
