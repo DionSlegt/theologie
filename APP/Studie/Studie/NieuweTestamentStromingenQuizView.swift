@@ -211,19 +211,44 @@ fileprivate enum NieuweTestamentStromingenData {
         """
     )
 
+    // Vaste volgorde, geen intro of slot.
     static func maakVolgordeVoorRonde() -> [NTStromingVraag] {
-        [introVraag] + kernVragen.shuffled() + [slotVraagAlleNamen]
+        kernVragen
     }
 
     static func volgordeFouten(oordelen: [String: Bool]) -> [NTStromingVraag]? {
         let foutIds = Set(oordelen.filter { !$0.value }.map(\.key))
-        guard !foutIds.isEmpty else { return nil }
-        var out: [NTStromingVraag] = []
-        if foutIds.contains(introVraag.id) { out.append(introVraag) }
-        out += kernVragen.filter { foutIds.contains($0.id) }.shuffled()
-        if foutIds.contains(slotVraagAlleNamen.id) { out.append(slotVraagAlleNamen) }
-        guard !out.isEmpty else { return nil }
-        return out
+        let fouten = kernVragen.filter { foutIds.contains($0.id) }
+        return fouten.isEmpty ? nil : fouten
+    }
+}
+
+// Toont de naam groot+vet en de drie rubrieken elk op een eigen regel eronder.
+struct NTStromingPromptView: View {
+    let prompt: String
+
+    private var blokken: [String] {
+        prompt
+            .components(separatedBy: "\n\n")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines)
+                      .replacingOccurrences(of: "**", with: "") }
+            .filter { !$0.isEmpty }
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            if let naam = blokken.first {
+                Text(naam)
+                    .font(.title2.weight(.bold))
+                    .foregroundStyle(.primary)
+            }
+            ForEach(Array(blokken.dropFirst().enumerated()), id: \.offset) { _, rubriek in
+                Text(rubriek)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
@@ -344,7 +369,7 @@ struct NieuweTestamentStromingenQuizView: View {
                     .font(.title2.weight(.semibold))
                 Text(scoreTekst)
                     .font(.title3)
-                Text("Intro en slot blijven vooraan en achteraan; de zeven stromingen stonden door elkaar.")
+                Text("De zeven stromingen stonden in vaste volgorde.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -393,12 +418,9 @@ struct NieuweTestamentStromingenQuizView: View {
             voortgangLabel: "Vraag \(index + 1) van \(volgorde.count)",
             promptInhoud: { stromingenPromptInhoud(v) },
             tussenPromptEnPlaceholder: {
-                if v.id != NieuweTestamentStromingenData.introVraag.id,
-                   v.id != NieuweTestamentStromingenData.slotVraagAlleNamen.id {
-                    Text("Tik op Laat antwoord zien voor de typering.")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                }
+                Text("Tik op Laat antwoord zien voor de typering.")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
             },
             antwoordZichtbaar: antwoordZichtbaar,
             antwoordInhoud: {
@@ -414,20 +436,10 @@ struct NieuweTestamentStromingenQuizView: View {
 
     @ViewBuilder
     private func stromingenPromptInhoud(_ v: NTStromingVraag) -> some View {
-        if v.id == NieuweTestamentStromingenData.introVraag.id {
-            Text(v.prompt)
-                .font(.title3.weight(.semibold))
-                .fixedSize(horizontal: false, vertical: true)
-        } else if v.id == NieuweTestamentStromingenData.slotVraagAlleNamen.id {
-            Text(v.prompt)
-                .font(.title3.weight(.semibold))
-                .fixedSize(horizontal: false, vertical: true)
-        } else {
-            Text("Stroming")
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(.secondary)
-            MarkdownAntwoordInlineTitle(markdown: v.prompt)
-        }
+        Text("Stroming")
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(.secondary)
+        NTStromingPromptView(prompt: v.prompt)
     }
 
     private func gaNaarVorigeVraag() {
@@ -449,39 +461,19 @@ struct NieuweTestamentStromingenQuizView: View {
     }
 }
 
-/// Alleen voor korte promptregels met vet (stromingsnaam).
-private struct MarkdownAntwoordInlineTitle: View {
-    let markdown: String
-
-    var body: some View {
-        Group {
-            if let attributed = try? AttributedString(markdown: markdown) {
-                Text(attributed)
-            } else {
-                Text(markdown)
-            }
-        }
-        .font(.title2.weight(.bold))
-        .foregroundStyle(.primary)
-    }
-}
-
 // MARK: - Gecombineerde oefening
 
 enum NieuweTestamentStromingenOefenAdapter {
     static func kaartenVoorGecombineerd() -> [NieuweTestamentOefenKaart] {
         NieuweTestamentStromingenData.maakVolgordeVoorRonde().map { v in
-            let isIntro = v.id == NieuweTestamentStromingenData.introVraag.id
-            let isSlot = v.id == NieuweTestamentStromingenData.slotVraagAlleNamen.id
-            let kern = !isIntro && !isSlot
-            return NieuweTestamentOefenKaart(
+            NieuweTestamentOefenKaart(
                 id: "nt-strom-\(v.id)",
                 bron: .stromingen,
-                promptWeergave: kern ? .markdownStromingNaamTitle2Bold : .plainTitle3,
+                promptWeergave: .markdownStromingNaamTitle2Bold,
                 prompt: v.prompt,
                 antwoordWeergave: .markdown,
                 antwoord: v.antwoordMarkdown,
-                secundaireHint: kern ? "Tik op Laat antwoord zien voor de typering." : nil
+                secundaireHint: "Tik op Laat antwoord zien voor de typering."
             )
         }
     }

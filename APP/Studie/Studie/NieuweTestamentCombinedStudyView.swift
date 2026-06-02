@@ -252,8 +252,10 @@ struct NieuweTestamentCombinedStudyView: View {
                 Text("Stroming")
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(.secondary)
+                NTStromingPromptView(prompt: k.prompt)
+            } else {
+                NTGecombineerdMarkdown(markdown: k.prompt, font: .title2.weight(.bold))
             }
-            NTGecombineerdMarkdown(markdown: k.prompt, font: .title2.weight(.bold))
         }
     }
 
