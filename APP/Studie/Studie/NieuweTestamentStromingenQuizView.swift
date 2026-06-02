@@ -252,19 +252,80 @@ struct NTStromingPromptView: View {
     }
 }
 
-private struct StromingenMarkdownAntwoord: View {
+// Parseert het gestructureerde antwoord-markdown en rendert:
+//   - sectiekoppen vet op eigen regel
+//   - witregel tussen secties
+//   - bullets elk op eigen regel
+struct NTStromingAntwoordView: View {
     let markdown: String
 
-    var body: some View {
-        Group {
-            if let attributed = try? AttributedString(markdown: markdown) {
-                Text(attributed)
-            } else {
-                Text(markdown)
+    private struct Sectie: Identifiable {
+        let id = UUID()
+        let kop: String
+        let bullets: [String]
+    }
+
+    private var secties: [Sectie] {
+        var result: [Sectie] = []
+        var huidigeKop = ""
+        var huidigeBullets: [String] = []
+
+        func sla() {
+            if !huidigeKop.isEmpty || !huidigeBullets.isEmpty {
+                result.append(Sectie(kop: huidigeKop, bullets: huidigeBullets))
             }
         }
-        .font(.body)
-        .foregroundStyle(.primary)
+
+        for blok in markdown
+            .components(separatedBy: "\n\n")
+            .map({ $0.trimmingCharacters(in: .whitespacesAndNewlines) })
+            .filter({ !$0.isEmpty })
+        {
+            let isKop = blok.hasPrefix("**") && blok.hasSuffix("**")
+                        && !blok.dropFirst(2).dropLast(2).contains("**")
+            if isKop {
+                sla()
+                huidigeKop = blok.replacingOccurrences(of: "**", with: "")
+                huidigeBullets = []
+            } else {
+                let lijnen = blok
+                    .components(separatedBy: "\n")
+                    .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+                    .filter { !$0.isEmpty }
+                for lijn in lijnen {
+                    let tekst = lijn.hasPrefix("- ") ? String(lijn.dropFirst(2)) : lijn
+                    huidigeBullets.append(tekst)
+                }
+            }
+        }
+        sla()
+        return result
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            ForEach(secties) { sectie in
+                VStack(alignment: .leading, spacing: 5) {
+                    if !sectie.kop.isEmpty {
+                        Text(sectie.kop)
+                            .font(.subheadline.weight(.bold))
+                            .foregroundStyle(.primary)
+                    }
+                    ForEach(Array(sectie.bullets.enumerated()), id: \.offset) { _, bullet in
+                        HStack(alignment: .top, spacing: 6) {
+                            Text("–")
+                                .font(.body)
+                                .foregroundStyle(.secondary)
+                            Text(bullet)
+                                .font(.body.weight(.semibold))
+                                .foregroundStyle(.primary)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
@@ -346,7 +407,7 @@ struct NieuweTestamentStromingenQuizView: View {
                         Text("Antwoord")
                             .font(.caption.weight(.semibold))
                             .foregroundStyle(.secondary)
-                        StromingenMarkdownAntwoord(markdown: v.antwoordMarkdown)
+                        NTStromingAntwoordView(markdown: v.antwoordMarkdown)
                             .font(.body.weight(.semibold))
                     }
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -424,7 +485,7 @@ struct NieuweTestamentStromingenQuizView: View {
             },
             antwoordZichtbaar: antwoordZichtbaar,
             antwoordInhoud: {
-                StromingenMarkdownAntwoord(markdown: v.antwoordMarkdown)
+                NTStromingAntwoordView(markdown: v.antwoordMarkdown)
                     .font(.body.weight(.semibold))
             },
             toonVorige: index > 0,

@@ -269,7 +269,9 @@ struct NieuweTestamentCombinedStudyView: View {
                 .foregroundStyle(.primary)
                 .fixedSize(horizontal: false, vertical: true)
         case .markdown:
-            if k.bron == .achtenmeierCanon && !k.id.contains("toets") {
+            if k.bron == .stromingen {
+                NTStromingAntwoordView(markdown: k.antwoord)
+            } else if k.bron == .achtenmeierCanon && !k.id.contains("toets") {
                 AchtenmeierGestapeldeInformatiefMarkdown(markdown: k.antwoord)
                     .font(.body.weight(.semibold))
                     .lineSpacing(4)
