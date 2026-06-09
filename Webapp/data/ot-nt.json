@@ -891,9 +891,19 @@
       "shuffle": false,
       "items": [
         {
-          "id": "deuterocanoniek-alle",
-          "prompt": "**Noem alle deuterocanonieke boeken**",
-          "answer": "**1. Historische boeken**\n\n**Tobit** en **Judith**\n\n**1 en 2 Makkabeeën**\n\n**1 Esdras** (alleen orthodox)\n\n**3 Makkabeeën** (alleen orthodox)\n\n**2. Wijsheidsliteratuur en poëzie**\n\n**Wijsheid van Salomo** en **Jezus Sirach** (Ecclesiasticus)\n\n**Psalm 151** (alleen orthodox)\n\n**Gebed van Manasse** (alleen orthodox)\n\n**3. Profeten (en toevoegingen)**\n\n**Baruch** en de **Brief van Jeremia**\n\n**Toevoegingen aan Esther**\n\n**Toevoegingen aan Daniël** (Susanna, Bel en de Draak)"
+          "id": "deuterocanoniek-historisch",
+          "prompt": "**1. Historische boeken**",
+          "answer": "Deze boeken richten zich op de geschiedenis en de beproevingen van het Joodse volk.\n\n- **Tobit:** Een vertelling over de vrome Tobit en zijn zoon Tobias, die op reis gaat met de engel Rafaël.\n- **Judit:** Het verhaal over een moedige Joodse weduwe die haar stad redt door de vijandelijke generaal Holofernes te onthoofden.\n- **1 & 2 Makkabeeën:** Beschrijven de geschiedenis in de hellenistische tijd, inclusief de Joodse opstand tegen de Seleuciden in 167 v.Chr.\n- **Toevoegingen aan Esther:** Extra gebeden en documenten die een religieuzere laag toevoegen aan het boek Esther.\n- **1 Esdras:** Een Griekse versie die de gebeurtenissen uit 2 Kronieken, Ezra en Nehemia opnieuw vertelt.\n- **3 Makkabeeën:** Beschrijft een wonderbaarlijke redding van de Joden in Egypte tijdens de regering van Ptolemaeus IV."
+        },
+        {
+          "id": "deuterocanoniek-poezie-wijsheid",
+          "prompt": "**2. Poëzie en Wijsheidsliteratuur**",
+          "answer": "Deze boeken bevatten liederen en praktische of filosofische levenslessen.\n\n- **Wijsheid van Salomo:** Een filosofisch werk dat wijsheid prijst en ingaat op gerechtigheid en onsterfelijkheid.\n- **Sirach (Ecclesiasticus):** Een grote verzameling praktische spreuken en levenslessen voor een vroom dagelijks leven.\n- **Psalm 151:** Een korte psalm, toegeschreven aan David, over zijn overwinning op Goliath.\n- **Gebed van Manasse:** Een diepgaand boetgebed van de koning van Juda na zijn gevangenschap."
+        },
+        {
+          "id": "deuterocanoniek-profetisch",
+          "prompt": "**3. Profetische boeken**",
+          "answer": "Deze boeken zijn nauw verbonden met de grote profeten uit de Hebreeuwse canon.\n\n- **Baruch:** Een tekst toegeschreven aan de secretaris van Jeremia, gericht aan de ballingen in Babylon.\n- **Brief van Jeremia:** Een vurig betoog tegen afgodendienst, vaak toegevoegd aan het boek Baruch.\n- **Toevoegingen aan Daniël:** Bevatten drie bekende verhalen: de onschuldige **Susanna**, de legende van **Bel en de Draak**, en het **Gebed van Azarja** in de vuuroven."
         }
       ]
     },

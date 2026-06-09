@@ -835,22 +835,43 @@ struct OudeTestamentHs2OntwikkelingOTView: View {
 private enum Hs2DeuterocanoniekeBoekenVragenData {
     static let alle: [Hs2JacobsonChanOefenVraag] = [
         .init(
-            id: "deuterocanoniek-alle",
-            termMarkdown: "**Noem alle deuterocanonieke boeken**",
+            id: "deuterocanoniek-historisch",
+            termMarkdown: "**1. Historische boeken**",
             antwoordMarkdown: Hs2JacobsonChanOpmaak.antwoordPerRegel([
-                "**1. Historische boeken**",
-                "**Tobit** en **Judith**",
-                "**1 en 2 Makkabeeën**",
-                "**1 Esdras** (alleen orthodox)",
-                "**3 Makkabeeën** (alleen orthodox)",
-                "**2. Wijsheidsliteratuur en poëzie**",
-                "**Wijsheid van Salomo** en **Jezus Sirach** (Ecclesiasticus)",
-                "**Psalm 151** (alleen orthodox)",
-                "**Gebed van Manasse** (alleen orthodox)",
-                "**3. Profeten (en toevoegingen)**",
-                "**Baruch** en de **Brief van Jeremia**",
-                "**Toevoegingen aan Esther**",
-                "**Toevoegingen aan Daniël** (Susanna, Bel en de Draak)",
+                "Deze boeken richten zich op de geschiedenis en de beproevingen van het Joodse volk.",
+                """
+                - **Tobit:** Een vertelling over de vrome Tobit en zijn zoon Tobias, die op reis gaat met de engel Rafaël.
+                - **Judit:** Het verhaal over een moedige Joodse weduwe die haar stad redt door de vijandelijke generaal Holofernes te onthoofden.
+                - **1 & 2 Makkabeeën:** Beschrijven de geschiedenis in de hellenistische tijd, inclusief de Joodse opstand tegen de Seleuciden in 167 v.Chr.
+                - **Toevoegingen aan Esther:** Extra gebeden en documenten die een religieuzere laag toevoegen aan het boek Esther.
+                - **1 Esdras:** Een Griekse versie die de gebeurtenissen uit 2 Kronieken, Ezra en Nehemia opnieuw vertelt.
+                - **3 Makkabeeën:** Beschrijft een wonderbaarlijke redding van de Joden in Egypte tijdens de regering van Ptolemaeus IV.
+                """,
+            ])
+        ),
+        .init(
+            id: "deuterocanoniek-poezie-wijsheid",
+            termMarkdown: "**2. Poëzie en Wijsheidsliteratuur**",
+            antwoordMarkdown: Hs2JacobsonChanOpmaak.antwoordPerRegel([
+                "Deze boeken bevatten liederen en praktische of filosofische levenslessen.",
+                """
+                - **Wijsheid van Salomo:** Een filosofisch werk dat wijsheid prijst en ingaat op gerechtigheid en onsterfelijkheid.
+                - **Sirach (Ecclesiasticus):** Een grote verzameling praktische spreuken en levenslessen voor een vroom dagelijks leven.
+                - **Psalm 151:** Een korte psalm, toegeschreven aan David, over zijn overwinning op Goliath.
+                - **Gebed van Manasse:** Een diepgaand boetgebed van de koning van Juda na zijn gevangenschap.
+                """,
+            ])
+        ),
+        .init(
+            id: "deuterocanoniek-profetisch",
+            termMarkdown: "**3. Profetische boeken**",
+            antwoordMarkdown: Hs2JacobsonChanOpmaak.antwoordPerRegel([
+                "Deze boeken zijn nauw verbonden met de grote profeten uit de Hebreeuwse canon.",
+                """
+                - **Baruch:** Een tekst toegeschreven aan de secretaris van Jeremia, gericht aan de ballingen in Babylon.
+                - **Brief van Jeremia:** Een vurig betoog tegen afgodendienst, vaak toegevoegd aan het boek Baruch.
+                - **Toevoegingen aan Daniël:** Bevatten drie bekende verhalen: de onschuldige **Susanna**, de legende van **Bel en de Draak**, en het **Gebed van Azarja** in de vuuroven.
+                """,
             ])
         ),
     ]
@@ -861,7 +882,8 @@ struct OudeTestamentHs2DeuterocanoniekeBoekenView: View {
         Hs2JacobsonChanOefenLijstView(
             navigatieTitel: "Deuterocanonieke boeken",
             voettekstAfsluiting: "Je kunt dit onderdeel zo vaak opnieuw oefenen als je wilt.",
-            vragen: Hs2DeuterocanoniekeBoekenVragenData.alle
+            vragen: Hs2DeuterocanoniekeBoekenVragenData.alle,
+            antwoordOpmaak: .informatief
         )
     }
 }
