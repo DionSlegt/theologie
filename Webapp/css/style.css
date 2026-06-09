@@ -1,14 +1,17 @@
 :root {
-  --bg: #f5f5f7;
+  --bg: #ffffff;
   --card: #ffffff;
-  --text: #1d1d1f;
-  --muted: #6e6e73;
-  --accent: #0071e3;
-  --accent-hover: #0077ed;
-  --border: #d2d2d7;
+  --text: #002c68;
+  --text-heading: #004b77;
+  --muted: #3d5f85;
+  --accent: #004b77;
+  --accent-hover: #003a5f;
+  --border: #c8d4e3;
   --radius: 14px;
   --bad: #c2410c;
   --ok: #15803d;
+  --font-body: Calibri, "Segoe UI", "Aptos", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Nunito", "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
 }
 
 * {
@@ -21,11 +24,35 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-body);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.45;
+  line-height: 1.5;
   min-height: 100dvh;
+  font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+.topbar h1,
+.launcher-card-title,
+.panel h2,
+.menu-section-title,
+.prompt-card .label,
+.wrong-review-heading,
+.modal h3,
+#view-reveal-summary > h2,
+.md-content .md-rubriek,
+.md-content .md-naam {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+}
+
+#view-reveal-summary > h2 {
+  font-size: 1.65rem;
+  font-weight: 800;
+  margin: 0 0 12px;
 }
 
 #app {
@@ -45,15 +72,15 @@ body {
   gap: 12px;
   padding: 12px max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left));
   padding-top: max(12px, env(safe-area-inset-top));
-  background: rgba(245, 245, 247, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
 .topbar h1 {
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.35rem;
+  font-weight: 800;
 }
 
 .btn-back {
@@ -61,18 +88,18 @@ body {
   background: transparent;
   color: var(--accent);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   padding: 10px 14px;
   min-width: 44px;
   min-height: 44px;
   border-radius: 10px;
   touch-action: manipulation;
-  font-family: inherit;
+  font-family: var(--font-heading);
 }
 
 .btn-back:hover {
-  background: rgba(0, 113, 227, 0.08);
+  background: rgba(0, 75, 119, 0.08);
 }
 
 .btn-back.hidden {
@@ -92,27 +119,28 @@ body {
 }
 
 .launcher-intro {
-  margin: 0 0 16px;
-  font-size: 0.95rem;
+  margin: 0 0 20px;
+  font-size: 1.125rem;
+  color: var(--text);
 }
 
 .launcher-grid {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
 }
 
 .launcher-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
+  gap: 8px;
   width: 100%;
   margin: 0;
-  padding: 16px 18px;
+  padding: 18px 20px;
   text-align: left;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--text);
   background: var(--card);
   border: 1px solid var(--border);
@@ -125,7 +153,7 @@ body {
 }
 
 .launcher-card:hover {
-  border-color: #a1a1a6;
+  border-color: #8fa8c4;
 }
 
 .launcher-card:active {
@@ -134,18 +162,20 @@ body {
 
 .launcher-card-featured {
   border-color: var(--accent);
-  background: rgba(0, 113, 227, 0.06);
+  background: rgba(0, 75, 119, 0.04);
 }
 
 .launcher-card-title {
-  font-weight: 700;
-  font-size: 1.05rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  line-height: 1.25;
+  color: var(--text-heading);
 }
 
 .launcher-card-desc {
-  font-size: 0.88rem;
-  color: var(--muted);
-  line-height: 1.4;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.45;
 }
 
 .coming-body {
@@ -163,7 +193,8 @@ body {
 
 .panel h2 {
   margin: 0 0 12px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
 }
 
 .setup-summary {
@@ -225,9 +256,9 @@ body {
 .segmented .seg.active,
 .segmented .seg-dir.active {
   border-color: var(--accent);
-  background: rgba(0, 113, 227, 0.1);
+  background: rgba(0, 75, 119, 0.08);
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .small {
@@ -272,7 +303,7 @@ body {
 }
 
 .chapter-list label:hover {
-  border-color: #a1a1a6;
+  border-color: #8fa8c4;
 }
 
 .check-all {
@@ -378,11 +409,11 @@ body {
 }
 
 .prompt-card .label {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-heading);
+  text-transform: none;
+  letter-spacing: 0;
   margin: 0 0 8px;
 }
 
@@ -398,9 +429,11 @@ body {
 }
 
 .prompt {
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 800;
   margin: 0;
+  color: var(--text-heading);
+  font-family: var(--font-heading);
 }
 
 .prompt-page {
@@ -545,7 +578,7 @@ body {
 .mcq-opt.selected {
   border-color: var(--accent);
   border-width: 2px;
-  background: rgba(0, 113, 227, 0.08);
+  background: rgba(0, 75, 119, 0.08);
 }
 
 .stats {
@@ -885,12 +918,12 @@ body {
 }
 
 .menu-section-title {
-  margin: 0 0 8px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--muted);
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-heading);
 }
 
 .menu-links {
@@ -905,7 +938,7 @@ body {
   padding: 14px 16px;
   text-align: left;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: var(--text);
   background: var(--card);
   border: 1px solid var(--border);
@@ -915,11 +948,12 @@ body {
 }
 
 .menu-link:hover {
-  border-color: #a1a1a6;
+  border-color: #8fa8c4;
 }
 
 .md-content {
   line-height: 1.5;
+  color: var(--text);
 }
 
 .md-content p {
@@ -961,27 +995,28 @@ body {
 
 .md-content strong {
   font-weight: 700;
+  color: var(--text);
 }
 
 /* OT-personen: Abraham groot; rubrieken (Gebied, Politiek, Typering) tussen kop en body. */
 .md-content .md-rubriek {
-  font-size: 1.0625rem;
-  font-weight: 600;
+  font-size: 1.125rem;
+  font-weight: 800;
   line-height: 1.35;
   margin: 0 0 8px;
 }
 
 .md-content .md-rubriek strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .md-content .md-naam {
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: 800;
   line-height: 1.25;
   margin: 0 0 12px;
 }
 
 .md-content .md-naam strong {
-  font-weight: 700;
+  font-weight: 800;
 }
