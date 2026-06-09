@@ -5,7 +5,7 @@
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
   let catalog = null;
-  /** @type {"ot-menu"|"nt-menu"|"nt-combined"|"reveal"|"reveal-summary"|null} */
+  /** @type {"ot-menu"|"nt-menu"|"bv-menu"|"nt-combined"|"reveal"|"reveal-summary"|null} */
   let activeView = null;
   let viewStack = [];
   let session = null;
@@ -58,6 +58,7 @@
     for (const id of [
       "view-ot-menu",
       "view-nt-menu",
+      "view-bv-menu",
       "view-nt-combined",
       "view-reveal",
       "view-reveal-summary",
@@ -75,6 +76,7 @@
       const map = {
         "ot-menu": "view-ot-menu",
         "nt-menu": "view-nt-menu",
+        "bv-menu": "view-bv-menu",
         "nt-combined": "view-nt-combined",
         reveal: "view-reveal",
         "reveal-summary": "view-reveal-summary",
@@ -97,6 +99,10 @@
     } else if (activeView === "nt-menu") {
       document.title = "Nieuwe Testament";
       title.textContent = "Nieuwe Testament";
+      back.textContent = "← Vakken";
+    } else if (activeView === "bv-menu") {
+      document.title = "Kenmerken bijbelvertalingen";
+      title.textContent = "Kenmerken bijbelvertalingen";
       back.textContent = "← Vakken";
     } else if (activeView === "nt-combined") {
       document.title = "NT — gecombineerd";
@@ -143,6 +149,16 @@
     setActiveView("ot-menu");
     const el = $("#view-ot-menu");
     renderMenuSection(el, catalog.ot.sections, (link) => {
+      if (link.pack) startPack(link.pack);
+    });
+  }
+
+  function openBvMenu() {
+    if (!catalog) return;
+    viewStack = [];
+    setActiveView("bv-menu");
+    const el = $("#view-bv-menu");
+    renderMenuSection(el, catalog.bv.sections, (link) => {
       if (link.pack) startPack(link.pack);
     });
   }
@@ -416,7 +432,7 @@
       if (activeView === "nt-menu") openNtMenu();
       return true;
     }
-    if (activeView === "ot-menu" || activeView === "nt-menu") {
+    if (activeView === "ot-menu" || activeView === "nt-menu" || activeView === "bv-menu") {
       close();
       return false;
     }
@@ -467,6 +483,7 @@
       setActiveView(prev);
       if (prev === "ot-menu") openOtMenu();
       else if (prev === "nt-menu") openNtMenu();
+      else if (prev === "bv-menu") openBvMenu();
       else if (prev === "nt-combined") openNtCombinedSetup();
     });
   }
@@ -482,6 +499,7 @@
     },
     openOt: openOtMenu,
     openNt: openNtMenu,
+    openBv: openBvMenu,
     handleBack,
     close,
     isActive,

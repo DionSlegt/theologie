@@ -182,12 +182,19 @@ def resolve_static_var(content: str, name: str) -> str | None:
     )
     if m3:
         return antwoord_per_regel(m3.group(1))
+    m4 = re.search(
+        rf"static let {re.escape(name)}\s*=\s*BijbelvertalingenOpmaak\.antwoordPerRegel\(\[(.*?)\]\)",
+        content,
+        re.DOTALL,
+    )
+    if m4:
+        return antwoord_per_regel(m4.group(1))
     return None
 
 
 def field_value(body: str, field: str, full_content: str) -> str | None:
     m = re.search(
-        rf"{field}:\s*(\"\"\"(.*?)\"\"\"|\"((?:[^\"\\]|\\.)*)\"|otMdBlok\(\[(.*?)\]\)|otArcheoMdBlok\(\[(.*?)\]\)|otGebMdBlok\(\[(.*?)\]\)|otWereldrijkMdBlok\(\[(.*?)\]\)|Hs2JacobsonChanOpmaak\.antwoordPerRegel\(\[(.*?)\]\)|Hs2CanonOTInhoud\.(\w+)|(\w+))",
+        rf"{field}:\s*(\"\"\"(.*?)\"\"\"|\"((?:[^\"\\]|\\.)*)\"|otMdBlok\(\[(.*?)\]\)|otArcheoMdBlok\(\[(.*?)\]\)|otGebMdBlok\(\[(.*?)\]\)|otWereldrijkMdBlok\(\[(.*?)\]\)|Hs2JacobsonChanOpmaak\.antwoordPerRegel\(\[(.*?)\]\)|BijbelvertalingenOpmaak\.antwoordPerRegel\(\[(.*?)\]\)|Hs2CanonOTInhoud\.(\w+)|(\w+))",
         body,
         re.DOTALL,
     )
@@ -207,10 +214,12 @@ def field_value(body: str, field: str, full_content: str) -> str | None:
         return antwoord_per_regel(m.group(7))
     if m.group(8) is not None:
         return antwoord_per_regel(m.group(8))
-    if m.group(9):
-        return resolve_static_var(full_content, m.group(9))
+    if m.group(9) is not None:
+        return antwoord_per_regel(m.group(9))
     if m.group(10):
         return resolve_static_var(full_content, m.group(10))
+    if m.group(11):
+        return resolve_static_var(full_content, m.group(11))
     return None
 
 
@@ -322,6 +331,8 @@ def enum_body(content: str, enum_name: str) -> str | None:
     m = re.search(rf"private enum {enum_name}\s*\{{", content)
     if not m:
         m = re.search(rf"fileprivate enum {enum_name}\s*\{{", content)
+    if not m:
+        m = re.search(rf"(?<![a-zA-Z_])enum {enum_name}\s*\{{", content)
     if not m:
         return None
     start = m.end()
@@ -628,6 +639,18 @@ def main() -> None:
         "items": extract_achtenmeier(nt_ach),
     }
 
+    bv = read_swift("BijbelvertalingenViews.swift")
+    packs["bv-begrippen-typeren"] = {
+        "title": "Begrippen typeren",
+        "shuffle": False,
+        "items": extract_from_enum(bv, "BijbelvertalingenBegrippenTyperenData"),
+    }
+    packs["bv-bijbelvertalingen-duiden"] = {
+        "title": "Bijbelvertalingen duiden",
+        "shuffle": False,
+        "items": extract_from_enum(bv, "BijbelvertalingenDuidenData"),
+    }
+
     catalog = {
         "version": 1,
         "ot": {
@@ -688,6 +711,18 @@ def main() -> None:
                 {
                     "header": "Achtenmeier",
                     "links": [{"label": "Canonvorming NT", "pack": "nt-achtenmeier"}],
+                },
+            ],
+        },
+        "bv": {
+            "title": "Kenmerken bijbelvertalingen",
+            "sections": [
+                {
+                    "header": "Oefenen",
+                    "links": [
+                        {"label": "Begrippen typeren", "pack": "bv-begrippen-typeren"},
+                        {"label": "Bijbelvertalingen duiden", "pack": "bv-bijbelvertalingen-duiden"},
+                    ],
                 },
             ],
         },

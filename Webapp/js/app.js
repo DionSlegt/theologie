@@ -917,6 +917,9 @@
     $("#launch-nt").addEventListener("click", () => {
       if (window.StudieOtNt?.openNt) window.StudieOtNt.openNt();
     });
+    $("#launch-bv").addEventListener("click", () => {
+      if (window.StudieOtNt?.openBv) window.StudieOtNt.openBv();
+    });
 
     $("#btn-back").addEventListener("click", () => requestExit());
     $("#dlg-exit-cancel").addEventListener("click", () => $("#dlg-exit").close());

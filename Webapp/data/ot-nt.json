@@ -117,6 +117,24 @@
       }
     ]
   },
+  "bv": {
+    "title": "Kenmerken bijbelvertalingen",
+    "sections": [
+      {
+        "header": "Oefenen",
+        "links": [
+          {
+            "label": "Begrippen typeren",
+            "pack": "bv-begrippen-typeren"
+          },
+          {
+            "label": "Bijbelvertalingen duiden",
+            "pack": "bv-bijbelvertalingen-duiden"
+          }
+        ]
+      }
+    ]
+  },
   "packs": {
     "ot-begrippen": {
       "title": "II. Begrippen",
@@ -1358,6 +1376,93 @@
           "kind": "quiz",
           "prompt": "**5. De verbinding tussen kerk en Schrift**",
           "answer": "Theologisch horen **kerk** en **Bijbel** bij elkaar: de canon is ontstaan **in en door** de gemeenschap van gelovigen. De boeken die in de canon terechtkwamen, hadden hun kracht al bewezen in **eredienst** en **dagelijks leven**. De waardering ligt hierin dat de canon de **collectieve ervaring** van de kerk met God door de eeuwen heen weerspiegelt."
+        }
+      ]
+    },
+    "bv-begrippen-typeren": {
+      "title": "Begrippen typeren",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "interpreteren-vertalen",
+          "prompt": "**Interpreteren / vertalen**",
+          "answer": "Bij het bestuderen van anderstalige teksten zoals de Bijbel maakt de reader een cruciaal onderscheid tussen **interpreteren** en **vertalen**:\n\n- **Interpreteren (de 'wat'-fase):** Dit is de poging van de lezer om de oorspronkelijke tekst te begrijpen; wat betekent deze tekst in de brontaal?. Hoewel het onmogelijk is de volledige oorspronkelijke betekenis met zekerheid vast te stellen, helpt taalkennis en exegetische methodiek om zo dicht mogelijk in de buurt te komen en foutieve uitleg te voorkomen.\n- **Vertalen (de 'hoe'-fase):** Dit is een activiteit die volgt op de interpretatie, waarbij men zoekt naar de juiste manier om de betekenis weer te geven in het Nederlands. Vertalen is complexer omdat je rekening houdt met zowel de brontaal als de betekenisnuances in de doeltaal. Hierbij maakt de vertaler bewuste keuzes met het oog op de **doelgroep**, zoals het gebruik van \\\"HEERE\\\" versus \\\"HEER\\\".\n\nKortom: interpretatie gaat over de betekenis van de brontekst, terwijl vertalen gaat over de verwoording daarvan voor een specifiek publiek."
+        },
+        {
+          "id": "meaning-significance",
+          "prompt": "**Meaning en significance**",
+          "answer": "Het verschil tussen deze twee termen zit in de focus: de tekst zelf versus de waarde voor de lezer.\n\n- **Meaning:** Dit is het geheel van **denotatie** (wat de tekst feitelijk beschrijft) en **connotatie** (de gevoelswaarde of culturele lading) van de tekst als zodanig. Het gaat om de vraag: wat betekent deze tekst taalkundig in zijn oorspronkelijke context?\n- **Significance:** Dit is de **betekenis voor een specifieke lezer** of lezerskring; welk belang of welke persoonlijke waarde heeft de tekst op dit moment voor jou?.\n\nEen duidelijk voorbeeld uit de reader is **Psalm 23**: de *meaning* betreft de tekstuele beelden van een herder en grazige weiden, maar de *significance* (het belang) is voor veel mensen erg hoog omdat zij er persoonlijk troost uit putten. Bij een lijst met namen in een geslachtsregister is de *meaning* wel duidelijk, maar de *significance* voor een moderne lezer vaak een stuk lager.\n\nIn de praktijk (bijvoorbeeld in een kring of pastoraal gesprek) kan iemand veel kracht putten uit een tekst (*significance*) terwijl de technische interpretatie (*meaning*) eigenlijk onjuist is."
+        },
+        {
+          "id": "woordveld",
+          "prompt": "**Woordveld**",
+          "answer": "Het begrip **woordveld** verwijst naar de thematische context of de specifieke omgeving waarin een woord wordt gebruikt, wat bepalend is voor de juiste betekenis en vertaling. De belangrijkste kenmerken zijn:\n\n- **Betekenisaspecten:** Een woord heeft vaak één kernbetekenis, maar krijgt verschillende nuances (betekenisaspecten) afhankelijk van het woordveld. Zo wordt het Griekse *logos* in het woordveld van 'spreken' vertaald als \\\"woord\\\", maar in een financieel woordveld als \\\"rekening\\\".\n- **Keuze van de vertaler:** Een vertaler kan niet willekeurig een vertaling kiezen uit een woordenboek; het woordveld dwingt tot een specifieke keuze die recht doet aan de tekst.\n- **Voorbeelden:** Het Hebreeuwse *paaqad* kan afhankelijk van het veld \\\"bezoeken\\\", \\\"inspecteren\\\" of \\\"straffen\\\" betekenen."
+        },
+        {
+          "id": "interpretive-community",
+          "prompt": "**Interpretive community**",
+          "answer": "Een **interpretative community** is een groep lezers die een tekst benadert vanuit een gedeelde 'leesbril' of set verwachtingen. Belangrijke kenmerken zijn:\n\n- **Focus:** Verschillende gemeenschappen (zoals evangelisch, reformatorisch of katholiek) leggen eigen accenten bij het lezen van dezelfde tekst op basis van hun theologische prioriteiten.\n- **Relatie met vertalingen:** De keuze voor een specifieke Bijbelvertaling hangt vaak samen met de interpretative community, omdat taalgebruik, inhoud en geloofsbeleving nauw met elkaar verbonden zijn.\n- **Onvermijdbaarheid:** Volgens de reader is het onmogelijk om zonder leesbril te lezen; het is daarom vooral belangrijk om de kleur en sterkte van je eigen bril te herkennen en te onderkennen."
+        },
+        {
+          "id": "concordant",
+          "prompt": "**Concordant**",
+          "answer": "**Concordant vertalen** houdt in dat men een specifiek Grieks of Hebreeuws woord zo vaak mogelijk met hetzelfde Nederlandse woord weergeeft. Dit wordt ook wel een \"woord-voor-woord\" vertaling genoemd. De belangrijkste kenmerken van deze methode zijn:\n\n- **Doel:** De lezer krijgt meer inzicht in de onderlinge samenhang van woorden in de brontekst en is minder afhankelijk van de interpretatiekeuzes van de vertaler.\n- **Voordeel:** Het is zeer geschikt voor diepgaande Bijbelstudie en woordstudies.\n- **Nadeel:** Omdat woorden in verschillende contexten andere betekenisaspecten hebben, kan een strikt concordante vertaling leiden tot onnatuurlijk Nederlands dat moeilijk te begrijpen is.\n- **Voorbeelden:** De **Naardense Bijbel** (zeer strikt), de **Statenvertaling** en de **Herziene Statenvertaling (HSV)** zijn voorbeelden van vertalingen met een sterk concordant karakter."
+        },
+        {
+          "id": "parafraserend",
+          "prompt": "**Parafraserend**",
+          "answer": "**Parafraserend vertalen** (vaak gelijkgesteld aan dynamisch-equivalent vertalen) houdt in dat een tekst **gedachte voor gedachte** wordt vertaald in plaats van woord voor woord. De belangrijkste kenmerken zijn:\n\n- **Focus op effect:** Men zoekt naar een vertaling die in het Nederlands dezelfde betekeniswaarde (equivalentie) heeft als de grondtekst.\n- **Natuurlijk taalgebruik:** Er wordt gestreefd naar vlot en begrijpelijk Nederlands, waarbij de vertaler de vrijheid neemt om een woord per context verschillend te vertalen om recht te doen aan de bedoeling.\n- **Verduidelijking:** Metaforen en typische uitdrukkingen worden vaak uitleggend vertaald om de toegankelijkheid te vergroten.\n- **Doelgroep:** Deze methode is zeer geschikt voor kinderen, jongeren of mensen die niet bekend zijn met de Bijbel, maar is minder geschikt voor diepgaande woordstudies.\n\nVoorbeelden zijn de *Groot Nieuws Bijbel* en de *Bijbel in Gewone Taal*. De reader maakt wel een belangrijk onderscheid: werken zoals *Het Boek* worden expliciet getypeerd als een **parafrase** en niet als een echte vertaling, omdat ze niet direct vanuit de brontekst door een team van brontaal- en doeltaalexperts zijn gemaakt."
+        }
+      ]
+    },
+    "bv-bijbelvertalingen-duiden": {
+      "title": "Bijbelvertalingen duiden",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "statenvertaling",
+          "prompt": "**Statenvertaling (SV)**",
+          "answer": "- **Vertaalprincipes:** Sterk **concordant** (woord-voor-woord) en brontekstgetrouw met een hoog, plechtig register.\n- **Waardering:** Geeft goed inzicht in **woordvelden** en de taalkundige **meaning** van de brontekst zonder veel kleuring door de vertaler. Echter, door de verouderde taal verschuift de last van het **interpreteren** volledig naar de lezer.\n- **Interpretive community:** Vooral in gebruik bij behoudende reformatorische kerken."
+        },
+        {
+          "id": "nbg-1951",
+          "prompt": "**NBG-vertaling 1951**",
+          "answer": "- **Vertaalprincipes:** Grote mate van **concordantie**, maar iets minder rigide dan de SV. Het register is archaïsch ten opzichte van modern Nederlands.\n- **Waardering:** Waardevol voor woordstudies, maar minder gericht op natuurlijk Nederlands (doeltaal)."
+        },
+        {
+          "id": "nbv",
+          "prompt": "**De Nieuwe Bijbelvertaling (NBV / NBV21)**",
+          "answer": "- **Vertaalprincipes:** Balans tussen brontaalgetrouw en doeltaalgericht; vertaalt vaker de gedachte (**parafraserend** op zinsniveau) om de **significance** voor de moderne lezer te vergroten.\n- **Waardering:** Biedt een natuurlijke leeservaring door gevarieerde registers, maar door de lagere concordantie is de onderlinge samenhang tussen **woordvelden** minder direct zichtbaar."
+        },
+        {
+          "id": "gnb",
+          "prompt": "**Groot Nieuws Bijbel (GNB)**",
+          "answer": "- **Vertaalprincipes:** Uitgesproken **dynamisch-equivalent** (gedachte-voor-gedachte); beelden worden omgezet naar begrijpelijk Nederlands.\n- **Waardering:** Zeer hoge **significance** voor jongeren en buitenkerkelijken, maar ongeschikt voor diepgaande studie omdat de oorspronkelijke taalkundige structuur vaak verloren gaat."
+        },
+        {
+          "id": "hsv",
+          "prompt": "**Herziene Statenvertaling (HSV)**",
+          "answer": "- **Vertaalprincipes:** **Concordant**; een herziening die het 'coloriet' van de SV wil behouden terwijl de taal wordt geactualiseerd.\n- **Waardering:** Herstelt fouten uit de oude SV en is beter leesbaar, maar blijft qua beleving sterk verbonden aan de eigen reformatorische **interpretive community**."
+        },
+        {
+          "id": "bgt",
+          "prompt": "**Bijbel in Gewone Taal (BGT)**",
+          "answer": "- **Vertaalprincipes:** Zeer duidelijke taal (B1-niveau); vertaalt de gedachte om de tekst voor iedereen toegankelijk te maken.\n- **Waardering:** Uitstekend voor de directe verstaanbaarheid, maar de literaire gelaagdheid en technische **meaning** van de brontekst verdwijnen bijna volledig."
+        },
+        {
+          "id": "naardense-bijbel",
+          "prompt": "**De Naardense Bijbel**",
+          "answer": "- **Vertaalprincipes:** Extreem **concordant**; probeert elk brontaalwoord consequent met één Nederlands woord weer te geven.\n- **Waardering:** Zeer waardevol voor woordstudies, maar taalkundig aanvechtbaar omdat het de natuurlijke communicatieve functie van taal (betekenis per context) negeert."
+        },
+        {
+          "id": "het-boek",
+          "prompt": "**Het Boek**",
+          "answer": "- **Vertaalprincipes:** Wordt getypeerd als een **parafrase** en niet als een echte vertaling, omdat het niet direct vanuit de brontekst is gemaakt door experts.\n- **Waardering:** Zeer toegankelijk, maar kan niet dienen als basis voor serieuze exegese of het onderzoeken van **woordvelden**."
+        },
+        {
+          "id": "willibrord",
+          "prompt": "**Willibrordvertaling**",
+          "answer": "- **Vertaalprincipes:** Dynamisch-equivalent, gericht op de katholieke **interpretive community**.\n- **Waardering:** Goede balans voor de kerkganger, maar minder geschikt voor exegese door de vrije vertaalwijze."
         }
       ]
     }
