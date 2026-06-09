@@ -552,7 +552,7 @@ def main() -> None:
     }
     packs["ot-hs2-canon"] = {
         "title": "Canon OT",
-        "shuffle": True,
+        "shuffle": False,
         "items": extract_from_enum(hs2, "Hs2CanonOTVragenData"),
     }
     packs["ot-hs2-septuagint"] = {

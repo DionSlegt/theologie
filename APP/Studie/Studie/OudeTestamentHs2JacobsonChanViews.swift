@@ -549,8 +549,8 @@ private enum Hs2CanonOTVragenData {
             id: "canon-verschillen",
             termMarkdown: "**Verklaar de verschillen in canons**",
             antwoordMarkdown: Hs2JacobsonChanOpmaak.antwoordPerRegel([
-                "**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.",
                 "**Protestantse canon:** Bevat precies dezelfde boeken als de Tenach, maar volgt de Griekse volgorde. Protestanten verwierpen de extra boeken uit de Vulgata als \"apocrief\" omdat ze terug wilden naar de oorspronkelijke Hebreeuwse bron.",
+                "**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.",
                 "**Rooms-katholieke canon:** Bevat de Hebreeuwse boeken plus een selectie Griekse boeken, de deuterocanonieke boeken. Deze lijst is gebaseerd op de **Vulgata** (eind van de 4e eeuw n.Chr.), de Latijnse vertaling van Hiëronymus die eeuwenlang de officiële tekst van de katholieke kerk was en een specifieke selectie uit de Griekse bronnen bevatte.",
                 "**Orthodoxe canon:** De meest uitgebreide canon, gebaseerd op de volledige Griekse Septuaginta (tussen 300 en 200 v.Chr. ontstaan). Omdat de Orthodoxe kerken de Griekse traditie bleven volgen en niet overstapten op de Latijnse Vulgata, behielden zij extra boeken (zoals 3 Makkabeeën) die in de Vulgata ontbraken.",
             ])

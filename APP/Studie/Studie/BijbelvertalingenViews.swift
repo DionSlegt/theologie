@@ -93,6 +93,44 @@ enum BijbelvertalingenBegrippenTyperenData {
                 "Voorbeelden zijn de *Groot Nieuws Bijbel* en de *Bijbel in Gewone Taal*. De reader maakt wel een belangrijk onderscheid: werken zoals *Het Boek* worden expliciet getypeerd als een **parafrase** en niet als een echte vertaling, omdat ze niet direct vanuit de brontekst door een team van brontaal- en doeltaalexperts zijn gemaakt.",
             ])
         ),
+        .init(
+            id: "register",
+            termMarkdown: "**Register**",
+            antwoordMarkdown: BijbelvertalingenOpmaak.antwoordPerRegel([
+                "Het register is de \"toon\" of sociale lading van taalgebruik. De reader onderscheidt vijf niveaus:",
+                """
+                - **1. Vulgair:** Zeer plat (bijv. *zeiken*).
+                - **2. Informeel:** Alledaags/populair (bijv. *pissen*).
+                - **3. Ongemarkeerd:** Neutraal/gewoon (bijv. *plassen*).
+                - **4. Formeel:** Beleefd/zakelijk (bijv. *urineren*).
+                - **5. Archaïsch:** Verouderd/plechtig (bijv. *wateren*).
+                """,
+                "Bijbelvertalingen zoals de **Statenvertaling** gebruiken een hoog, archaïsch register om eerbied uit te drukken, terwijl de **BGT** juist een ongemarkeerd register hanteert voor maximale toegankelijkheid.",
+            ])
+        ),
+        .init(
+            id: "taaleigen",
+            termMarkdown: "**Taaleigen (Taalkenmerk)**",
+            antwoordMarkdown: BijbelvertalingenOpmaak.antwoordPerRegel([
+                "Dit verwijst naar taalkundige constructies uit de brontaal (Grieks of Hebreeuws) die doorschemeren in de vertaling.",
+                """
+                - **Kenmerk:** Een vertaling die dicht bij het \"taaleigen\" van de brontekst blijft, behoudt bijvoorbeeld Griekse zinsconstructies die in het Nederlands onnatuurlijk klinken.
+                - **Voorbeeld:** De **Statenvertaling** laat vaak Griekse taalkenmerken staan (zoals: \"Hij... verhoogd zijnde\"), terwijl moderne vertalingen dit omzetten naar vloeibaar Nederlands.
+                """,
+            ])
+        ),
+        .init(
+            id: "teksteigen",
+            termMarkdown: "**Teksteigen (Tekstkenmerk)**",
+            antwoordMarkdown: BijbelvertalingenOpmaak.antwoordPerRegel([
+                "Dit gaat over de kenmerken van de tekst zelf, zoals het **genre** en de **toon**.",
+                """
+                - **Kenmerk:** Een vertaler moet beslissen of hij tekstkenmerken zoals poëzie, een strakke redenering of een luchtige toon in het Nederlands wil laten horen en zien in de lay-out.
+                - **Voorbeeld:** De **NBV21** besteedt veel aandacht aan tekstkenmerken door poëzie ook echt als poëzie te vertalen, terwijl een parafrase zoals **Het Boek** deze kenmerken vaak verliest in een gelijkmatige alledaagsheid.
+                """,
+                "Met deze begrippen kun je typeren of een vertaling de nadruk legt op de **vorm van de brontaal** (taaleigen) of op de **literaire aard van de tekst** (teksteigen).",
+            ])
+        ),
     ]
 }
 
@@ -183,10 +221,10 @@ enum BijbelvertalingenDuidenData {
         ),
         .init(
             id: "willibrord",
-            termMarkdown: "**Willibrordvertaling**",
+            termMarkdown: "**9. Willibrordvertaling**",
             antwoordMarkdown: BijbelvertalingenOpmaak.antwoordPerRegel([
                 """
-                - **Vertaalprincipes:** Dynamisch-equivalent, gericht op de katholieke **interpretive community**.
+                - **Vertaalprincipes:** Dynamisch-equivalent, gericht op de Room-Katholieke **interpretive community** omdat deze deutrocanonieke boeken bevat.
                 - **Waardering:** Goede balans voor de kerkganger, maar minder geschikt voor exegese door de vrije vertaalwijze.
                 """,
             ])

@@ -815,7 +815,7 @@
     },
     "ot-hs2-canon": {
       "title": "Canon OT",
-      "shuffle": true,
+      "shuffle": false,
       "items": [
         {
           "id": "canon-protestants",
@@ -840,7 +840,7 @@
         {
           "id": "canon-verschillen",
           "prompt": "**Verklaar de verschillen in canons**",
-          "answer": "**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.\n\n**Protestantse canon:** Bevat precies dezelfde boeken als de Tenach, maar volgt de Griekse volgorde. Protestanten verwierpen de extra boeken uit de Vulgata als \"apocrief\" omdat ze terug wilden naar de oorspronkelijke Hebreeuwse bron.\n\n**Rooms-katholieke canon:** Bevat de Hebreeuwse boeken plus een selectie Griekse boeken, de deuterocanonieke boeken. Deze lijst is gebaseerd op de **Vulgata** (eind van de 4e eeuw n.Chr.), de Latijnse vertaling van Hiëronymus die eeuwenlang de officiële tekst van de katholieke kerk was en een specifieke selectie uit de Griekse bronnen bevatte.\n\n**Orthodoxe canon:** De meest uitgebreide canon, gebaseerd op de volledige Griekse Septuaginta (tussen 300 en 200 v.Chr. ontstaan). Omdat de Orthodoxe kerken de Griekse traditie bleven volgen en niet overstapten op de Latijnse Vulgata, behielden zij extra boeken (zoals 3 Makkabeeën) die in de Vulgata ontbraken."
+          "answer": "**Protestantse canon:** Bevat precies dezelfde boeken als de Tenach, maar volgt de Griekse volgorde. Protestanten verwierpen de extra boeken uit de Vulgata als \"apocrief\" omdat ze terug wilden naar de oorspronkelijke Hebreeuwse bron.\n\n**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.\n\n**Rooms-katholieke canon:** Bevat de Hebreeuwse boeken plus een selectie Griekse boeken, de deuterocanonieke boeken. Deze lijst is gebaseerd op de **Vulgata** (eind van de 4e eeuw n.Chr.), de Latijnse vertaling van Hiëronymus die eeuwenlang de officiële tekst van de katholieke kerk was en een specifieke selectie uit de Griekse bronnen bevatte.\n\n**Orthodoxe canon:** De meest uitgebreide canon, gebaseerd op de volledige Griekse Septuaginta (tussen 300 en 200 v.Chr. ontstaan). Omdat de Orthodoxe kerken de Griekse traditie bleven volgen en niet overstapten op de Latijnse Vulgata, behielden zij extra boeken (zoals 3 Makkabeeën) die in de Vulgata ontbraken."
         }
       ]
     },
@@ -1412,6 +1412,21 @@
           "id": "parafraserend",
           "prompt": "**Parafraserend**",
           "answer": "**Parafraserend vertalen** (vaak gelijkgesteld aan dynamisch-equivalent vertalen) houdt in dat een tekst **gedachte voor gedachte** wordt vertaald in plaats van woord voor woord. De belangrijkste kenmerken zijn:\n\n- **Focus op effect:** Men zoekt naar een vertaling die in het Nederlands dezelfde betekeniswaarde (equivalentie) heeft als de grondtekst.\n- **Natuurlijk taalgebruik:** Er wordt gestreefd naar vlot en begrijpelijk Nederlands, waarbij de vertaler de vrijheid neemt om een woord per context verschillend te vertalen om recht te doen aan de bedoeling.\n- **Verduidelijking:** Metaforen en typische uitdrukkingen worden vaak uitleggend vertaald om de toegankelijkheid te vergroten.\n- **Doelgroep:** Deze methode is zeer geschikt voor kinderen, jongeren of mensen die niet bekend zijn met de Bijbel, maar is minder geschikt voor diepgaande woordstudies.\n\nVoorbeelden zijn de *Groot Nieuws Bijbel* en de *Bijbel in Gewone Taal*. De reader maakt wel een belangrijk onderscheid: werken zoals *Het Boek* worden expliciet getypeerd als een **parafrase** en niet als een echte vertaling, omdat ze niet direct vanuit de brontekst door een team van brontaal- en doeltaalexperts zijn gemaakt."
+        },
+        {
+          "id": "register",
+          "prompt": "**Register**",
+          "answer": "Het register is de \"toon\" of sociale lading van taalgebruik. De reader onderscheidt vijf niveaus:\n\n- **1. Vulgair:** Zeer plat (bijv. *zeiken*).\n- **2. Informeel:** Alledaags/populair (bijv. *pissen*).\n- **3. Ongemarkeerd:** Neutraal/gewoon (bijv. *plassen*).\n- **4. Formeel:** Beleefd/zakelijk (bijv. *urineren*).\n- **5. Archaïsch:** Verouderd/plechtig (bijv. *wateren*).\n\nBijbelvertalingen zoals de **Statenvertaling** gebruiken een hoog, archaïsch register om eerbied uit te drukken, terwijl de **BGT** juist een ongemarkeerd register hanteert voor maximale toegankelijkheid."
+        },
+        {
+          "id": "taaleigen",
+          "prompt": "**Taaleigen (Taalkenmerk)**",
+          "answer": "Dit verwijst naar taalkundige constructies uit de brontaal (Grieks of Hebreeuws) die doorschemeren in de vertaling.\n\n- **Kenmerk:** Een vertaling die dicht bij het \\\"taaleigen\\\" van de brontekst blijft, behoudt bijvoorbeeld Griekse zinsconstructies die in het Nederlands onnatuurlijk klinken.\n- **Voorbeeld:** De **Statenvertaling** laat vaak Griekse taalkenmerken staan (zoals: \\\"Hij... verhoogd zijnde\\\"), terwijl moderne vertalingen dit omzetten naar vloeibaar Nederlands."
+        },
+        {
+          "id": "teksteigen",
+          "prompt": "**Teksteigen (Tekstkenmerk)**",
+          "answer": "Dit gaat over de kenmerken van de tekst zelf, zoals het **genre** en de **toon**.\n\n- **Kenmerk:** Een vertaler moet beslissen of hij tekstkenmerken zoals poëzie, een strakke redenering of een luchtige toon in het Nederlands wil laten horen en zien in de lay-out.\n- **Voorbeeld:** De **NBV21** besteedt veel aandacht aan tekstkenmerken door poëzie ook echt als poëzie te vertalen, terwijl een parafrase zoals **Het Boek** deze kenmerken vaak verliest in een gelijkmatige alledaagsheid.\n\nMet deze begrippen kun je typeren of een vertaling de nadruk legt op de **vorm van de brontaal** (taaleigen) of op de **literaire aard van de tekst** (teksteigen)."
         }
       ]
     },
@@ -1461,8 +1476,8 @@
         },
         {
           "id": "willibrord",
-          "prompt": "**Willibrordvertaling**",
-          "answer": "- **Vertaalprincipes:** Dynamisch-equivalent, gericht op de katholieke **interpretive community**.\n- **Waardering:** Goede balans voor de kerkganger, maar minder geschikt voor exegese door de vrije vertaalwijze."
+          "prompt": "**9. Willibrordvertaling**",
+          "answer": "- **Vertaalprincipes:** Dynamisch-equivalent, gericht op de Room-Katholieke **interpretive community** omdat deze deutrocanonieke boeken bevat.\n- **Waardering:** Goede balans voor de kerkganger, maar minder geschikt voor exegese door de vrije vertaalwijze."
         }
       ]
     }
