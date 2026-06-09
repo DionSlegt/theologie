@@ -654,7 +654,7 @@
   }
 
   function requestExit() {
-    if (view === "launcher") return;
+    if (view === "launcher" && !window.StudieOtNt?.isActive?.()) return;
     if (window.StudieOtNt?.isActive?.()) {
       if (window.StudieOtNt.handleBack()) return;
       setView("launcher");

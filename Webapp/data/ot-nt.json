@@ -21,15 +21,33 @@
         ]
       },
       {
+        "header": "Archeologische perioden",
+        "links": [
+          {
+            "label": "Archeologische perioden",
+            "pack": "ot-archeo-perioden"
+          }
+        ]
+      },
+      {
+        "header": "Wereldrijken",
+        "links": [
+          {
+            "label": "Rijken van het Oude Testament",
+            "pack": "ot-wereldrijken"
+          }
+        ]
+      },
+      {
         "header": "Hs 2 Jacobson & Chan",
         "links": [
           {
-            "label": "Opbouw OT",
-            "pack": "ot-hs2-opbouw"
-          },
-          {
             "label": "Canon OT",
             "pack": "ot-hs2-canon"
+          },
+          {
+            "label": "Septuagint",
+            "pack": "ot-hs2-septuagint"
           },
           {
             "label": "Deuterocanonieke boeken",
@@ -585,7 +603,7 @@
         {
           "id": "ot-persoon-abraham",
           "prompt": "**Abraham**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- Midden bronstijd (2000 – 1550 v.Chr.)\n- Abraham en aartsvaders hadden half nomadisch bestaan\n- Mesopotamië in Ur, huidige Irak\n- Via Haran naar Sichem in Kanaän omdat dat de vruchtbare halve maan volgt\n\n**Politiek**\n\n- Machtsverschuiving\n  - De gevestigde dynastieën waren ingestort\n  - Half nomadische stammen (Amorieten) de macht in Mesopotamië\n  - Dit is de optrap naar het Oud-Babylonische rijk (Hammurabi) als eerste koning. (Hammurabi codex, verzameling wetten)\n\n**Typering**\n\n- Explosieve stedelijke ontwikkeling en gigantische bureaucratie\n- Tijd van uitvinding en spreiding van het schrift\n  - Mesopotamië spijkerschrift\n  - Egypte hiërogliefen op papyrus"
+          "answer": "**Gebied en Archeologische periode**\n\n- Midden bronstijd (2000 – 1550 v.Chr.)\n- Abraham en aartsvaders hadden half nomadisch bestaan\n- Mesopotamië in Ur, huidige Irak\n- Via Haran naar Sichem in Kanaän omdat dat de vruchtbare halve maan volgt\n\n**Politiek**\n\n- Machtsverschuiving\n  - De gevestigde dynastieën waren ingestort\n  - Half nomadische stammen (Amorieten) de macht in Mesopotamië\n  - Dit is de optrap naar het Oud-Babylonische rijk (Hammurabi) als belangrijke koning. (Hammurabi codex, verzameling wetten)\n\n**Typering**\n\n- Explosieve stedelijke ontwikkeling en gigantische bureaucratie\n- Tijd van uitvinding en spreiding van het schrift\n  - Mesopotamië spijkerschrift\n  - Egypte hiërogliefen op papyrus"
         },
         {
           "id": "ot-persoon-mozes",
@@ -595,12 +613,12 @@
         {
           "id": "ot-persoon-jozua",
           "prompt": "**Jozua**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- Late bronstijd (1550 – 1200 v.Chr.)\n- Kanaän / Israël\n\n**Politiek**\n\n- Tijd van de vestiging en richters\n- Balance of powers viel weg wat ruimte gaf voor de Israëlieten\n\n**Typering**\n\n- Tijden van droogte, hongersnoden en migraties laat de grote rijken instorten\n  - Hierdoor konden zeevolken ontwikkelen (Filistijnen)"
+          "answer": "**Gebied en Archeologische periode**\n\n- Late bronstijd (1550 – 1200 v.Chr.)\n- Kanaän / Israël\n\n**Politiek**\n\n- Israël was in deze tijd een stammenfederatie (een confederatie van 12 stammen) en nog geen centraal koninkrijk\n- Interne zwakte bij de wereldrijken\n\n**Typering**\n\n- Tijden van droogte, hongersnoden en migraties laat de grote rijken instorten\n  - Hierdoor konden zeevolken ontwikkelen (Filistijnen)"
         },
         {
           "id": "ot-persoon-david",
           "prompt": "**David**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 1 (1200 - 930 v.Chr.)\n- Datering David 1000 v.Chr.\n\n**Politiek**\n\n- Geopolitiek machtsvacuüm (Egypte en de rijken in Mesopotamië waren tijdelijk zwak waren of waren ingestort)\n- Filistijnen al vijand\n  - Pentapolis: Ekron – Asdod – Ashkelon – Gath – Gaza\n\n**Typering**\n\n- Verenigde monarchie (Hoofdstad Jeruzalem)\n- Overgang bronstijd naar ijzertijd"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 1 (1200 - 930 v.Chr.)\n- Datering David 1000 v.Chr.\n\n**Politiek**\n\n- Geopolitiek machtsvacuüm (Egypte en de rijken in Mesopotamië waren tijdelijk zwak waren of waren ingestort)\n- Interne zwakte van Egypte: Het Egyptische Nieuwe Rijk kampte met interne verdeeldheid en wanorde, waardoor zij de controle over Kanaän verloren\n- Filistijnen al vijand\n  - Pentapolis: Ekron – Asdod – Ashkelon – Gath – Gaza\n\n**Typering**\n\n- Verenigde monarchie (Hoofdstad Jeruzalem)\n- Overgang bronstijd naar ijzertijd"
         },
         {
           "id": "ot-persoon-salomo",
@@ -610,7 +628,7 @@
         {
           "id": "ot-persoon-jerobeam-i",
           "prompt": "**Jerobeam I**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Scheuring rijk (930 v.Chr.)\n- Koning Noordrijk\n\n**Politiek**\n\n- Veel oorlog tussen Juda, Israël en Aram\n- Egypte speelde geen rol maar in de verte begon Assyrië weer te groeien.\n\n**Typering**\n\n- Een tijd van interne politieke onrust en wisselende dynastieën in het noorden\n- Begin van \"kwaad doen in de ogen van God,\"\n- Tempel staat in zuiden. Om te voorkomen dat het volk naar het zuiden reist:\n  - Creëert 2 heiligdommen (Dan en Bethel)\n  - Gouden kalveren\n  - Religieuze instabiliteit (Ook i.v.m. Baal diensten)."
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Scheuring rijk (930 v.Chr.)\n- Koning Noordrijk\n\n**Politiek**\n\n- Veel oorlog tussen Juda, Israël en Aram\n- Egypte speelde minder direct een rol; Assyrië begon op afstand weer sterker te worden.\n\n**Typering**\n\n- Een tijd van interne politieke onrust en wisselende dynastieën in het noorden\n- Begin van \"kwaad doen in de ogen van God,\"\n- Tempel staat in zuiden. Om te voorkomen dat het volk naar het zuiden reist:\n  - Creëert 2 heiligdommen (Dan en Bethel)\n  - Gouden kalveren\n  - Religieuze instabiliteit (Ook i.v.m. Baal diensten)."
         },
         {
           "id": "ot-persoon-jerobeam-ii",
@@ -625,7 +643,7 @@
         {
           "id": "ot-persoon-josia",
           "prompt": "**Josia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- (regeerde ca. 640–609 v.Chr.).\n- Gebied: Het Zuidrijk (Juda).\n\n**Politiek**\n\n- Assyrië stort in door druk van Babylonische rebellen (Ninevé valt)\n- Machtsvacuüm ontstaat Josia pakt zijn kans\n- Egypte grijpt in, Josia dacht de Farao tegen te kunnen houden\n- Josia sterft in strijd met Egypte bij Megido\n- Einde van een tijdperk: Hij was de laatste goede koning vóór de verwoesting van Jeruzalem en de daaropvolgende ballingschap\n\n**Typering**\n\n- Hervormingskoning: Josia wordt getypeerd als een hervormingsgezinde en de laatste \"goede\" koning van Juda. Zorgt voor zuivering van Syrische en heidense invloeden\n- Vondst van de Wet: Tijdens herstelwerkzaamheden in de tempel werd het \"boek van de wet\" (waarschijnlijk een vroege vorm van Deuteronomium) teruggevonden, wat leidde tot een grote religieuze ommekeer\n- Herstel: Hij probeerde de corruptie van zijn voorgangers ongedaan te maken en de exclusieve aanbidding van God te herstellen"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- (regeerde ca. 640–609 v.Chr.).\n- Gebied: Het Zuidrijk (Juda).\n\n**Politiek**\n\n- Assyrië stort in door druk van Babylonische rebellen (Ninevé valt)\n- Machtsvacuüm ontstaat Josia pakt zijn kans\n- Egypte grijpt in, Josia dacht de Farao tegen te kunnen houden\n- Josia sterft in strijd met Egypte bij Megido\n- Einde van een tijdperk: Hij was de laatste goede koning vóór de verwoesting van Jeruzalem en de daaropvolgende ballingschap\n\n**Typering**\n\n- Hervormingskoning: Josia wordt getypeerd als een hervormingsgezinde en de laatste \"goede\" koning van Juda. Zorgt voor zuivering van Assyrische en vreemde/heiden cultische invloeden\n- Vondst van de Wet: Tijdens herstelwerkzaamheden in de tempel werd het \"boek van de wet\" (waarschijnlijk een vroege vorm van Deuteronomium) teruggevonden, wat leidde tot een grote religieuze ommekeer\n- Herstel: Hij probeerde de corruptie van zijn voorgangers ongedaan te maken en de exclusieve aanbidding van God te herstellen"
         },
         {
           "id": "ot-persoon-jeremia",
@@ -649,39 +667,90 @@
         }
       ]
     },
-    "ot-hs2-opbouw": {
-      "title": "Opbouw OT",
-      "shuffle": true,
+    "ot-archeo-perioden": {
+      "title": "Archeologische perioden",
+      "shuffle": false,
       "items": [
         {
-          "id": "opbouw-overzicht",
-          "prompt": "**Wat is de opbouw van het oude testament?**",
-          "answer": "**Pentateuch (Wet)**\n\nHistorische boeken\n\nPoëzie en wijsheid\n\nGrote Profeten\n\nKleine profeten"
+          "id": "ot-archeo-paleolithicum",
+          "prompt": "**Oude Steentijd — Paleolithicum**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\nVóór 14.000\n\n**Israël:**\n\n—"
         },
         {
-          "id": "opbouw-pentateuch",
-          "prompt": "**Pentateuch (Wet)**",
-          "answer": "Genesis\n\nExodus\n\nLeviticus\n\nNumeri\n\nDeuteronomium"
+          "id": "ot-archeo-mesolithicum",
+          "prompt": "**Midden-Steentijd — Mesolithicum**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n14.000–8000\n\n**Israël:**\n\n—"
         },
         {
-          "id": "opbouw-historisch",
-          "prompt": "**Historische boeken**",
-          "answer": "Jozua\n\nRechters\n\nRuth\n\n1 Samuel\n\n2 Samuel\n\n1 Koningen\n\n2 Koningen\n\n1 Kronieken\n\n2 Kronieken\n\nEzra\n\nNehemia\n\nEster"
+          "id": "ot-archeo-neolithicum",
+          "prompt": "**Nieuwe Steentijd — Neolithicum**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n8000–4200\n\n**Israël:**\n\n—"
         },
         {
-          "id": "opbouw-poezie",
-          "prompt": "**Poëzie en wijsheid**",
-          "answer": "Job\n\nPsalmen\n\nSpreuken\n\nPrediker\n\nHooglied"
+          "id": "ot-archeo-chalcolithicum",
+          "prompt": "**Koper-Steentijd — Chalcolithicum**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n4200–3300\n\n**Israël:**\n\n—"
         },
         {
-          "id": "opbouw-grote-profeten",
-          "prompt": "**Grote profeten**",
-          "answer": "Jesaja\n\nJeremia\n\nKlaagliederen\n\nEzechiël\n\nDaniël"
+          "id": "ot-archeo-vroege-bronstijd",
+          "prompt": "**Vroege Bronstijd**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n3300–2000\n\n**Israël:**\n\n—"
         },
         {
-          "id": "opbouw-kleine-profeten",
-          "prompt": "**Kleine profeten**",
-          "answer": "Hosea\n\nJoël\n\nAmos\n\nObadja\n\nJona\n\nMicha\n\nNahum\n\nHabakuk\n\nSefanja\n\nHaggai\n\nZacharia\n\nMaleachi"
+          "id": "ot-archeo-midden-bronstijd",
+          "prompt": "**Midden-Bronstijd**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n2000–1550\n\n**Israël:**\n\nAartsvaders van Israël"
+        },
+        {
+          "id": "ot-archeo-late-bronstijd",
+          "prompt": "**Late Bronstijd**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n1550–1200\n\n**Israël:**\n\nSlavernij in Egypte; geboorte van Mozes; de exodus; woestijnreis; Israëlitische verovering en vestiging in Kanaän"
+        },
+        {
+          "id": "ot-archeo-ijzertijd-i",
+          "prompt": "**IJzertijd I**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n1200–930\n\n**Israël:**\n\nTijd van de rechters; verenigde monarchie: Saul, David en Salomo"
+        },
+        {
+          "id": "ot-archeo-ijzertijd-ii",
+          "prompt": "**IJzertijd II**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n930–539\n\n**Israël:**\n\nVerdeeld koninkrijk; val van Israël in 722; val van Juda in 587"
+        },
+        {
+          "id": "ot-archeo-ijzertijd-iii",
+          "prompt": "**IJzertijd III**\n\n**Geschatte datering v.Chr.:**\n\n**Israël:**",
+          "answer": "**Geschatte datering v.Chr.:**\n\n539–332\n\n**Israël:**\n\nTerugkeer van de Joodse ballingen; Ezra en Nehemia; bouw van de tweede tempel en de muren van Jeruzalem"
+        }
+      ]
+    },
+    "ot-wereldrijken": {
+      "title": "Rijken van het Oude Testament",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "ot-wereldrijk-egypte",
+          "prompt": "**Egyptisch rijk**\n\n**Periode:**\n\n**Thuisland:**\n\n**Taal:**\n\n**Belangrijke leiders:**\n\n**Belangrijke goden:**",
+          "answer": "**Periode:**\n\n1550–1069 v.Chr.\n\n**Thuisland:**\n\nEgypte\n\n**Taal:**\n\nEgyptisch\n\n**Belangrijke leiders:**\n\nAchnaton, Ramses III\n\n**Belangrijke goden:**\n\nHorus, Re"
+        },
+        {
+          "id": "ot-wereldrijk-assyrie",
+          "prompt": "**Nieuw-Assyrisch rijk**\n\n**Periode:**\n\n**Thuisland:**\n\n**Taal:**\n\n**Belangrijke leiders:**\n\n**Belangrijke goden:**",
+          "answer": "**Periode:**\n\n934–609 v.Chr.\n\n**Thuisland:**\n\nMesopotamië\n\n**Taal:**\n\nAkkadisch\n\n**Belangrijke leiders:**\n\nTiglat-Pileser III, Sargon\n\n**Belangrijke goden:**\n\nAssur, Isjtar"
+        },
+        {
+          "id": "ot-wereldrijk-babylon",
+          "prompt": "**Nieuw-Babylonisch rijk**\n\n**Periode:**\n\n**Thuisland:**\n\n**Taal:**\n\n**Belangrijke leiders:**\n\n**Belangrijke goden:**",
+          "answer": "**Periode:**\n\n627–539 v.Chr.\n\n**Thuisland:**\n\nMesopotamië\n\n**Taal:**\n\nAkkadisch\n\n**Belangrijke leiders:**\n\nNebukadnezar\n\n**Belangrijke goden:**\n\nMardoek, Sin"
+        },
+        {
+          "id": "ot-wereldrijk-perzie",
+          "prompt": "**Perzisch rijk**\n\n**Periode:**\n\n**Thuisland:**\n\n**Taal:**\n\n**Belangrijke leiders:**\n\n**Belangrijke goden:**",
+          "answer": "**Periode:**\n\n550–333 v.Chr.\n\n**Thuisland:**\n\nIran\n\n**Taal:**\n\nAramees\n\n**Belangrijke leiders:**\n\nCyrus, Artaxerxes\n\n**Belangrijke goden:**\n\nAhura Mazda"
+        },
+        {
+          "id": "ot-wereldrijk-griekenland",
+          "prompt": "**Grieks rijk**\n\n**Periode:**\n\n**Thuisland:**\n\n**Taal:**\n\n**Belangrijke leiders:**\n\n**Belangrijke goden:**",
+          "answer": "**Periode:**\n\n334–167 v.Chr.\n\n**Thuisland:**\n\nMacedonië\n\n**Taal:**\n\nGrieks\n\n**Belangrijke leiders:**\n\nAlexander, Seleucus\n\n**Belangrijke goden:**\n\nZeus, Mars"
         }
       ]
     },
@@ -692,37 +761,37 @@
         {
           "id": "ontwikkeling-ot-zes-stappen",
           "prompt": "**Geef de 6 stappen waarin de ontwikkeling van het OT kan worden omschreven.**",
-          "answer": "1. De pre-canonieke fase\n\n2. De eerste schriftelijke vastlegging\n\n3. De vorming van de drie delen (TaNaK)\n\n4. De invloed van de Septuaginta (LXX)\n\n5. De definitieve vaststelling en stabilisatie\n\n6. Ontwikkelingen tijdens de Reformatie"
+          "answer": "**1. Mondelinge overlevering**\n\n**2. Kern Joodse canon (De Pentateuch)**\n\n**3. Uitbreiding en graduele vaststelling**\n\n**4. Septuaginta (LXX)**\n\n**5. Bevestiging op concilie van Jamnia**\n\n**6. Reformatie**"
         },
         {
-          "id": "ontwikkeling-ot-stap-1-pre-canoniek",
-          "prompt": "**1. De pre-canonieke fase:**",
-          "answer": "**Mondelinge overdracht:** In de vroege geschiedenis van Israël werden tradities, wetten en verhalen mondeling van generatie op generatie doorgegeven.\n\n**Beperkte geletterdheid:** Omdat slechts een klein percentage van de bevolking kon lezen en schrijven, bleven belangrijke tradities in eerste instantie uitsluitend mondeling bestaan."
+          "id": "ontwikkeling-ot-stap-1-mondeling",
+          "prompt": "**1. Mondelinge overlevering**",
+          "answer": "In de vroegste fase werden tradities, verhalen en liederen mondeling doorgegeven. Voorbeelden hiervan zijn zeer oude teksten zoals het lied van Mozes en Mirjam en het lied van Debora."
         },
         {
-          "id": "ontwikkeling-ot-stap-2-schriftelijk",
-          "prompt": "**2. De eerste schriftelijke vastlegging**",
-          "answer": "**Vroege documenten:** Gaandeweg ontstonden er zeer vroege schriftelijke documenten, zoals het lied van Mozes en Mirjam (Exodus 15) of het lied van Debora (Rechters 5), die later in grotere verhalen werden opgenomen.\n\n**Individuele boeken:** Boeken als Genesis of Deuteronomium ontwikkelden zich waarschijnlijk eerst als zelfstandige eenheden voordat ze onderdeel werden van een grotere verzameling."
+          "id": "ontwikkeling-ot-stap-2-pentateuch",
+          "prompt": "**2. Kern Joodse canon (De Pentateuch)**",
+          "answer": "De eerste vijf boeken van de Bijbel vormden de eerste vaste kern. Dit deel was als eerste voltooid en genoot binnen de Joodse gemeenschap het meeste gezag."
         },
         {
-          "id": "ontwikkeling-ot-stap-3-tanak",
-          "prompt": "**3. De vorming van de drie delen (TaNaK)**",
-          "answer": "De canon ontwikkelde zich in drie opeenvolgende stadia, wat nog steeds zichtbaar is in de Joodse indeling:\n\n**De Thora** (Wet)\n\n**De Nevi’im** (Profeten)\n\n**De Ketuvim** (Geschriften)"
+          "id": "ontwikkeling-ot-stap-3-uitbreiding",
+          "prompt": "**3. Uitbreiding en graduele vaststelling**",
+          "answer": "Na de Pentateuch volgde de verzameling van de Profeten en uiteindelijk de overige Geschriften. Dit was een langdurig proces waarbij boeken geleidelijk als gezaghebbend werden aanvaard."
         },
         {
           "id": "ontwikkeling-ot-stap-4-lxx",
-          "prompt": "**4. De invloed van de Septuaginta (LXX)**",
-          "answer": "**Vertaling naar het Grieks:** Tussen 300 en 200 v.Chr. werden de Joodse geschriften in Alexandrië vertaald naar het Grieks voor de Joden in de diaspora.\n\n**Langere canon:** De Septuaginta bevatte vijftien extra boeken (de apocriefen of deuterocanonieke boeken) die niet in de Hebreeuwse canon voorkwamen.\n\n**Christelijke adoptie:** De vroege christelijke kerk nam deze Griekse versie over als hun Schrift, wat de basis vormde voor de uitgebreidere rooms-katholieke en orthodoxe canons."
+          "prompt": "**4. Septuaginta (LXX)**",
+          "answer": "Tussen 300 en 200 v.Chr. ontstond een Griekse vertaling voor Joden in de diaspora. Deze versie bevatte vijftien extra boeken (de apocriefen of deuterocanonieke boeken) die niet in de Hebreeuwse lijst stonden."
         },
         {
-          "id": "ontwikkeling-ot-stap-5-vaststelling",
-          "prompt": "**5. De definitieve vaststelling en stabilisatie**",
-          "answer": "**Concilie van Jamnia** (ca. 90 n.Chr.): Na de verwoesting van de tweede tempel in 70 n.Chr. was er behoefte aan een officiële lijst. Tijdens een bijeenkomst van rabbijnen in Jamnia (Yabneh) werd de Hebreeuwse canon definitief bevestigd.\n\n**Masoretische Tekst:** Tussen 600 en 1000 n.Chr. stabiliseerden Joodse geleerden (de Masoreten) de tekst door klinkertekens en voordrachtstekens toe te voegen, wat resulteerde in de Masoretische Tekst die we vandaag nog gebruiken.\n\n**De rol van Qumran:** De vondst van de Dode Zeerollen toonde aan dat de teksten rond het begin van de jaartelling al zeer stabiel waren, maar dat er ook nog tekstuele variaties bestonden."
+          "id": "ontwikkeling-ot-stap-5-jamnia",
+          "prompt": "**5. Bevestiging op concilie van Jamnia**",
+          "answer": "Rond 90 n.Chr. kwamen Joodse geleerden in Jamnia (Yabneh) samen. Hier stelden zij de officiële lijst van heilige boeken vast voor het Rabbijnse Jodendom, waarbij zij alleen de Hebreeuwse teksten erkenden."
         },
         {
           "id": "ontwikkeling-ot-stap-6-reformatie",
-          "prompt": "**6. Ontwikkelingen tijdens de Reformatie**",
-          "answer": "**Terug naar de bron:** In de zestiende eeuw besloot Maarten Luther terug te keren naar de Hebreeuwse canonlijst (zonder de extra boeken uit de Septuaginta).\n\n**Griekse volgorde:** Hoewel de protestanten de kortere Joodse lijst aanhielden, behielden ze de indeling en volgorde van de boeken uit de Griekse traditie.\n\n**Verschillen blijven bestaan:** Hierdoor hebben protestanten en rooms-katholieken vandaag de dag een verschillende canon: de protestanten volgen de Hebreeuwse lijst, terwijl katholieken de uitgebreidere lijst inclusief de deuterocanonieke boeken handhaven."
+          "prompt": "**6. Reformatie**",
+          "answer": "Tijdens de Reformatie keerden protestanten terug naar deze kortere Hebreeuwse lijst (zonder de extra Griekse boeken). Ze behielden echter de indeling en volgorde van de Septuaginta (Wet, Geschiedenis, Poëzie, Profeten)."
         }
       ]
     },
@@ -732,28 +801,49 @@
       "items": [
         {
           "id": "canon-protestants",
-          "prompt": "**De Christelijke (Protestantse) canon**",
-          "answer": "Pentateuch (Wet)\n\nHistorische boeken\n\nPoëzie en Wijsheid\n\nGrote profeten\n\nKleine profeten"
+          "prompt": "**Protestantse canon**",
+          "answer": "**Protestantse canon**\n\n**Wet (Pentateuch)**\n\n**1.** Genesis\n\n**2.** Exodus\n\n**3.** Leviticus\n\n**4.** Numeri\n\n**5.** Deuteronomium\n\n**Historische boeken**\n\n**6.** Jozua\n\n**7.** Rechters\n\n**8.** Ruth\n\n**9.** 1 Samuël\n\n**10.** 2 Samuël\n\n**11.** 1 Koningen\n\n**12.** 2 Koningen\n\n**13.** 1 Kronieken\n\n**14.** 2 Kronieken\n\n**15.** Ezra\n\n**16.** Nehemia\n\n**17.** Esther\n\n**Poëtische boeken**\n\n**18.** Job\n\n**19.** Psalmen\n\n**20.** Spreuken\n\n**21.** Prediker\n\n**22.** Hooglied\n\n**Grote Profeten**\n\n**23.** Jesaja\n\n**24.** Jeremia\n\n**25.** Klaagliederen\n\n**26.** Ezechiël\n\n**27.** Daniël\n\n**Kleine Profeten**\n\n**28.** Hosea\n\n**29.** Joël\n\n**30.** Amos\n\n**31.** Obadja\n\n**32.** Jona\n\n**33.** Micha\n\n**34.** Nahum\n\n**35.** Habakuk\n\n**36.** Zefanja\n\n**37.** Haggai\n\n**38.** Zacharia\n\n**39.** Maleachi"
         },
         {
           "id": "canon-joods",
-          "prompt": "**De Joodse canon**",
-          "answer": "**Torah (Wet)**\n\n– Genesis\n\n– Exodus\n\n– Leviticus\n\n– Numeri\n\n– Deuteronomium\n\n**Profeten**\n\n**Vroege profeten**\n\n– Jozua\n\n– Richteren\n\n– Samuël\n\n– Koningen\n\n**Late profeten**\n\n– Jesaja\n\n– Jeremia\n\n– Ezechiël\n\n**De rol van de Twaalf:**\n\n– Hosea\n\n– Joël\n\n– Amos\n\n– Obadja\n\n– Jona\n\n– Micha\n\n– Nahum\n\n– Habakuk\n\n– Sefanja\n\n– Haggai\n\n– Zacharia\n\n– Maleachi\n\n**Geschriften**\n\n– Psalmen\n\n– Job\n\n– Spreuken\n\n– Ruth\n\n– Hooglied\n\n– Prediker\n\n– Klaagliederen\n\n– Ester\n\n– Daniël\n\n– Ezra-Nehemia\n\n– Kronieken"
+          "prompt": "**Joodse canon (Tenach)**",
+          "answer": "**Joodse canon (Tenach)**\n\n**Tora**\n\n**1.** Genesis\n\n**2.** Exodus\n\n**3.** Leviticus\n\n**4.** Numeri\n\n**5.** Deuteronomium\n\n**Profeten**\n\n**Vroege Profeten**\n\n**6.** Jozua\n\n**7.** Rechters\n\n**8.** Samuël\n\n**9.** Koningen\n\n**Late Profeten**\n\n**10.** Jesaja\n\n**11.** Jeremia\n\n**12.** Ezechiël\n\n**13.** De Twaalf Profeten\n\n- Hosea\n- Joël\n- Amos\n- Obadja\n- Jona\n- Micha\n- Nahum\n- Habakuk\n- Zefanja\n- Haggai\n- Zacharia\n- Maleachi\n\n**Geschriften**\n\n**14.** Psalmen\n\n**15.** Job\n\n**16.** Spreuken\n\n**17.** Ruth\n\n**18.** Hooglied\n\n**19.** Prediker\n\n**20.** Klaagliederen\n\n**21.** Esther\n\n**22.** Daniël\n\n**23.** Ezra-Nehemia\n\n**24.** Kronieken"
         },
         {
           "id": "canon-rooms-katholiek",
-          "prompt": "**De Rooms-katholieke canon**",
-          "answer": "**Pentateuch (Wet)**\n\n**Historische boeken**\n\ndeuterocanonieke toevoegingen:\n\nTobit\n\nJudit\n\nEster (met deuterocanonieke toevoegingen)\n\n1 Makkabeeën\n\n2 Makkabeeën\n\n**Poëzie & Wijsheid**\n\ndeuterocanonieke toevoegingen:\n\nWijsheid (van Salomo)\n\nWijsheid van Jezus Sirach (Ecclesiasticus)\n\n**Grote profeten**\n\ndeuterocanonieke toevoegingen:\n\nBaruch\n\nDaniël (met deuterocanonieke toevoegingen)\n\n**Kleine profeten — Twaalfprofetenboek**"
+          "prompt": "**Rooms-katholieke canon**",
+          "answer": "**Rooms-katholieke canon**\n\n**Wet (Pentateuch)**\n\n**1.** Genesis\n\n**2.** Exodus\n\n**3.** Leviticus\n\n**4.** Numeri\n\n**5.** Deuteronomium\n\n**Historische boeken**\n\n**6.** Jozua\n\n**7.** Rechters\n\n**8.** Ruth\n\n**9.** 1 Samuël\n\n**10.** 2 Samuël\n\n**11.** 1 Koningen\n\n**12.** 2 Koningen\n\n**13.** 1 Kronieken\n\n**14.** 2 Kronieken\n\n**15.** Ezra\n\n**16.** Nehemia\n\n**17.** Tobit **(DC)**\n\n**18.** Judit **(DC)**\n\n**19.** Esther **(toevoeging DC)**\n\n**20.** 1 Makkabeeën **(DC)**\n\n**21.** 2 Makkabeeën **(DC)**\n\n**Wijsheids- en poëtische boeken**\n\n**22.** Job\n\n**23.** Psalmen\n\n**24.** Spreuken\n\n**25.** Prediker\n\n**26.** Hooglied\n\n**27.** Wijsheid van Salomo **(DC)**\n\n**28.** Jezus Sirach / Ecclesiasticus **(DC)**\n\n**Grote Profeten**\n\n**29.** Jesaja\n\n**30.** Jeremia\n\n**31.** Klaagliederen\n\n**32.** Baruch (inclusief Brief van Jeremia) **(DC)**\n\n**33.** Ezechiël\n\n**34.** Daniël **(toevoeging DC)**\n\n**Kleine Profeten**\n\n**35.** Hosea\n\n**36.** Joël\n\n**37.** Amos\n\n**38.** Obadja\n\n**39.** Jona\n\n**40.** Micha\n\n**41.** Nahum\n\n**42.** Habakuk\n\n**43.** Zefanja\n\n**44.** Haggai\n\n**45.** Zacharia\n\n**46.** Maleachi"
         },
         {
           "id": "canon-oosters-orthodox",
           "prompt": "**Oosters-orthodoxe canon**",
-          "answer": "De oosters-orthodoxe kerken baseren zich primair op de **Septuaginta (LXX)**.\n\n**Pentateuch**\n\n**Historische boeken**\n\n1 Esdras (3 Ezra) — extra (alleen orthodox)\n\nTobit — deuterocanoniek\n\nJudit — deuterocanoniek\n\nEster (met toevoegingen) — deuterocanoniek\n\n1 Makkabeeën — deuterocanoniek\n\n2 Makkabeeën — deuterocanoniek\n\n3 Makkabeeën — extra (orthodox)\n\n4 Makkabeeën — soms als appendix\n\n**Poëzie & Wijsheid**\n\nWijsheid van Salomo\n\nWijsheid van Jezus Sirach\n\nPsalm 151 — extra (orthodox)\n\nOden (incl. Gebed van Manasse) — extra (orthodox)\n\n**Grote profeten**\n\nBaruch — deuterocanoniek\n\nBrief van Jeremia — deuterocanoniek\n\nDaniël (met toevoegingen) — deuterocanoniek\n\n**Kleine profeten**"
+          "answer": "**Oosters-orthodoxe canon**\n\n**Wet (Pentateuch)**\n\n**1.** Genesis\n\n**2.** Exodus\n\n**3.** Leviticus\n\n**4.** Numeri\n\n**5.** Deuteronomium\n\n**Historische boeken**\n\n**6.** Jozua\n\n**7.** Rechters\n\n**8.** Ruth\n\n**9.** 1 Koninkrijken (= 1 Samuël)\n\n**10.** 2 Koninkrijken (= 2 Samuël)\n\n**11.** 3 Koninkrijken (= 1 Koningen)\n\n**12.** 4 Koninkrijken (= 2 Koningen)\n\n**13.** 1 Paralipomenon (= 1 Kronieken)\n\n**14.** 2 Paralipomenon (= 2 Kronieken)\n\n**15.** 1 Esdras **(extra orthodox)**\n\n**16.** 2 Esdras (= Ezra-Nehemia)\n\n**17.** Tobit **(DC)**\n\n**18.** Judit **(DC)**\n\n**19.** Esther **(toevoeging DC)**\n\n**20.** 1 Makkabeeën **(DC)**\n\n**21.** 2 Makkabeeën **(DC)**\n\n**22.** 3 Makkabeeën **(extra orthodox)**\n\n**Wijsheids- en poëtische boeken**\n\n**23.** Psalmen\n\n**24.** Psalm 151 **(extra orthodox)**\n\n**25.** Job\n\n**26.** Oden (Gebed van Manasse) **(extra orthodox)**\n\n**27.** Spreuken\n\n**28.** Prediker\n\n**29.** Hooglied\n\n**30.** Wijsheid van Salomo **(DC)**\n\n**31.** Jezus Sirach / Ecclesiasticus **(DC)**\n\n**Kleine Profeten**\n\n**32.** Hosea\n\n**33.** Joël\n\n**34.** Amos\n\n**35.** Obadja\n\n**36.** Jona\n\n**37.** Micha\n\n**38.** Nahum\n\n**39.** Habakuk\n\n**40.** Zefanja\n\n**41.** Haggai\n\n**42.** Zacharia\n\n**43.** Maleachi\n\n**Grote Profeten**\n\n**44.** Jesaja\n\n**45.** Jeremia\n\n**46.** Baruch **(DC)**\n\n**47.** Klaagliederen\n\n**48.** Brief van Jeremia **(DC)**\n\n**49.** Ezechiël\n\n**50.** Daniël **(toevoeging DC)**\n\n**Appendix**\n\n**51.** 4 Makkabeeën **(appendix)**"
         },
         {
           "id": "canon-verschillen",
           "prompt": "**Verklaar de verschillen in canons**",
           "answer": "**Joodse canon (Tenach):** Bevat alleen de boeken die oorspronkelijk in het Hebreeuws en Aramees zijn geschreven. De Vulgata speelt hier geen rol, omdat deze canon de Joodse brontekst zelf is waaruit later vertaald werd.\n\n**Protestantse canon:** Bevat precies dezelfde boeken als de Tenach, maar volgt de Griekse volgorde. Protestanten verwierpen de extra boeken uit de Vulgata als \"apocrief\" omdat ze terug wilden naar de oorspronkelijke Hebreeuwse bron.\n\n**Rooms-katholieke canon:** Bevat de Hebreeuwse boeken plus een selectie Griekse boeken, de deuterocanonieke boeken. Deze lijst is gebaseerd op de **Vulgata** (eind van de 4e eeuw n.Chr.), de Latijnse vertaling van Hiëronymus die eeuwenlang de officiële tekst van de katholieke kerk was en een specifieke selectie uit de Griekse bronnen bevatte.\n\n**Orthodoxe canon:** De meest uitgebreide canon, gebaseerd op de volledige Griekse Septuaginta (tussen 300 en 200 v.Chr. ontstaan). Omdat de Orthodoxe kerken de Griekse traditie bleven volgen en niet overstapten op de Latijnse Vulgata, behielden zij extra boeken (zoals 3 Makkabeeën) die in de Vulgata ontbraken."
+        }
+      ]
+    },
+    "ot-hs2-septuagint": {
+      "title": "Septuagint",
+      "shuffle": false,
+      "items": [
+        {
+          "id": "septuagint-kenmerken",
+          "prompt": "**Septuagint**",
+          "answer": "De **Septuaginta** (vaak afgekort als **LXX**) is de Griekse vertaling van het Hebreeuwse Oude Testament, die tussen ongeveer 300 en 200 v.Chr. tot stand kwam in Alexandrië.\n\nDe belangrijkste kenmerken zijn:\n\n- **Doelgroep:** De vertaling werd gemaakt voor Joden in de diaspora die door de hellenisering Grieks spraken als hun dagelijkse taal.\n- **Inhoud:** De Septuaginta is uitgebreider dan de Hebreeuwse canon en bevat extra boeken, die we nu kennen als de **deuterocanonieke** of apocriefe boeken.\n- **Structuur:** De volgorde van de boeken in moderne Nederlandse en Engelse vertalingen volgt de indeling van de Septuaginta (Wet, Geschiedenis, Poëzie, Profeten) in plaats van de Joodse indeling (Wet, Profeten, Geschriften).\n- **Betekenis:** Het was de Bijbel die door de vroege christelijke kerk en de auteurs van het Nieuwe Testament het meest werd gebruikt.\n\nWist je dat de naam '70' (LXX) verwijst naar de legende dat zeventig (of 72) geleerden de tekst onafhankelijk van elkaar vertaalden en tot exact hetzelfde resultaat kwamen?"
+        },
+        {
+          "id": "vulgata-kenmerken",
+          "prompt": "**Vulgata**",
+          "answer": "De **Vulgata** is de Latijnse \"volksvertaling\" van de Bijbel, die aan het eind van de 4e eeuw werd voltooid door Hiëronymus (Jerome).\n\nHier zijn de belangrijkste redenen waarom deze vertaling zo belangrijk is voor de Katholieke Kerk:\n\n- **Terug naar de bron:** In tegenstelling tot eerdere vertalingen, vertaalde Hiëronymus het Oude Testament rechtstreeks vanuit het Hebreeuws en Aramees (\"Hebraica Veritas\") in plaats van uit het Grieks.\n- **Gezaghebbende status:** De Vulgata was gedurende meer dan duizend jaar vrijwel de enige Bijbel die in het westerse christendom werd gebruikt en groeide zo uit tot de officiële tekst van de Rooms-Katholieke Kerk.\n- **Volledige canon:** De Vulgata bevat de deuterocanonieke boeken (zoals Tobit en Judith). Hoewel Hiëronymus zelf de voorkeur gaf aan de kortere Hebreeuwse lijst, voegde hij deze boeken toe omdat de vroege kerk ze als heilig beschouwde.\n\nTegenwoordig gebruiken katholieke vertalingen vaker de originele Hebreeuwse en Griekse teksten, maar de Vulgata blijft een fundamentele tekst in hun traditie."
+        },
+        {
+          "id": "traditie-bijbelbron",
+          "prompt": "**Traditie en Bijbelbron**",
+          "answer": "**Oosters-Orthodox: De Septuaginta (LXX)**\n\n- **Waarom:** Dit was de Bijbel van de vroege christelijke kerk en de auteurs van het Nieuwe Testament. De Orthodoxe Kerk zet deze traditie voort en beschouwt de Griekse tekst als gezaghebbender dan de Hebreeuwse bronteksten.\n\n**Rooms-Katholiek: De Vulgata**\n\n- **Waarom:** Hiëronymus maakte deze Latijnse vertaling eind 4e eeuw om de Bijbel voor het gewone volk (*vulgus*) toegankelijk te maken. Het werd de officiële tekst van de kerk en bleef in het Westen meer dan duizend jaar de enige standaard.\n\n**Protestants: De Hebreeuwse canon (Tanach) met Griekse indeling**\n\n- **Waarom:** Tijdens de Reformatie greep men terug op de boeken die in de oorspronkelijke Hebreeuwse brontekst stonden, omdat men die als meest gezaghebbend beschouwde. Men behield wel de indeling van de Septuaginta (Wet, Geschiedenis, Poëzie, Profeten) omdat deze volgorde inmiddels vertrouwd was."
         }
       ]
     },
@@ -1109,32 +1199,37 @@
         {
           "id": "open-alle-personen",
           "prompt": "Noem zoveel mogelijk belangrijke personen met betrekking tot het NT:",
-          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
+          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
+        },
+        {
+          "id": "personen-overzicht",
+          "prompt": "Belangrijke personen rond het Nieuwe Testament",
+          "answer": "- **Alexander de Grote:** Griekse veroveraar die in 332 v.Chr. Palestina innam. Hij verspreidde de Griekse taal en cultuur (hellenisering), wat de wereld van het Nieuwe Testament blijvend vormgaf.\n- **Antiochus IV Epiphanes:** Seleucidische koning (175–164 v.Chr.) die de Joden wreed vervolgde en de tempel ontheiligde. Zijn acties vormden de directe aanleiding voor de Makkabese opstand en beïnvloedden het boek Daniël.\n- **Judas de Makkabeeër:** Bijgenaamd \"de hamer\", leidde hij de Joodse opstand in 167 v.Chr. Hij heroverde de tempel, wat leidde tot een periode van Joods zelfbestuur onder de Hasmoneese dynastie.\n- **Pontius Pilatus:** De Romeinse prefect (stadhouder) van Judea. Hij is de politieke sleutelfiguur die verantwoordelijk was voor het proces en de kruisiging van Jezus.\n\n**De vier Herodessen in het Nieuwe Testament:**\n\n1. **Herodes de Grote:** Regeerde over heel Palestina (37–4 v.Chr.) en was koning tijdens de geboorte van Jezus. Hij was een groot bouwer (o.a. de Tempel in Jeruzalem), maar ook berucht om zijn wreedheid.\n2. **Herodes Antipas:** Zoon van Herodes de Grote; hij heerste over Galilea en Perea tijdens het leven van Jezus en liet Johannes de Doper executeren.\n3. **Herodes Agrippa I:** Kleinzoon van Herodes de Grote; hij vervolgde de vroege christelijke gemeente en liet de apostel Jakobus ter dood brengen (Handelingen 12).\n4. **Herodes Agrippa II:** Zoon van Agrippa I en de laatste koning uit de dynastie; hij hoorde de verdediging van de apostel Paulus aan (Handelingen 25–26)."
         },
         {
           "id": "twee-griekse-heersers",
           "prompt": "Noem de belangrijke 2 Griekse heersers uit het Nieuwe Testament.",
-          "answer": "**Alexander de Grote**\n\nDeze Macedonische koning veroverde Palestina in 332 v.Chr. Zijn belangrijkste erfenis voor het Nieuwe Testament is de hellenisering: de verspreiding van de Griekse taal en cultuur over het hele Midden-Oosten, waardoor het Grieks de algemene taal van die wereld werd.\n\n**Antiochus IV Epiphanes**\n\nEen Seleucidische koning (175–164 v.Chr.) die berucht werd omdat hij probeerde de Joodse religie volledig uit te roeien. Hij verbood Joodse rituelen en plaatste een altaar voor de Griekse god Zeus in de tempel van Jeruzalem, wat de directe aanleiding was voor de Joodse opstand."
+          "answer": "- **Alexander de Grote:** Griekse veroveraar die in 332 v.Chr. Palestina innam. Hij verspreidde de Griekse taal en cultuur (hellenisering), wat de wereld van het Nieuwe Testament blijvend vormgaf.\n- **Antiochus IV Epiphanes:** Seleucidische koning (175–164 v.Chr.) die de Joden wreed vervolgde en de tempel ontheiligde. Zijn acties vormden de directe aanleiding voor de Makkabese opstand en beïnvloedden het boek Daniël."
         },
         {
           "id": "joodse-bevrijders",
           "prompt": "Wat was de naam van de Joodse bevrijders?",
-          "answer": "**Judas de Makkabeër**\n\nZijn bijnaam ‘Makkabeër’ betekent ‘de hamer’, wat verwijst naar de felheid waarmee hij de guerrilla-oorlog tegen de Seleuciden voerde. Hij heroverde de tempel in 164 v.Chr. en wijdde deze opnieuw in, een gebeurtenis die nog steeds gevierd wordt met het Chanoeka-feest."
+          "answer": "- **Judas de Makkabeeër:** Bijgenaamd \"de hamer\", leidde hij de Joodse opstand in 167 v.Chr. Hij heroverde de tempel, wat leidde tot een periode van Joods zelfbestuur onder de Hasmoneese dynastie."
         },
         {
           "id": "romeinse-bestuurder",
           "prompt": "Noem de Romeinse bestuurder.",
-          "answer": "**Pontius Pilatus**\n\nHij was de Romeinse prefect (gouverneur) die over Judea regeerde van 26 tot 36 n.Chr. In de bronnen staat hij bekend als een meedogenloze bestuurder die weinig begrip had voor de Joodse gevoeligheden. Hij is degene die Jezus uiteindelijk ter dood veroordeelde."
+          "answer": "- **Pontius Pilatus:** De Romeinse prefect (stadhouder) van Judea. Hij is de politieke sleutelfiguur die verantwoordelijk was voor het proces en de kruisiging van Jezus."
         },
         {
           "id": "herodessen",
           "prompt": "Noem de verschillende Herodessen.",
-          "answer": "**Herodes de Grote** (37–4 v.Chr.)\n\nHij heerste over heel Palestina toen Jezus werd geboren. Hij was een meesterbouwer (hij breidde de tempel in Jeruzalem enorm uit), maar ook extreem paranoïde; hij liet zelfs drie van zijn eigen zonen en zijn vrouw vermoorden.\n\n**Herodes Antipas** (4 v.Chr.–39 n.Chr.)\n\nEen zoon van Herodes de Grote die regeerde over Galilea en Perea tijdens de bediening van Jezus. Hij liet Johannes de Doper onthoofden en wordt door Jezus in de Bijbel een “vos” genoemd.\n\n**Herodes Agrippa I** (41–44 n.Chr.)\n\nDe kleinzoon van Herodes de Grote die kortstondig weer over het hele Joodse land regeerde. Hij vervolgde de vroege kerk, liet de apostel Jacobus ter dood brengen en Petrus gevangen zetten.\n\n**Herodes Agrippa II** (ca. 50–100 n.Chr.)\n\nDe zoon van Agrippa I. Hij regeerde over gebieden in het noordoosten en trad vaak op als adviseur voor Romeinse gouverneurs bij Joodse religieuze kwesties. Hij is de koning Agrippa die de apostel Paulus verhoorde in het boek Handelingen."
+          "answer": "**De vier Herodessen in het Nieuwe Testament:**\n\n1. **Herodes de Grote:** Regeerde over heel Palestina (37–4 v.Chr.) en was koning tijdens de geboorte van Jezus. Hij was een groot bouwer (o.a. de Tempel in Jeruzalem), maar ook berucht om zijn wreedheid.\n2. **Herodes Antipas:** Zoon van Herodes de Grote; hij heerste over Galilea en Perea tijdens het leven van Jezus en liet Johannes de Doper executeren.\n3. **Herodes Agrippa I:** Kleinzoon van Herodes de Grote; hij vervolgde de vroege christelijke gemeente en liet de apostel Jakobus ter dood brengen (Handelingen 12).\n4. **Herodes Agrippa II:** Zoon van Agrippa I en de laatste koning uit de dynastie; hij hoorde de verdediging van de apostel Paulus aan (Handelingen 25–26)."
         },
         {
           "id": "alle-namen-achter-elkaar",
           "prompt": "Noem ze nu allemaal achter elkaar op.",
-          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
+          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
         }
       ]
     },
@@ -1143,39 +1238,14 @@
       "shuffle": false,
       "items": [
         {
-          "id": "nt-stroming-farizeeen",
-          "prompt": "**Farizeeën**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Streefden naar een heilig leven door navolging van de Thora.\n- Kenden gezag toe aan de mondelinge wet als aanvulling op de geschreven wet.\n- Geloofden in de opstanding van de doden, engelen en demonen en in de komst van een Messias.\n- Vonden dat het hele volk de reinheidswetten van de priester diende te houden: elk huis = tempel, elke tafel = altaar.\n\n**Culturele context**\n\n- Vrome leken en schriftgeleerden uit de middenklasse.\n- Drijvende kracht achter de lokale synagoges, waar zij onderwezen in de Thora.\n- Hun machtsbasis lag buiten Jeruzalem.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- In de evangeliën staan zij vaak tegenover Jezus, vooral in discussies over de juiste uitleg / interpretatie van de wet.\n- Jezus en de Farizeeën hadden ook theologische overeenkomsten, wat debat mogelijk maakte; Paulus was bijvoorbeeld een Farizeeër."
+          "id": "intro-typering",
+          "prompt": "Tijdens de periode van het Nieuwe Testament was de religieuze wereld zeer divers. \\\nGeef een typering van de 7 belangrijkste religieuze en sociale stromingen.\n\n(Bedenk de stromingen; ze zullen hierna in beeld komen.)",
+          "answer": "Noteer voor jezelf welke zeven je kunt bedenken. Hierna volgt **elke stroming afzonderlijk** \\\nmet overtuigingen, culturele context en verhouding tot Jezus en het vroege christendom."
         },
         {
-          "id": "nt-stroming-sadduceeen",
-          "prompt": "**Sadduceeën**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Theologisch conservatief: accepteerden alleen de Pentateuch als gezaghebbende Schrift.\n- Verwierpen de opstanding, het laatste oordeel, engelen en geestelijke machten.\n- Religieuze focus lag volledig op het offerstelsel en de ceremoniële cultus in de tempel.\n\n**Culturele context**\n\n- Rijke, priesterlijke elite van Jeruzalem.\n- Hadden veel invloed in het Sanhedrin, de Joodse hoge raad.\n- Werkten politiek samen met de Romeinse bezetter om hun positie en de tempelorde te behouden.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Zagen Jezus als bedreiging, omdat zijn optreden onrust rond de tempel en Rome kon veroorzaken.\n- Waren betrokken bij het verzet tegen Jezus en later ook tegen de apostelen.\n- Na de verwoesting van de tempel in 70 n.Chr. verdwenen zij als groep uit de geschiedenis."
-        },
-        {
-          "id": "nt-stroming-essenen",
-          "prompt": "**Essenen**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Ascetische afscheidingsbeweging die de tempelcultus in Jeruzalem als corrupt en onrein zag.\n- Hielden zich aan strenge reinheidswetten, rituele baden en gezamenlijke maaltijden.\n- Zagen zichzelf als de “kinderen van het licht” en verwachtten een eindstrijd tussen goed en kwaad.\n\n**Culturele context**\n\n- Leefden vaak in afgezonderde, kloosterachtige gemeenschappen in de woestijn.\n- Hielden zich verre van de mainstream samenleving en wijdden zich aan arbeid en de bestudering van de Schriften.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Worden niet direct genoemd in het Nieuwe Testament.\n- Er zijn wel parallellen met Johannes de Doper, zoals bekering, doop en leven in de woestijn.\n- Ook lijken sommige praktijken op die van de vroege christelijke gemeenschap, zoals eenvoud, gezamenlijke maaltijden en sterk gemeenschapsleven."
-        },
-        {
-          "id": "nt-stroming-samaritanen",
-          "prompt": "**Samaritanen**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Zagen zichzelf als afstammelingen van het noordelijke rijk Israël.\n- Accepteerden alleen hun eigen versie van de Pentateuch en verwierpen de overige Joodse geschriften.\n- Geloofden dat de berg Gerizim, en niet de tempel in Jeruzalem, de ware plaats van aanbidding was.\n\n**Culturele context**\n\n- Woonden in Samaria, tussen Judea en Galilea.\n- Joden zagen hen vaak als religieuze afvalligen of ketters, waardoor er een diepe vijandschap tussen Joden en Samaritanen bestond en religieus contact strikt verboden was.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Jezus doorbrak de sociale en religieuze grens door openlijk met Samaritanen om te gaan.\n- Voorbeelden hiervan zijn de Samaritaanse vrouw bij de bron en de gelijkenis van de barmhartige Samaritaan.\n- Na de opstanding werd Samaria een van de eerste gebieden waar het evangelie zich buiten Judea verspreidde."
-        },
-        {
-          "id": "nt-stroming-opkomende-gnostiek",
-          "prompt": "**Opkomende gnostiek**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Gnostiek ging uit van een sterk dualisme: de geestelijke wereld was goed, de materiële wereld slecht.\n- De mens had volgens deze gedachte een goddelijke vonk die gevangen zat in het lichaam.\n- Verlossing kwam door geheime goddelijke kennis, *gnosis*, die de mens bevrijdde.\n- Zij geloofden vaak dat de materiële wereld was geschapen door een lagere, dwalende godheid, de Demiurg.\n\n**Culturele context**\n\n- De gnostiek kwam als volledige beweging vooral in de tweede eeuw n.Chr. tot bloei.\n- In de eerste eeuw waren er al vroege, “proto-gnostische” ideeën aanwezig in de Grieks-Romeinse wereld.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Gnostici zagen Jezus vaak vooral als geestelijke brenger van kennis.\n- Zij ontkenden of verzwakten vaak dat Jezus werkelijk mens van vlees en bloed was.\n- Sommige nieuwtestamentische geschriften, zoals de brieven van Johannes, lijken te waarschuwen tegen zulke vroege ideeën."
-        },
-        {
-          "id": "nt-stroming-polytheisme-grieks-romeins",
-          "prompt": "**Polytheïsme van de traditionele Grieks-Romeinse godsdienst**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- De Grieks-Romeinse godsdienst kende veel goden, zoals Zeus, Apollo, Aphrodite en Artemis, die verschillende aspecten van het leven beheersten.\n- Religie draaide vooral om orthopraxis (juist handelen) door rituelen, offers en publieke eerbied, minder om persoonlijke geloofsovertuiging.\n- Keizerverering werd hieraan toegevoegd als een uiting van loyaliteit en patriottisme aan de staat.\n\n**Culturele context**\n\n- De godsdienst was overal aanwezig in de publieke ruimte door tempels, festivals en rituelen.\n- Het was diep verweven met de sociale en politieke structuren van het Romeinse Rijk.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Christenen weigerden andere goden en de keizer als god te vereren.\n- Daardoor werden zij soms gezien als atheïsten, omdat zij de traditionele goden afwezen.\n- Hun exclusieve geloof in één God botste met de religieuze en politieke verwachtingen van de Grieks-Romeinse samenleving."
-        },
-        {
-          "id": "nt-stroming-mysteriegodsdiensten",
-          "prompt": "**Mysteriegodsdiensten**\n\n**Belangrijkste overtuigingen**\n\n**Culturele context**\n\n**Verhouding tot Jezus en/of het vroege christendom**",
-          "answer": "**Belangrijkste overtuigingen**\n\n- Meer persoonlijke vorm van religie dan de publieke staatsgodsdienst.\n- Zij waren georganiseerd rond geheime mythen van godheden zoals Isis, Mithras of Dionysus.\n- Via geheime inwijdingsriten en ceremonies zocht de gelovige verbondenheid met een godheid, vaak met de belofte van bescherming en een gezegend leven na de dood.\n\n**Culturele context**\n\n- Deze cultussen waren wijdverspreid.\n- Boden mensen in de anonimiteit van het Romeinse Rijk een gevoel van identiteit en behoren bij een besloten groep.\n\n**Verhouding tot Jezus en/of het vroege christendom**\n\n- Sommige Romeinen zagen het vroege christendom als een nieuwe mysteriegodsdienst vanwege de eigen inwijdingsrituelen (doop) en geheime maaltijden (eucharistie).\n- Vroege berichten over de christelijke eredienst bevatten beschuldigingen van orgieën en kannibalisme, waarschijnlijk omdat christenen hun eucharistische maaltijd een “liefdesmaaltijd” noemden en spraken over “het lichaam van Christus eten”."
+          "id": "alle-stromingen-achter-elkaar",
+          "prompt": "Noem de zeven stromingen nu allemaal achter elkaar op.",
+          "answer": "**Farizeeën**, **Sadduceeën**, **Essenen**, **Samaritanen**, \\\n**Opkomende gnostiek**, **Polytheïsme van de Grieks-Romeinse godsdienst**, **Mysteriegodsdiensten**"
         }
       ]
     },

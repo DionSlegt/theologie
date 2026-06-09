@@ -19,6 +19,8 @@ INIT_PREFIXES = (
     "NTPersonenVraag(",
     "NTQuizVraag(",
     "NTBegripQuizItem(",
+    "OTArcheoVraag(",
+    "OTWereldrijkVraag(",
 )
 
 
@@ -59,13 +61,99 @@ def strip_swift_string(s: str) -> str:
     return s.replace("\\n", "\n").replace('\\"', '"').replace("\\'", "'")
 
 
+def _volgende_antwoord_regel(block: str, start: int) -> tuple[str | None, int]:
+    i = start
+    n = len(block)
+    while i < n and block[i] in " \t\n\r,":
+        i += 1
+    if i >= n:
+        return None, i
+
+    if block.startswith('"""', i):
+        end = block.find('"""', i + 3)
+        if end == -1:
+            return None, n
+        inner = block[i + 3 : end]
+        return strip_swift_string('"""' + inner + '"""'), end + 3
+
+    if block[i] == '"':
+        j = i + 1
+        while j < n:
+            if block[j] == "\\":
+                j += 2
+                continue
+            if block[j] == '"':
+                return strip_swift_string(block[i : j + 1]), j + 1
+            j += 1
+        return None, n
+
+    m = re.match(
+        r"Hs2JacobsonChanOpmaak\.canonBoek\(\s*(\d+)\s*,\s*\"((?:[^\"\\]|\\.)*)\"\s*\)",
+        block[i:],
+    )
+    if m:
+        nummer = m.group(1)
+        naam = m.group(2).replace('\\"', '"')
+        return f"**{nummer}.** {naam}", i + m.end()
+
+    return None, i + 1
+
+
 def antwoord_per_regel(block: str) -> str:
-    lines = re.findall(r'"((?:[^"\\]|\\.)*)"', block, re.DOTALL)
-    cleaned = [ln.replace("\\n", "\n").replace('\\"', '"') for ln in lines]
-    return "\n\n".join(cleaned)
+    items: list[str] = []
+    i = 0
+    while i < len(block):
+        item, i = _volgende_antwoord_regel(block, i)
+        if item is not None:
+            items.append(item)
+    return "\n\n".join(items)
+
+
+def extract_swift_triple_quoted(block: str) -> list[str]:
+    return [
+        strip_swift_string('"""' + m + '"""')
+        for m in re.findall(r'"""(.*?)"""', block, re.DOTALL)
+    ]
+
+
+def resolve_static_string_array(content: str, name: str) -> list[str] | None:
+    m = re.search(
+        rf"private static let {re.escape(name)}\s*=\s*\[(.*?)\]",
+        content,
+        re.DOTALL,
+    )
+    if not m:
+        return None
+    return [
+        strip_swift_string('"' + g + '"')
+        for g in re.findall(r'"((?:[^"\\]|\\.)*)"', m.group(1))
+    ]
 
 
 def resolve_static_var(content: str, name: str) -> str | None:
+    if name == "namenOpsommingsMarkdown":
+        namen = resolve_static_string_array(content, "namenOpsommingsNamen")
+        if namen:
+            return "\n\n".join(f"**{n}**" for n in namen)
+
+    m_blokken = re.search(
+        rf"private static let {re.escape(name)}\s*=\s*persoonAntwoordBlokken\(\[(.*?)\]\)",
+        content,
+        re.DOTALL,
+    )
+    if m_blokken:
+        blokken = extract_swift_triple_quoted(m_blokken.group(1))
+        if blokken:
+            return "\n\n\n".join(blokken)
+
+    m_triple = re.search(
+        rf"private static let {re.escape(name)}\s*=\s*\"\"\"(.*?)\"\"\"",
+        content,
+        re.DOTALL,
+    )
+    if m_triple:
+        return strip_swift_string('"""' + m_triple.group(1) + '"""')
+
     m0 = re.search(
         rf"(?:private )?static let {re.escape(name)}\s*=\s*\"((?:[^\"\\]|\\.)*)\"",
         content,
@@ -99,7 +187,7 @@ def resolve_static_var(content: str, name: str) -> str | None:
 
 def field_value(body: str, field: str, full_content: str) -> str | None:
     m = re.search(
-        rf"{field}:\s*(\"\"\"(.*?)\"\"\"|\"((?:[^\"\\]|\\.)*)\"|otMdBlok\(\[(.*?)\]\)|Hs2JacobsonChanOpmaak\.antwoordPerRegel\(\[(.*?)\]\)|Hs2CanonOTInhoud\.(\w+)|(\w+))",
+        rf"{field}:\s*(\"\"\"(.*?)\"\"\"|\"((?:[^\"\\]|\\.)*)\"|otMdBlok\(\[(.*?)\]\)|otArcheoMdBlok\(\[(.*?)\]\)|otGebMdBlok\(\[(.*?)\]\)|otWereldrijkMdBlok\(\[(.*?)\]\)|Hs2JacobsonChanOpmaak\.antwoordPerRegel\(\[(.*?)\]\)|Hs2CanonOTInhoud\.(\w+)|(\w+))",
         body,
         re.DOTALL,
     )
@@ -113,10 +201,16 @@ def field_value(body: str, field: str, full_content: str) -> str | None:
         return antwoord_per_regel(m.group(4))
     if m.group(5) is not None:
         return antwoord_per_regel(m.group(5))
-    if m.group(6):
-        return resolve_static_var(full_content, m.group(6))
-    if m.group(7):
-        return resolve_static_var(full_content, m.group(7))
+    if m.group(6) is not None:
+        return antwoord_per_regel(m.group(6))
+    if m.group(7) is not None:
+        return antwoord_per_regel(m.group(7))
+    if m.group(8) is not None:
+        return antwoord_per_regel(m.group(8))
+    if m.group(9):
+        return resolve_static_var(full_content, m.group(9))
+    if m.group(10):
+        return resolve_static_var(full_content, m.group(10))
     return None
 
 
@@ -249,13 +343,19 @@ def extract_from_enum(content: str, enum_name: str) -> list[dict]:
     return extract_inits_from_text(body, content)
 
 
+def titel_zonder_engels(titel: str) -> str:
+    """Engels `woord (Nederlands)` → alleen het deel tussen haakjes."""
+    m = re.search(r"\(([^)]+)\)\s*$", titel)
+    return m.group(1).strip() if m else titel
+
+
 def extract_rijen(content: str) -> list[dict]:
     items = []
     for m in re.finditer(
         r'Rij\(titel:\s*"((?:[^"\\]|\\.)*)",\s*uitleg:\s*"((?:[^"\\]|\\.)*)"\)',
         content,
     ):
-        titel = strip_swift_string('"' + m.group(1) + '"')
+        titel = titel_zonder_engels(strip_swift_string('"' + m.group(1) + '"'))
         uitleg = strip_swift_string('"' + m.group(2) + '"')
         items.append(
             {"id": f"lex-{len(items)}", "prompt": f"**{titel}**", "answer": uitleg}
@@ -265,6 +365,41 @@ def extract_rijen(content: str) -> list[dict]:
 
 def read_swift(name: str) -> str:
     return (SWIFT / name).read_text(encoding="utf-8")
+
+
+def balanced_bracket_slice(text: str, open_idx: int) -> str:
+    depth = 0
+    i = open_idx
+    while i < len(text):
+        c = text[i]
+        if c == "[":
+            depth += 1
+        elif c == "]":
+            depth -= 1
+            if depth == 0:
+                return text[open_idx : i + 1]
+        elif c in ('"', "'"):
+            quote = c
+            i += 1
+            while i < len(text):
+                if text[i] == "\\":
+                    i += 2
+                    continue
+                if text[i] == quote:
+                    break
+                i += 1
+        i += 1
+    return text[open_idx:]
+
+
+def extract_vaste_volgorde(content: str, enum_name: str) -> list[dict]:
+    body = enum_body(content, enum_name) or ""
+    m = re.search(r"static let vasteVolgorde.*?=\s*\[", body, re.DOTALL)
+    if not m:
+        return []
+    open_idx = m.end() - 1
+    chunk = balanced_bracket_slice(body, open_idx)
+    return extract_inits_from_text(chunk[1:-1], content)
 
 
 def extract_kaders_ordered(content: str) -> list[dict]:
@@ -384,12 +519,21 @@ def main() -> None:
         "items": extract_from_enum(personen, "OudeTestamentPersonenData"),
     }
 
-    hs2 = read_swift("OudeTestamentHs2JacobsonChanViews.swift")
-    packs["ot-hs2-opbouw"] = {
-        "title": "Opbouw OT",
-        "shuffle": True,
-        "items": extract_from_enum(hs2, "Hs2OpbouwOTVragenData"),
+    archeo = read_swift("OudeTestamentArcheologischePeriodenView.swift")
+    packs["ot-archeo-perioden"] = {
+        "title": "Archeologische perioden",
+        "shuffle": False,
+        "items": extract_vaste_volgorde(archeo, "OudeTestamentArcheologischePeriodenData"),
     }
+
+    wereldrijken = read_swift("OudeTestamentWereldrijkenView.swift")
+    packs["ot-wereldrijken"] = {
+        "title": "Rijken van het Oude Testament",
+        "shuffle": False,
+        "items": extract_vaste_volgorde(wereldrijken, "OudeTestamentWereldrijkenData"),
+    }
+
+    hs2 = read_swift("OudeTestamentHs2JacobsonChanViews.swift")
     packs["ot-hs2-ontwikkeling"] = {
         "title": "Ontwikkeling OT",
         "shuffle": False,
@@ -399,6 +543,11 @@ def main() -> None:
         "title": "Canon OT",
         "shuffle": True,
         "items": extract_from_enum(hs2, "Hs2CanonOTVragenData"),
+    }
+    packs["ot-hs2-septuagint"] = {
+        "title": "Septuagint",
+        "shuffle": False,
+        "items": extract_from_enum(hs2, "Hs2SeptuagintVragenData"),
     }
     packs["ot-hs2-verschil"] = {
         "title": "Verschil ‘achter’ en ‘in’ de tekst",
@@ -442,7 +591,7 @@ def main() -> None:
     )
     packs["nt-begrippen-hs12"] = {
         "title": "Begrippen (hs 1–2)",
-        "shuffle": True,
+        "shuffle": False,
         "items": historisch + extract_rijen(nt_beg),
     }
     packs["nt-begrippen-hs3"] = {
@@ -493,10 +642,22 @@ def main() -> None:
                     ],
                 },
                 {
+                    "header": "Archeologische perioden",
+                    "links": [
+                        {"label": "Archeologische perioden", "pack": "ot-archeo-perioden"},
+                    ],
+                },
+                {
+                    "header": "Wereldrijken",
+                    "links": [
+                        {"label": "Rijken van het Oude Testament", "pack": "ot-wereldrijken"},
+                    ],
+                },
+                {
                     "header": "Hs 2 Jacobson & Chan",
                     "links": [
-                        {"label": "Opbouw OT", "pack": "ot-hs2-opbouw"},
                         {"label": "Canon OT", "pack": "ot-hs2-canon"},
+                        {"label": "Septuagint", "pack": "ot-hs2-septuagint"},
                         {"label": "Deuterocanonieke boeken", "pack": "ot-hs2-deuterocanoniek"},
                         {"label": "Ontwikkeling OT", "pack": "ot-hs2-ontwikkeling"},
                         {"label": "Verschil ‘achter’ en ‘in’ de tekst", "pack": "ot-hs2-verschil"},
