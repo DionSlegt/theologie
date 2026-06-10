@@ -189,6 +189,13 @@ def resolve_static_var(content: str, name: str) -> str | None:
     )
     if m4:
         return antwoord_per_regel(m4.group(1))
+    m5 = re.search(
+        rf"private static let {re.escape(name)}\s*=\s*personenMd\(\[(.*?)\]\)",
+        content,
+        re.DOTALL,
+    )
+    if m5:
+        return antwoord_per_regel(m5.group(1))
     return None
 
 
@@ -457,6 +464,29 @@ def extract_opbouw_nt(content: str) -> list[dict]:
                 "id": f"nt-opbouw-cat-{num}",
                 "prompt": titel,
                 "answer": clean_text(antwoord_per_regel(body_lines)),
+            }
+        )
+    overzicht_p = re.search(
+        r'static let overzichtBoekenPrompt: String = "((?:[^"\\]|\\.)*)"',
+        body,
+    )
+    overzicht_a = re.search(
+        r"static let overzichtBoekenAntwoord: String = opbouwAntwoordPerRegel\(\[(.*?)\]\)",
+        body,
+        re.DOTALL,
+    )
+    if not overzicht_a:
+        overzicht_a = re.search(
+            r"static let overzichtBoekenAntwoord: String = \[(.*?)\]\.joined\(separator:",
+            body,
+            re.DOTALL,
+        )
+    if overzicht_p and overzicht_a:
+        items.append(
+            {
+                "id": "nt-opbouw-overzicht-boeken",
+                "prompt": strip_swift_string('"' + overzicht_p.group(1) + '"'),
+                "answer": clean_text(antwoord_per_regel(overzicht_a.group(1))),
             }
         )
     return items

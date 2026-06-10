@@ -1020,3 +1020,26 @@ h3,
 .md-content .md-naam strong {
   font-weight: 800;
 }
+
+#reveal-answer.reveal-answer {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+#reveal-answer.reveal-answer p {
+  margin: 0 0 4px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+#reveal-answer.reveal-answer .md-rubriek {
+  font-size: 1.125rem;
+  font-weight: 800;
+  margin: 12px 0 6px;
+}
+
+#reveal-answer.reveal-answer .md-rubriek:first-child {
+  margin-top: 0;
+}

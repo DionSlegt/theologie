@@ -666,22 +666,22 @@
         {
           "id": "ot-persoon-jeremia",
           "prompt": "**Jeremia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 2 (930–539 v.Chr.)\n- Zuidrijk (Juda)\n\n**Politiek**\n\n- Neo-Babylonische dominantie\n- Rebellie tegen Babylon\n- Exilische periode\n\n**Typering**\n\n- De Ondergang\n- Predikt in Jeruzalem\n- Conflict met de macht (koning Jojakim)\n- Juda kwam in opstand tegen Babyloniërs – Gevolg:\n  - Uithongering\n  - Deportaties\n  - Vernietiging van de tempel\n- Vlucht naar Egypte"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd II (930 – 539 v.Chr.)\n- **Zuidrijk (Juda)**\n\n**Politiek**\n\n- Jeremia leefde tijdens de absolute overmacht van het **Neo-Babylonische Rijk**.\n- Ondanks zijn waarschuwingen kwam Juda in opstand tegen Babylon,\n- Wat leidde tot de totale verwoesting van Jeruzalem en de tempel in 587 v.Chr.\n\n**Typering**\n\n- **Profeet van de ondergang:** Hij kondigde de straf van God aan en maakte de verschrikkingen van de belegering (uithongering) en de deportaties zelf mee.\n- **Conflict met de macht:** Een bekend moment is dat koning **Jojakim** de boekrol met profetieën van Jeremia in het vuur gooide omdat de boodschap hem niet beviel."
         },
         {
           "id": "ot-persoon-zerubbabel",
           "prompt": "**Zerubbabel**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Perzisch rijk → provincie Jehud (Jeruzalem)\n\n**Politiek**\n\n- Perzische hegemonie\n- Vroege Perzische periode\n  - Religieuze tolerantie\n  - Loyaliteit van grensprovincies\n\n**Typering**\n\n- De terugkeer\n- Herbouw van de tempel"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd III (539–332 v.Chr.)\n- Perzisch rijk → provincie Jehud (Jeruzalem)\n\n**Politiek**\n\n- Het Perzische Rijk nam de macht over van Babylon\n- Koning Cyrus de Grote vaardigde in 539 v.Chr. een decreet uit (de eerste terugkeer), waarbij bannelingen toestemming kregen om naar huis te gaan en hun tempels te herbouwen\n\n**Typering**\n\n- Leider van de eerste groep ballingen die terugkeerde uit Perzië naar Jeruzalem.\n- Hij was verantwoordelijk voor de herbouw van de Tempel op de fundamenten van de oude tempel van Salomo"
         },
         {
           "id": "ot-persoon-ezra",
           "prompt": "**Ezra**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Perzisch rijk\n\n**Politiek**\n\n- Ezra als officieel van het Perzische hof\n- Autonomie van Jehud onder Perzen\n\n**Typering**\n\n- Wetsgeleerde\n- De tweede terugkeer\n- Verlegde focus van tempel naar Thora\n  - Nadruk op de geschriften in plaats van alleen de tempel\n  - Centrale rol van de wet in het gemeenschapsleven"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd III (539–332 v.Chr.)\n- Perzisch rijk → provincie Jehud (Jeruzalem)\n\n**Politiek**\n\n- Ezra als officieel van het Perzische hof\n- Autonomie van Jehud onder Perzen\n  - Hij leidde de \"tweede terugkeer\" van ballingen in 458 v.Chr., met toestemming van de Perzische koning Artaxerxes\n\n**Typering**\n\n- Schriftgeleerde\n- Geestelijk hervormer: Hij herstelde het priesterschap en de religieuze voorschriften in Jeruzalem\n- Verlegde focus van tempel naar Thora\n  - Nadruk op de geschriften in plaats van alleen de tempel\n  - Centrale rol van de wet in het gemeenschapsleven"
         },
         {
           "id": "ot-persoon-nehemia",
           "prompt": "**Nehemia**\n\n**Gebied en Archeologische periode**\n\n**Politiek**\n\n**Typering**",
-          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd 3 (539–332 v.Chr.)\n- Gebied: reisde vanuit Perzisch rijk naar Jehud (Jeruzalem)\n\n**Politiek**\n\n- Nehemia als aangestelde landvoogd\n- Perzische hegemonie (absoluut wereldrijk, lokale autonomie voor Jehud)\n\n**Typering**\n\n- De herbouwer: Nehemia was verantwoordelijk voor de herbouw van de stadsmuren\n- Derde terugkeer: hij vertegenwoordigt de derde groep ballingschapstergenoten die terugkeerde\n- Restauratie: herstel van Jeruzalem als religieus en politiek centrum\n- Strikte sociale grenzen\n  - Gedwongen scheidingen van buitenlandse vrouwen\n  - Overleven door isolatie"
+          "answer": "**Gebied en Archeologische periode**\n\n- IJzertijd III (539–332 v.Chr.)\n- Gebied: reisde vanuit Perzisch rijk naar Jehud (Jeruzalem)\n\n**Politiek**\n\n- **gouverneur** om de \"derde terugkeer\" van ballingen te leiden\n- **Perzische absoluut wereldrijk**, lokale autonomie voor Jehud\n\n**Typering**\n\n- **De herbouwer:** Nehemia was verantwoordelijk voor de herbouw van de stadsmuren\n- **Restauratie:** herstel van Jeruzalem als religieus en politiek centrum\n- **Strikte sociale grenzen**\n  - Gedwongen scheidingen van buitenlandse vrouwen\n  - Overleven door isolatie\n- **Organisatorisch leider:** Terwijl Ezra de geestelijke hervormingen leidde, richtte Nehemia zich op het bestuur en de verdediging van Jeruzalem."
         }
       ]
     },
@@ -1225,39 +1225,24 @@
       "shuffle": false,
       "items": [
         {
-          "id": "open-alle-personen",
-          "prompt": "Noem zoveel mogelijk belangrijke personen met betrekking tot het NT:",
-          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
+          "id": "griekse-heersers",
+          "prompt": "**Griekse heersers**",
+          "answer": "- **Alexander de Grote:** Macedonische koning die Palestina veroverde (332 v.Chr.) en de **hellenisering** (verspreiding Griekse taal en cultuur) startte.\n- **Antiochus IV Epiphanes:** Seleucidische koning die de Joodse religie probeerde uit te roeien en de tempel ontheiligde met een altaar voor Zeus."
         },
         {
-          "id": "personen-overzicht",
-          "prompt": "Belangrijke personen rond het Nieuwe Testament",
-          "answer": "- **Alexander de Grote:** Griekse veroveraar die in 332 v.Chr. Palestina innam. Hij verspreidde de Griekse taal en cultuur (hellenisering), wat de wereld van het Nieuwe Testament blijvend vormgaf.\n- **Antiochus IV Epiphanes:** Seleucidische koning (175–164 v.Chr.) die de Joden wreed vervolgde en de tempel ontheiligde. Zijn acties vormden de directe aanleiding voor de Makkabese opstand en beïnvloedden het boek Daniël.\n- **Judas de Makkabeeër:** Bijgenaamd \"de hamer\", leidde hij de Joodse opstand in 167 v.Chr. Hij heroverde de tempel, wat leidde tot een periode van Joods zelfbestuur onder de Hasmoneese dynastie.\n- **Pontius Pilatus:** De Romeinse prefect (stadhouder) van Judea. Hij is de politieke sleutelfiguur die verantwoordelijk was voor het proces en de kruisiging van Jezus.\n\n**De vier Herodessen in het Nieuwe Testament:**\n\n1. **Herodes de Grote:** Regeerde over heel Palestina (37–4 v.Chr.) en was koning tijdens de geboorte van Jezus. Hij was een groot bouwer (o.a. de Tempel in Jeruzalem), maar ook berucht om zijn wreedheid.\n2. **Herodes Antipas:** Zoon van Herodes de Grote; hij heerste over Galilea en Perea tijdens het leven van Jezus en liet Johannes de Doper executeren.\n3. **Herodes Agrippa I:** Kleinzoon van Herodes de Grote; hij vervolgde de vroege christelijke gemeente en liet de apostel Jakobus ter dood brengen (Handelingen 12).\n4. **Herodes Agrippa II:** Zoon van Agrippa I en de laatste koning uit de dynastie; hij hoorde de verdediging van de apostel Paulus aan (Handelingen 25–26)."
-        },
-        {
-          "id": "twee-griekse-heersers",
-          "prompt": "Noem de belangrijke 2 Griekse heersers uit het Nieuwe Testament.",
-          "answer": "- **Alexander de Grote:** Griekse veroveraar die in 332 v.Chr. Palestina innam. Hij verspreidde de Griekse taal en cultuur (hellenisering), wat de wereld van het Nieuwe Testament blijvend vormgaf.\n- **Antiochus IV Epiphanes:** Seleucidische koning (175–164 v.Chr.) die de Joden wreed vervolgde en de tempel ontheiligde. Zijn acties vormden de directe aanleiding voor de Makkabese opstand en beïnvloedden het boek Daniël."
-        },
-        {
-          "id": "joodse-bevrijders",
-          "prompt": "Wat was de naam van de Joodse bevrijders?",
-          "answer": "- **Judas de Makkabeeër:** Bijgenaamd \"de hamer\", leidde hij de Joodse opstand in 167 v.Chr. Hij heroverde de tempel, wat leidde tot een periode van Joods zelfbestuur onder de Hasmoneese dynastie."
+          "id": "joodse-bevrijder",
+          "prompt": "**Joodse bevrijder**",
+          "answer": "- **Judas de Makkabeeër:** Leider van de Joodse opstand ('de moker') die in 164 v.Chr. de tempel heroverde en reinigde (oorsprong **Chanoeka**)."
         },
         {
           "id": "romeinse-bestuurder",
-          "prompt": "Noem de Romeinse bestuurder.",
-          "answer": "- **Pontius Pilatus:** De Romeinse prefect (stadhouder) van Judea. Hij is de politieke sleutelfiguur die verantwoordelijk was voor het proces en de kruisiging van Jezus."
+          "prompt": "**Romeinse bestuurder**",
+          "answer": "- **Pontius Pilatus:** Romeinse prefect van Judea (26–36 n.Chr.) die Jezus ter dood veroordeelde; historisch bekend als een meedogenloos bestuurder."
         },
         {
           "id": "herodessen",
-          "prompt": "Noem de verschillende Herodessen.",
-          "answer": "**De vier Herodessen in het Nieuwe Testament:**\n\n1. **Herodes de Grote:** Regeerde over heel Palestina (37–4 v.Chr.) en was koning tijdens de geboorte van Jezus. Hij was een groot bouwer (o.a. de Tempel in Jeruzalem), maar ook berucht om zijn wreedheid.\n2. **Herodes Antipas:** Zoon van Herodes de Grote; hij heerste over Galilea en Perea tijdens het leven van Jezus en liet Johannes de Doper executeren.\n3. **Herodes Agrippa I:** Kleinzoon van Herodes de Grote; hij vervolgde de vroege christelijke gemeente en liet de apostel Jakobus ter dood brengen (Handelingen 12).\n4. **Herodes Agrippa II:** Zoon van Agrippa I en de laatste koning uit de dynastie; hij hoorde de verdediging van de apostel Paulus aan (Handelingen 25–26)."
-        },
-        {
-          "id": "alle-namen-achter-elkaar",
-          "prompt": "Noem ze nu allemaal achter elkaar op.",
-          "answer": "**Alexander de Grote**\n\n**Antiochus IV Epiphanes**\n\n**Judas de Makkabeeër**\n\n**Pontius Pilatus**\n\n**Herodes de Grote**\n\n**Herodes Antipas**\n\n**Herodes Agrippa I**\n\n**Herodes Agrippa II**"
+          "prompt": "**De vier Herodessen**",
+          "answer": "1. **Herodes de Grote:** Koning van heel Palestina (37–4 v.Chr.) tijdens Jezus' geboorte; een meesterbouwer (tempel Jeruzalem) die berucht was om zijn extreme paranoia.\n2. **Herodes Antipas:** Zoon van de Grote en **tetrarch** van Galilea tijdens Jezus' leven; liet Johannes de Doper onthoofden en verhoorde Jezus.\n3. **Herodes Agrippa I:** Kleinzoon van de Grote; vervolgde de vroege kerk, liet de apostel Jakobus doden en stierf een plotselinge dood.\n4. **Herodes Agrippa II:** Zoon van Agrippa I; trad op als adviseur voor Romeinse bestuurders en hoorde de verdediging van Paulus aan."
         }
       ]
     },
@@ -1320,6 +1305,11 @@
           "id": "nt-opbouw-cat-7",
           "prompt": "**7. Het boek Openbaring**",
           "answer": "Dit boek staat op zichzelf. In de traditie wordt het ook wel **Apocalyps van Johannes** genoemd. Het verhaalt visionaire ervaringen toegeschreven aan iemand die Johannes heette."
+        },
+        {
+          "id": "nt-opbouw-overzicht-boeken",
+          "prompt": "**Noem de opbouw van het Nieuwe Testament met alle boeken**",
+          "answer": "**1. De vier Evangeliën**\n\nMatteüs\n\nMarcus\n\nLucas\n\nJohannes\n\n**2. Handelingen van de Apostelen**\n\nHandelingen\n\n**3. Brieven van Paulus aan gemeenten**\n\nRomeinen\n\n1 Korintiërs\n\n2 Korintiërs\n\nGalaten\n\nEfeziërs\n\nFilippenzen\n\nKolossenzen\n\n1 Tessalonicenzen\n\n2 Tessalonicenzen\n\n**4. Brieven van Paulus aan individuen**\n\n1 Timoteüs\n\n2 Timoteüs\n\nTitus\n\nFilemon\n\n**5. De brief aan de Hebreeën**\n\nHebreeën\n\n**6. De Algemene (of Katholieke) brieven**\n\nJakobus\n\n1 Petrus\n\n2 Petrus\n\n1 Johannes\n\n2 Johannes\n\n3 Johannes\n\nJudas\n\n**7. Het boek Openbaring**\n\nOpenbaring"
         }
       ]
     },
