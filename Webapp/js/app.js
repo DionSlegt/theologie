@@ -579,10 +579,7 @@
     const wrap = $("#setup-advanced");
     const btn = $("#btn-toggle-settings");
     if (wrap) wrap.classList.add("hidden");
-    if (btn) {
-      btn.setAttribute("aria-expanded", "false");
-      btn.textContent = "Instellingen aanpassen";
-    }
+    if (btn) btn.setAttribute("aria-expanded", "false");
   }
 
   function toggleSetupAdvanced() {
@@ -593,7 +590,6 @@
     if (isHidden) {
       wrap.classList.remove("hidden");
       btn.setAttribute("aria-expanded", "true");
-      btn.textContent = "Instellingen verbergen";
     } else {
       collapseSetupAdvanced();
     }
@@ -625,8 +621,8 @@
     }
 
     if (v === "launcher") {
-      document.title = "Studie";
-      $("#title").textContent = "Studie";
+      document.title = "Theologie";
+      $("#title").textContent = "Theologie";
     } else if (v === "setup") {
       document.title = "Dogmatiek — oefenen";
       $("#title").textContent = "Dogmatiek oefenen";
@@ -975,7 +971,7 @@
     $("#btn-typing-good").addEventListener("click", () => finishTypingSelfJudge(true));
     $("#btn-typing-wrong").addEventListener("click", () => finishTypingSelfJudge(false));
     $("#btn-judge-prev").addEventListener("click", onJudgePrev);
-    $("#btn-open-manage").addEventListener("click", openManage);
+    $("#btn-open-manage")?.addEventListener("click", openManage);
     $("#btn-new-card").addEventListener("click", () => openCardDialog(null));
     $("#form-card").addEventListener("submit", (e) => {
       e.preventDefault();

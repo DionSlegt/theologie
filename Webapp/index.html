@@ -3,25 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Studie</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="css/style.css?v=202606091" />
+  <title>Theologie</title>
+  <link rel="stylesheet" href="css/style.css?v=2026061818" />
 </head>
 <body>
   <div id="app">
     <header class="topbar">
       <button type="button" id="btn-back" class="btn-back hidden" aria-label="Terug">← Terug</button>
-      <h1 id="title">Studie</h1>
+      <h1 id="title">Theologie</h1>
     </header>
 
     <main id="main">
       <section id="view-launcher" class="view" aria-label="Kies vak">
-        <p class="launcher-intro muted">Kies waar je wilt oefenen.</p>
         <div class="launcher-grid">
           <button type="button" class="launcher-card" id="launch-dogmatiek">
             <span class="launcher-card-title">Dogmatiek</span>
@@ -40,6 +33,10 @@
             <span class="launcher-card-desc">Begrippen typeren en Bijbelvertalingen duiden.</span>
           </button>
         </div>
+        <figure class="launcher-verse">
+          <blockquote class="launcher-verse-text">"Een verstandig mens verwerft kennis, een wijze is gespitst op inzicht."</blockquote>
+          <figcaption class="launcher-verse-ref">Spreuken 18:15 · NBV21</figcaption>
+        </figure>
       </section>
 
       <section id="view-ot-menu" class="view hidden" aria-label="Oude Testament"></section>
@@ -98,12 +95,10 @@
 
       <!-- Setup (Dogmatiek) -->
       <section id="view-setup" class="view hidden">
-        <div class="setup-summary panel">
-          <p class="setup-summary-label small muted">Manier van leren</p>
+        <button type="button" id="btn-toggle-settings" class="setup-summary panel" aria-expanded="false" aria-controls="setup-advanced">
+          <p class="setup-summary-label small muted">Manier van leren · tik om aan te passen</p>
           <p class="setup-summary-line" id="setup-summary"></p>
-        </div>
-
-        <button type="button" id="btn-toggle-settings" class="btn secondary" aria-expanded="false" aria-controls="setup-advanced">Instellingen aanpassen</button>
+        </button>
 
         <div id="setup-advanced" class="setup-advanced hidden">
           <div class="panel">
@@ -132,7 +127,6 @@
         </div>
 
         <button type="button" id="btn-start" class="btn primary" disabled>Start oefening</button>
-        <button type="button" id="btn-open-manage" class="btn secondary">Termen beheren…</button>
       </section>
 
       <section id="view-manage" class="view hidden" aria-label="Termen beheren">
@@ -273,7 +267,7 @@
     </div>
   </dialog>
 
-  <script src="js/ot-nt.js?v=202606093"></script>
-  <script src="js/app.js?v=202606091"></script>
+  <script src="js/ot-nt.js?v=2026061816"></script>
+  <script src="js/app.js?v=2026061816"></script>
 </body>
 </html>

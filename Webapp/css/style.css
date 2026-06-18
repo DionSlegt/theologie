@@ -1,17 +1,82 @@
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-Buch.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-BuchKursiv.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-Kraftig.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-Halbfett.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-Dreiviertelfett.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne";
+  src: url("../fonts/Sohne-Fett.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-Dreiviertelfett.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-Fett.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-Extrafett.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #ffffff;
   --card: #ffffff;
-  --text: #002c68;
-  --text-heading: #004b77;
-  --muted: #3d5f85;
-  --accent: #004b77;
-  --accent-hover: #003a5f;
+  --text: #20315c;
+  --text-heading: #20315c;
+  --muted: #51618a;
+  --accent: #20315c;
+  --accent-hover: #16213f;
+  --accent-red: #aa334d;
   --border: #c8d4e3;
-  --radius: 14px;
-  --bad: #c2410c;
-  --ok: #15803d;
-  --font-body: Calibri, "Segoe UI", "Aptos", "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "Nunito", "Arial Rounded MT Bold", "Arial Rounded", Arial, sans-serif;
+  --radius: 8px;
+  --bad: #aa334d;
+  --ok: #399356;
+  --font-body: "Sohne", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Sohne", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -47,6 +112,19 @@ h3,
 .md-content .md-naam {
   font-family: var(--font-heading);
   color: var(--text-heading);
+}
+
+/* CHE-stijl: brede, vette uppercase titels in Söhne Breit */
+.topbar h1,
+.launcher-card-title,
+.panel h2,
+.menu-section-title,
+#view-reveal-summary > h2 {
+  font-family: "Sohne Breit", "Sohne", -apple-system, "Segoe UI", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  font-weight: 800;
+  line-height: 1.1;
 }
 
 #view-reveal-summary > h2 {
@@ -93,13 +171,13 @@ h3,
   padding: 10px 14px;
   min-width: 44px;
   min-height: 44px;
-  border-radius: 10px;
+  border-radius: var(--radius);
   touch-action: manipulation;
   font-family: var(--font-heading);
 }
 
 .btn-back:hover {
-  background: rgba(0, 75, 119, 0.08);
+  background: rgba(32, 49, 92, 0.08);
 }
 
 .btn-back.hidden {
@@ -162,7 +240,7 @@ h3,
 
 .launcher-card-featured {
   border-color: var(--accent);
-  background: rgba(0, 75, 119, 0.04);
+  background: rgba(32, 49, 92, 0.04);
 }
 
 .launcher-card-title {
@@ -203,6 +281,19 @@ h3,
   gap: 4px;
 }
 
+/* "Manier van leren"-blok is nu zelf klikbaar */
+button.setup-summary {
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  color: var(--text);
+  cursor: pointer;
+  position: relative;
+  padding-right: 40px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .setup-summary-label {
   margin: 0;
   text-transform: uppercase;
@@ -216,11 +307,19 @@ h3,
   line-height: 1.4;
 }
 
+#btn-toggle-settings::after {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  color: var(--accent);
+}
 #btn-toggle-settings[aria-expanded="true"]::after {
-  content: " ▴";
+  content: "▴";
 }
 #btn-toggle-settings[aria-expanded="false"]::after {
-  content: " ▾";
+  content: "▾";
 }
 
 .setup-advanced {
@@ -243,7 +342,7 @@ h3,
   min-width: 0;
   padding: 10px 12px;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: var(--radius);
   background: var(--bg);
   font-size: 0.85rem;
   font-family: inherit;
@@ -256,7 +355,7 @@ h3,
 .segmented .seg.active,
 .segmented .seg-dir.active {
   border-color: var(--accent);
-  background: rgba(0, 75, 119, 0.08);
+  background: rgba(32, 49, 92, 0.08);
   color: var(--accent);
   font-weight: 700;
 }
@@ -280,13 +379,29 @@ h3,
   -webkit-overflow-scrolling: touch;
 }
 
+/* Hoofdstukken in 2 kolommen zodat scrollen niet nodig is */
+#chapter-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: none;
+  overflow: visible;
+}
+
+#chapter-list label {
+  padding: 12px 10px;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
 .chapter-list label {
   display: flex;
   align-items: center;
   gap: 12px;
   padding: 14px 14px;
   min-height: 52px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   cursor: pointer;
   background: var(--bg);
@@ -329,7 +444,7 @@ h3,
   justify-content: center;
   min-height: 48px;
   padding: 0 18px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   font-size: 1rem;
   font-weight: 600;
   border: none;
@@ -363,7 +478,7 @@ h3,
 }
 
 .btn.danger {
-  background: #b91c1c;
+  background: var(--accent-red);
   color: #fff;
 }
 
@@ -391,7 +506,7 @@ h3,
   color: var(--muted);
   background: rgba(0, 0, 0, 0.04);
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 12px;
 }
 
@@ -450,7 +565,7 @@ h3,
   margin-bottom: 16px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.04);
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 
@@ -495,7 +610,7 @@ h3,
 
 .blank-placeholder {
   min-height: 120px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 2px dashed var(--border);
   background: rgba(0, 0, 0, 0.02);
 }
@@ -503,8 +618,8 @@ h3,
 .blank-revealed {
   margin-top: 0;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.04);
-  border-radius: 12px;
+  background: var(--card);
+  border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 
@@ -529,12 +644,12 @@ h3,
 }
 
 .btn.judge-wrong {
-  background: #ea580c;
+  background: var(--accent-red);
   color: #fff;
 }
 
 .btn.judge-wrong:hover {
-  background: #c2410c;
+  background: #8c2940;
 }
 
 .btn.judge-good {
@@ -543,13 +658,13 @@ h3,
 }
 
 .btn.judge-good:hover {
-  background: #166534;
+  background: #2c7544;
 }
 
 #answer-input {
   width: 100%;
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   font: inherit;
   resize: vertical;
@@ -564,7 +679,7 @@ h3,
 .mcq-opt {
   text-align: left;
   padding: 14px 16px;
-  border-radius: 12px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   background: var(--card);
   font: inherit;
@@ -578,7 +693,7 @@ h3,
 .mcq-opt.selected {
   border-color: var(--accent);
   border-width: 2px;
-  background: rgba(0, 75, 119, 0.08);
+  background: rgba(32, 49, 92, 0.08);
 }
 
 .stats {
@@ -619,7 +734,7 @@ h3,
   padding: 12px 14px;
   margin-bottom: 10px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius);
   background: var(--bg);
   font-size: 0.9rem;
   line-height: 1.4;
@@ -714,7 +829,7 @@ h3,
 .card-form textarea {
   width: 100%;
   padding: 10px 12px;
-  border-radius: 10px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
   font: inherit;
 }
@@ -796,7 +911,7 @@ h3,
   align-items: flex-start;
   padding: 12px 14px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: var(--radius);
   margin-bottom: 8px;
   background: var(--card);
 }
@@ -1042,4 +1157,84 @@ h3,
 
 #reveal-answer.reveal-answer .md-rubriek:first-child {
   margin-top: 0;
+}
+
+/* Achtergrondafbeelding op alle schermen */
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Topbar transparant zodat de achtergrond overal doorloopt */
+.topbar {
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: none;
+}
+
+.topbar h1 {
+  color: var(--text-heading);
+}
+
+/* Grotere, iets lagere en gecentreerde titel op het beginscherm */
+body:has(#view-launcher:not(.hidden)) .topbar {
+  justify-content: center;
+}
+
+body:has(#view-launcher:not(.hidden)) .topbar h1 {
+  font-size: 2.2rem;
+  margin-top: 52px;
+  text-align: center;
+}
+
+/* Hele home-inhoud iets lager */
+body:has(#view-launcher:not(.hidden)) #view-launcher {
+  margin-top: 28px;
+}
+
+.btn-back {
+  color: var(--accent);
+}
+
+.btn-back:hover {
+  background: rgba(32, 49, 92, 0.1);
+}
+
+/* Bijbeltekst onder de vakken op het beginscherm */
+.launcher-verse {
+  margin: 18px 2px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.launcher-verse-text {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--text-heading);
+}
+
+.launcher-verse-ref {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-heading);
+  opacity: 0.85;
+}
+
+/* Losse tekst die direct op de achtergrond staat in CHE-blauw */
+.launcher-intro,
+.progress,
+.menu-section-title,
+#manage-storage-hint,
+#view-summary > h2,
+#view-reveal-summary > h2,
+.stats p {
+  color: var(--text-heading);
 }
